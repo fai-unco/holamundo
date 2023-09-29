@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Diplomatura Hola Mundo: Secuencias y Variables</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Diplomatura Hola Mundo: Secuencias y Variables">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+	<!-- Codemirror -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
+	</link>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js">
+	</script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js">
+		</script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
+	</link>
+	<link rel="stylesheet" href="./assets/plugins/code-mirror/material-ocean.css">
+	</link>
+	<link rel="stylesheet" href="./assets/plugins/code-mirror/material.css">
+	</link>
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="assets/images/logo-diplo1.png" width="200" alt="logo"><span
+								class="logo-text">#<span class="text-alt">Variables</span></span></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+
+				</div>
+				<!--//docs-top-utilities-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
+
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Variables</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Entonces… ¿Qué son las
+							variables?</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Por qué necesitamos saberlo?</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Cómo las utilizamos?</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrows-alt-h"></i></span>Entrada de
+							datos</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
+								class="theme-icon-holder me-2"><i class="fas fa-ellipsis-v"></i></span>Tipos de
+							datos</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-calculator"></i></span>Operadores</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Operadores Aritméticos</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Operadores de Asignación</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Operadores de Comparación</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">Operadores Lógicos</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-video"></i></span>Videos</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-hammer"></i></span>A trabajar!</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Nivel 0: Nuestra primera variable con entrada</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Nivel 1: Más variables!</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Nivel 2: Nuestra primera variable con entrada</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-4">Nivel 3: Muchos más datos, muchos más tipos</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-5">Nivel 4: Aprender a comparar, comparando :)</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-6">Nivel 5: NOT|AND|OR</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-7">Nivel 6: Atrapando al tramposo</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-brain"></i></span>Adicionales</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Adicional 1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Adicional 2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Adicional 3</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-4">Adicional 4</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-5">Adicional 5</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fab fa-gripfire"></i></span>Desafío Dipli!</a></li>
+					<!--<li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 7.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 7.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 7.3</a></li> -->
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span
+								class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Repaso!</a></li>
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li> -->
+				</ul>
+
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content" style="background-image: url('assets/images/fondo.png')">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">Variables<span class="docs-time"></span></h1>
+						<section class="docs-intro">
+							<p>Sin lugar a dudas, una de las herramientas con las que cualquier programador debe contar
+								a la hora de desarrollar código útil,
+								son las variables. Sin ellas, los lenguajes de programación perderían completamente la
+								capacidad de resolver problemas complejos,
+								además de que programar resultaría en una tarea engorrosa y más compleja de lo que
+								necesitaría serlo.</p>
+							<p>Para entender mejor el porqué de su importancia sería bueno que lo veamos desde la
+								perspectiva de un problema: Ahora que ya conocen la sentencia alert para mostrar
+								mensajes,
+								consideren que se les pide que su programa muestre en la pantalla un saludo
+								personalizado. Esto es,
+								que una persona le dice al programa como se llama y este lo saluda mostrando
+								<i>“Hola”</i> y a continuación, su nombre. Por ejemplo: <i>“Hola Juan Pérez”</i>.
+							</p>
+							<p>En principio parece algo sencillo de lograr, pero con lo que sabemos hasta ahora, serían
+								capaces de resolverlo?</p>
+
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+					<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Entonces… ¿Qué son las variables? </h2>
+						<p>Desde el punto de vista de los “fierros” (hardware), una variable no es más que un espacio de
+							memoria donde podemos guardar datos. Pero, la cosa no termina ahí,
+							porque lo interesante de las variables es que podemos darles un nombre. De manera que, cada
+							vez que escribamos ese nombre en nuestros programas,
+							la computadora va a entender que nos estamos refiriendo a ese exacto espacio de la memoria
+							donde tenemos guardados los datos.</p>
+
+						<p>Aún no parecen muy sorprendidos por la </b>INCREÍBLE</b> revelación de que le podamos dar
+							nombres a las variables… Para que quede más claro,
+							les voy a mostrar un pequeño ejemplo de como los fierros entienden los espacios de memoria
+							VS como lo podemos entender los programadores:</p>
+
+						<img src="assets\images\ejemploMemoria.png" width="100%" alt="Representación de los espacios de memoria">
+							
+						<p></p>
+						<p>Como pueden ver, hay diferentes formas de referirnos a estos espacios de memoria dependiendo
+							de la perspectiva que tomemos. Si somos el hardware,
+							estaremos viendo estos espacios de memoria como una serie de largos números binarios que
+							identifican a cada espacio. Ahora, si lo vemos como el sistema operativo,
+							los identificadores cambian de esos largos números binarios, a una serie de números y letras
+							un poco extraños de leer (sobre todo por esas “x” entre medio de los números)
+							que se conocen como números hexadecimales. Por último, desde el punto de vista del
+							programador, nos encontramos con nombres sencillos que identifican a los distintos espacios
+							de memoria y que nos ahorran el trabajo de tener que recordar en cuál identificador
+							hexadecimal está guardado el dato de un resultado,
+							o de cuantos unos y ceros tenemos que escribir para decirle al programa, en números
+							binarios, donde debe guardar un dato en la memoria.</p>
+						<p>Se podrán imaginar lo complicado que sería escribir <b>1010100000</b> o <b>0x002b0</b>, cada
+							vez que queramos guardar o recuperar un dato. Sin mencionar que, tendríamos que recordar esa
+							secuencia de números para poder usarla en nuestro código… horrible!.</p>
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Por qué necesitamos saberlo?</h2>
+						<p>Bien, ahora que ya sabemos que sin las variables estaríamos perdidos, como así también qué es
+							lo que son… debemos entender el por qué?.<br>
+							Necesitamos saber usar las variables ya que nos permiten guardar y recuperar datos dentro de
+							nuestro programa. Desde ya, puedo ver que no les parece mucho...Miren,
+							volvamos al problema que planteamos al principio del tema: <i>El programa que debe saludar
+								usando el nombre del usuario</i>.</p>
+						<p>Ahora debería serles más sencillo pensar una posible solución :).</p>
+
+						<p>Veamos, sin entrar mucho en detalle, un paso a paso de lo que deberíamos hacer para lograrlo:
+						</p>
+
+						<ol>
+							<li>Nuestro programa debería comunicarle al usuario que ingrese su nombre, mediante un
+								mensaje.</li>
+							<li>Obtener el nombre del usuario.</li>
+							<li>Esa información deberíamos guardarla en una variable que tenga un nombre que nos sea
+								fácil de identificar qué es lo que contiene. Por ejemplo <b>nombreUsuario</b>.</li>
+							<li>Finalmente, podemos usar dos <b>alert</b> para construir el saludo. En un <b>alert</b>
+								mostramos el mensaje “hola” y el segundo lo usamos para que muestre el nombre que
+								guardamos en la variable <b>nombreUsuario</b>.</li>
+						</ol>
+
+						<p>Y voila! problema resuelto !! :D <br>
+							Como pueden ver, las variables nos permiten guardar, asignar,
+							representar y mostrar información relevante en cualquier parte de nuestro código o programa,
+							de ahí que resultan ser muy importantes para los programadores ;).</p>
+
+						<!-- <h5>Usando variables en JavaScript:</h5> -->
+						<!-- <p>You can <a class="theme-link" href="https://gist.github.com/"  target="_blank">embed your code snippets using Github gists</a></p> -->
+						<!-- <div class="docs-code-block"> -->
+						<!-- ** Embed github code starts ** -->
+						<!-- <script src="https://gist.github.com/xriley/fce6cf71edfd2dadc7919eb9c98f3f17.js"></script> -->
+						<!-- ** Embed github code ends ** -->
+						<!-- </div>//docs-code-block -->
+
+
+
+
+
+					</section>
+
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Cómo las utilizamos?</h2>
+						<p>Creo que ya pude convencerlos de la importancia de las variables, al punto que se están
+							muriendo por poder usarlas!! No se preocupen que la espera ya terminó, ya mismo les explico
+							cómo pueden usarlas en sus programas.</p>
+
+						<p>En Javascript existen una serie de palabras que le avisan al lenguaje que estamos creando una
+							variable. Este tipo de palabras se conocen como “palabras reservadas” y existen en todos los
+							lenguajes de programación.
+							Se les dicen palabras reservadas porque éstas no pueden ser usadas para otra cosa, por
+							ejemplo como nombre de una variable.<br>
+							Quédense tranquilos que si llegan a hacerlo, la computadora no va a explotar… sólo su
+							programa no funcionará o Javascript les dirá que hay un error :).</p>
+
+						<h5 class="mt-5">Las palabras reservadas para crear variables son:</h5>
+
+						<div class="table-responsive my-4">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th style="text-align: center" class="theme-bg-light">var</th>
+										<td>Si querés que tu código funcione en navegadores antiguos, usala!</td>
+									</tr>
+									<tr>
+										<th style="text-align: center" class="theme-bg-light">let</th>
+										<td>Variables declaradas con let no pueden ser re-declaradas. Y deben ser
+											declaradas antes de usarse</td>
+									</tr>
+									<tr>
+										<th style="text-align: center" class="theme-bg-light">const</th>
+										<td>Tampoco pueden ser re-declaradas, ni tampoco re-asignadas</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--//table-responsive-->
+
+						<div class="callout-block callout-block-success">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-thumbs-up"></i>
+									</span>
+									<!--//icon-holder-->
+									Tip
+								</h4>
+								<p>Al proceso de crear una variable también se lo conoce como declaración</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<h5 class="mt-5">Veamos como podemos usarlo en el código:</h5>
+
+						<div class="docs-code-block">
+							<!-- ** Embed github code starts ** -->
+							<script
+								src="https://gist.github.com/Guille2407/4d307b075ee01f1b1b232b5a90846076.js"></script>
+							<!-- ** Embed github code ends ** -->
+						</div>
+						<!--//docs-code-block-->
+					</section>
+					<!--//section-->
+					<textarea id="myTextareaVarExa1">
+var variable1 = "hola";
+
+let variable2 = "cómo";
+						
+const variable3 = "estás?";
+						
+variable4 = "yo muy bien :)";
+
+alert(variable1);
+alert(variable2);
+alert(variable3);
+alert(variable4);</textarea>
+					<script>
+						var editorVarExa1 = CodeMirror.fromTextArea(myTextareaVarExa1, {
+							lineNumbers: true,
+							tabSize: 3,
+							mode: 'javascript',
+							theme: 'material'
+						});
+					</script>
+					<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa1.getValue())"> Ejecutar
+					</button>
+
+					<div class="alert alert-primary" role="alert">
+						<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #1 : A partir de la
+						caja de código usada más arriba, ¿Te parece que los nombres de las variables son adecuados para
+						la información que están almacenando?¿Te animás a renombrarlas adecuadamente?
+					</div>
+
+					<h2>Veamos que pasa con el orden de las declaraciones</h2>
+					<p>A la hora de programar, es importante que consideremos la forma en la cual la computadora interpreta nuestro código. En JavaScript, 
+						cada sentencia o instrucción que escribimos sigue un orden, que está definido por la disposición de cada sentencia. Para entender esto, vamos a salir un poco
+						del campo de la informática y vayamos a la cocina por un momento.
+					</p>	
+					<p>Cuando queremos preparar algún platillo sin tener ningún conocimiento sobre cómo hacerlo,
+						solemos recurrir a una receta que nos indique el paso a paso para poder realizarlo. De esta manera, (y con receta en mano) solo tenemos que ir al paso 1, luego al paso 
+						2, y así. Aquí aparece una cuestión importante, que es el orden. Porque si no seguimos los pasos ordenadamente, lo más probable es que lo que preparemos termine siendo 
+						incomible. Si batimos antes de agregar los ingredientes, si ponemos en el horno sin haberle agregado los huevos, o si desmoldamos antes de cocinar, el resultado es un desastre.
+					</p>
+					<p>Podríamos pensar que, al sentarnos a programar en realidad estamos creando una receta que nuestra computadora tiene que preparar. Y si queremos usar una variable deberíamos, en un paso previo, 
+						declararla con la palabra reservada, ó si pretendemos mostrar algo por pantalla, primero tendríamos que tener algo que mostrar. <b>El orden importa!</b>
+					</p>
+					<h5>Un ejemplo:</h5>
+					<textarea id="myTextareaVarExa10">
+alert(variable);
+variable = 25;
+let variable;						
+					</textarea>
+											<script>
+												var editorVarExa10 = CodeMirror.fromTextArea(myTextareaVarExa10, {
+													lineNumbers: true,
+													tabSize: 3,
+													mode: 'javascript',
+													theme: 'material'
+												});
+											</script>
+											<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa10.getValue())"> Ejecutar
+											</button>
+					
+					<div class="alert alert-primary" role="alert">
+						<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #2 : El código de más arriba <b>no funciona</b>, ¿Cúal sería el problema?
+						¿Las sentencias están en el orden adecuado?¿Te animás a corregirlo para que funcione?
+
+					</div>			
+
+					<p>Considerando que ya saben usar un poco más las variables. Me parece un buen momento para recordar
+						el paso a paso que resolvimos ligeramente más arriba:</p>
+
+					<ol>
+						<li>Nuestro programa debería comunicarle al usuario que ingrese su nombre, mediante un mensaje.
+						</li>
+						<li>Obtener el nombre del usuario.</li>
+						<li>Esa información deberíamos guardarla en una variable que tenga un nombre que nos sea fácil
+							de identificar qué es lo que contiene. Por ejemplo </b>nombreUsuario</b>.</li>
+						<li>Finalmente, podemos usar dos alert para construir el saludo. En un alert mostramos el
+							mensaje “hola” y el segundo lo usamos para que muestre el nombre que guardamos en la
+							variable nombreUsuario.</li>
+					</ol>
+
+					<p>Este paso a paso debería funcionar … en teoría … si … pero … y quizás alguien ya se haya dado
+						cuenta … ¿Cómo hacemos para que nuestro programa obtenga esa información del usuario? </p>
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+				</article>
+
+				<article class="docs-article" id="section-2">
+					<header class="docs-header">
+						<h1 class="docs-heading">Entrada de datos</h1>
+						<section class="docs-intro">
+							<p>Hace no mucho tiempo, aprendimos que nuestros programas pueden “comunicarse” con el
+								usuario mediante los mensajes que muestra por pantalla, la sentencia alert.
+								Puede que algunos de ustedes ya se lo hayan planteado: <i>Sí hay una forma de hacer
+									llegar información desde el programa hacia el usuario …
+									también debería haber una forma que vaya desde el usuario hacia el programa…
+									no?</i><br>
+								Efectivamente, así como existe el <b>alert</b> para que el programa nos entregue
+								información, también existe una sentencia que nos permite darle datos al programa.</p>
+
+							<p>La sentencia <b>prompt</b> le da al usuario una ventana en la cual escribir los datos que
+								desea hacerle llegar al programa. Por sí sólo,
+								el <b>prompt</b> no es muy útil ya que luego de que escribamos en él y le demos
+								<i>aceptar</i> en la ventana, lo que sea que hayamos escrito se perderá en el olvido.
+								Pero,
+								si combinamos el poder de las variables con la sentencia <b>prompt</b> podremos ver el
+								verdadero potencial de las variables!. Con estas dos herramientas de nuestro lado,
+								el programa ahora es capaz, no sólo de guardar información sino que también, ahora puede
+								pedirle los datos directamente al usuario!!
+							</p>
+
+							<h5>Desarrollemos nuestro paso a paso por completo:</h5>
+							<textarea id="myTextareaVarExa8">
+var nombreUsuario; 
+alert("Por favor digame como se llama");
+nombreUsuario = prompt();
+alert(" Hola ");
+alert(nombreUsuario);</textarea>
+							<script>
+								var editorVarExa8 = CodeMirror.fromTextArea(myTextareaVarExa8, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material'
+								});
+							</script>
+							<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa8.getValue())"> Ejecutar
+							</button>
+
+
+							<p>Ahora que son duchos con el arte de las variables, ¿Se animan a modificar el programa
+								anterior para que también pida la edad, la altura del usuario y muestre todos los datos?
+							</p>
+
+							<textarea id="myTextareaVarExa9">//Escriba su solución aquí!</textarea>
+							<script>
+								var editorVarExa9 = CodeMirror.fromTextArea(myTextareaVarExa9, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material'
+								});
+							</script>
+							<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa9.getValue())"> Ejecutar
+							</button>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-3">
+					<header class="docs-header">
+						<h1 class="docs-heading">Tipos de datos</h1>
+						<section class="docs-intro">
+							<p>Dado que ustedes ya la tiene re clara con el concepto de variables y quieren saber más al
+								respecto, les comento que además de poder guarda datos en una variable,
+								también podemos especificar que tipo de dato queremos que guarde. Es decir que le puedo
+								pedir a una variable sólo me deje guardar en ella frutas,
+								por lo que no voy a poder pedirle que guarde una lechuga… podré guardar un tomate?...
+								<i>(les dejo la inquietud)</i>.
+								La razón por la que les cuento esto es porque existen lenguajes de programación que
+								únicamente nos dejan crear una variable sólo si primero le decimos de que tipo va a ser
+								la información que vamos a almacenar en ella.
+								A estos lenguajes se les conoce como “fuertemente tipados”.
+								Javascript se trata de un lenguaje “levemente tipado” por lo que ya se imaginarán que no
+								le importa mucho que le digamos el tipo que va a tener una variable.
+							</p>
+							<p>Ahora bien, que a Javascript no le importen los tipos de sus variables no quiere decir
+								que no Javascript no tenga tipos de datos. Estos le ayudan al lenguaje, y al
+								programador,
+								a comprender los datos que está utilizando y como interpretarlos. Podrán entender la
+								importancia de que Javascript pueda diferencia un texto de unos números, verdad?...No?
+							</p>
+							<h5>Miren la siguiente situación:</h5>
+							<textarea id="myTextareaVarExa2">
+let suma1 = "6 + 20";  //Devuelve el texto "6 + 20"
+								
+let suma2 =  6 + 20;  //Devuelve Devuelve 26
+
+alert(suma1);
+alert(suma2);</textarea>
+							<script>
+								var editorVarExa2 = CodeMirror.fromTextArea(myTextareaVarExa2, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material'
+								});
+							</script>
+							<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa2.getValue())"> Ejecutar
+							</button>
+
+
+
+
+							<p>Pueden ver que la diferencia en el código es sútil, pero el cambio en el resultado es
+								bastante importante. En el primer caso Javascript entiende que lo que vamos a guardar es
+								un texto,
+								por lo que interpreta que los número que aparecen ahí no son más que caracteres de una
+								palabra. Mientras que en el otro caso, se entiende que son números y que se esta
+								realizando una operación matemática con ellos.</p>
+
+							<div class="alert alert-primary" role="alert">
+								<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #3 : A
+								partir de la caja de código usada más arriba, ¿Te animás a modificarla para que los
+								datos los pueda ingrese el usuario con el teclado?
+							</div>
+
+							<h5>Lista de tipos admitidos en Javascript:</h5>
+
+							<div class="table-responsive my-4">
+								<table class="table table-bordered">
+									<tbody>
+										<tr>
+											<th style="text-align: center" class="theme-bg-light"><a>Number</a></th>
+											<td>Es capaz de almacenar números de punto flotante entre 2^-1074 y 2^1024,
+												pero sólo puede almacenar con seguridad números enteros en el rango
+												-(2^53 - 1) a 2^53 - 1.</td>
+										</tr>
+										<tr>
+											<th style="text-align: center" class="theme-bg-light"><a>String</a></th>
+											<td>El tipo String de JavaScript se utiliza para representar datos
+												textuales. A diferencia de algunos lenguajes de programación (como en
+												C), las cadenas de texto en JavaScript son inmutables. Esto significa
+												que una vez creada la cadena, no es posible modificarla.</td>
+										</tr>
+										<tr>
+											<th style="text-align: center" class="theme-bg-light"><a>Symbol</a></th>
+											<td>Un símbolo es un valor primitivo único e inmutable </td>
+										</tr>
+										<tr>
+											<th style="text-align: center" class="theme-bg-light"><a>Null</a></th>
+											<td>El tipo Null tiene exactamente un valor: null</td>
+										</tr>
+										<tr>
+											<th style="text-align: center" class="theme-bg-light"><a>Undefined</a></th>
+											<td>Una variable a la que no se le ha asignado un valor tiene el valor
+												indefinido</td>
+										</tr>
+										<tr>
+											<th style="text-align: center" class="theme-bg-light"><a>Boolean</a></th>
+											<td>El booleano representa una entidad lógica y puede tener dos valores:
+												verdadero y falso (true, false)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!--//table-responsive-->
+
+							<p>En javaScript no hace falta declarar ningún tipo a la hora de declarar una variable, ya
+								que es capaz de entender e interpretar el tipo en función del dato que se le pide
+								almacenar.
+								Esto nos permite que una variable pueda cambiar el tipo de dato fácilmente dependiendo
+								de lo que le asignemos:</p>
+
+							<div class="docs-code-block">
+								<!-- ** Embed github code starts ** -->
+								<script
+									src="https://gist.github.com/Guille2407/9fc2e7f6dc9bb9f355782eb06ff4ccb6.js"></script>
+								<!-- ** Embed github code ends ** -->
+							</div>
+							<!--//docs-code-block-->
+							<textarea id="myTextareaVarExa3">
+let soyUnCamaleon = "Esto es un texto";
+alert(soyUnCamaleon);
+								
+soyUnCamaleon = 2022;
+alert(soyUnCamaleon);
+								
+soyUnCamaleon = true;
+alert(soyUnCamaleon);
+								
+soyUnCamaleon = null;
+alert(soyUnCamaleon);
+								
+soyUnCamaleon = undefined;
+alert(soyUnCamaleon);</textarea>
+							<script>
+								var editorVarExa3 = CodeMirror.fromTextArea(myTextareaVarExa3, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material'
+								});
+							</script>
+							<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa3.getValue())"> Ejecutar
+							</button>
+							<div class="alert alert-primary" role="alert">
+								<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #4 : A
+								partir de la caja de código usada más arriba, cambia
+								<code>let soyUnCamaleon = "Esto es un texto"</code> por
+								<code>const soyUnCamaleon = "Esto es un texto</code> ¿Qué sucede con los demás alert?¿El
+								programa sigue funcionando correctamente?¿Te animás a explicar lo que sucede?
+							</div>
+
+
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-4">
+					<header class="docs-header">
+						<h1 class="docs-heading">Operadores</h1>
+						<section class="docs-intro">
+							<p>Bueno, ya incorporamos el concepto de variables, que són y el porqué de su importancia. También sabemos que
+								hay diferentes tipos de datos que pueden ser tomados por las variables… ya sabemos todo,
+								no?.
+								Casi, lo último que nos queda por aprender son los operadores.<br>
+								Los operadores son las operaciones podemos realizar con los tipos de datos, por ejemplo
+								si tenemos dos números y queremos multiplicarlos,
+								simplemente podemos utilizar el operador <b>*</b>. Entonces Javascript va a entender que
+								se deben multiplicar esos números,
+								sencillo…Ahora que pasa si usamos el mismo operador pero en lugar de números, usamos
+								Strings? Cómo se pueden multiplicar dos Strings? Si alguno sabe me avisa porque yo no lo
+								sé.<br>
+								Pueden ver que algunos operadores sólo tiene sentido usarlos si los empleamos con los
+								tipos de datos correctos.</p>
+							<p>En javascript existen muchos operadores diferentes, pero podemos dividirlos en los
+								siguientes grupos:</p>
+
+							<li><strong class="me-1"></strong>Operadores Aritméticos</li>
+							<li><strong class="me-1"></strong>Operadores de Asignación</li>
+							<li><strong class="me-1"></strong>Operadores de Comparación</li>
+							<li><strong class="me-1"></strong>Operadores Lógicos</li>
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+					<section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Operadores Aritméticos</h2>
+						<p>Los operadores aritméticos se utilizan para realizar operaciones aritméticas con números:</p>
+
+						<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th style="text-align: center" scope="col">Operador</th>
+										<th style="text-align: center" scope="col">Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="text-align: center">+</td>
+										<td style="text-align: center">suma</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">-</td>
+										<td style="text-align: center">resta</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">*</td>
+										<td style="text-align: center">multiplicación</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">/</td>
+										<td style="text-align: center">división</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">**</td>
+										<td style="text-align: center">potencia</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">++</td>
+										<td style="text-align: center">incrementar</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">--</td>
+										<td style="text-align: center">decrementar</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">%</td>
+										<td style="text-align: center">módulo</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--//table-responsive-->
+
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									También se aplica
+								</h4>
+								<p>El operador de suma <code>+</code> también se puede usar con String. En ese caso, el
+									operador pasa de llamarse "suma" a llamarse "concatenar" y su función es la de unir
+									o concatenar dos o más textos</p>
+								<li><strong class="me-1"></strong> <code>let texto1 = “hola Pedro” 		</code></li>
+								<li><strong class="me-1"></strong> <code>let texto2 = “cómo estás?” </code></li>
+								<li><strong class="me-1"></strong>
+									<code>let texto3 = texto1 + texto2; --> texto3 devuelve "hola Pedro cómo estás?</code>
+								</li>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<h5>Veamos un código de ejemplo:</h5>
+						<textarea id="myTextareaVarExa4">
+let texto1 = "hola Pedro ";
+let texto2 = "cómo estás? ";
+let texto3 = texto1 + texto2;   //texto3 devuelve "hola Pedro cómo estás?
+alert(texto3);</textarea>
+						<script>
+							var editorVarExa4 = CodeMirror.fromTextArea(myTextareaVarExa4, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa4.getValue())"> Ejecutar
+						</button>
+						<div class="alert alert-primary" role="alert">
+							<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #5 : A partir
+							de la caja de código usada más arriba, agregale las modificaciones necesarias para que
+							<code>texto3</code> concatene 4 variables más, y en el alert
+							del final muestre como resultado <code>hola Pedro cómo estás? Yo estoy muy bien :)</code>
+						</div>
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Operadores de Asignación</h2>
+						<p>Los operadores de asignación asignan valores a las variables de JavaScript:</p>
+
+						<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th style="text-align: center" scope="col">Operador</th>
+										<th style="text-align: center" scope="col">Ejemplo</th>
+										<th style="text-align: center" scope="col">Es lo mismo que</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="text-align: center">=</td>
+										<td style="text-align: center">x = y</td>
+										<td style="text-align: center">x = y</td>
+
+									</tr>
+									<tr>
+										<td style="text-align: center">+=</td>
+										<td style="text-align: center">x += y</td>
+										<td style="text-align: center">x = x + y</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">-=</td>
+										<td style="text-align: center">x -= y</td>
+										<td style="text-align: center">x = x - y</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">*=</td>
+										<td style="text-align: center">x *= y</td>
+										<td style="text-align: center">x = x * y</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">/=</td>
+										<td style="text-align: center">x /= y</td>
+										<td style="text-align: center">x = x / y</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">%=</td>
+										<td style="text-align: center">x %= y</td>
+										<td style="text-align: center">x = x % y</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">**=</td>
+										<td style="text-align: center">x **= y</td>
+										<td style="text-align: center">x = x ^ y</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--//table-responsive-->
+
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									También se aplica
+								</h4>
+								<p>El operador <code>+=</code> también se puede usar con String. Su función es la de
+									unir o concatenar dos o más textos en una variable, conservando el valor que ya
+									contenia la variable originalmente</p>
+								<li><strong class="me-1"></strong> <code>let texto1 = "Hola Pedro" 		</code></li>
+								<li><strong class="me-1"></strong> <code>let texto2 = "Cómo estás?" </code></li>
+								<li><strong class="me-1"></strong> <code>let texto3 = "Mi nombre es Pablo." </code></li>
+								<li><strong class="me-1"></strong>
+									<code>texto3 += texto1 + texto2; --> texto3 devuelve "Mi nombre es Pablo. Hola Pedro cómo estás?"</code>
+								</li>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<h5>Veamos un código de ejemplo:</h5>
+						<textarea id="myTextareaVarExa5">
+let texto1 = " hola Pedro ";
+let texto2 = " cómo estás? ";
+let texto3 = " Mi nombre es Pablo. ";
+texto3 += texto1 + texto2;
+alert(texto3);</textarea>
+						<script>
+							var editorVarExa5 = CodeMirror.fromTextArea(myTextareaVarExa5, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa5.getValue())"> Ejecutar
+						</button>
+
+						<div class="alert alert-primary" role="alert">
+							<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #6 : A partir
+							de la caja de código usada más arriba, agregale las modificaciones necesarias para que el
+							alert muestre lo mismo. Pero sin hacer uso del operador <b>+=</b>, ¿Te animás?
+						</div>
+					</section>
+
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">Operadores de Comparación</h2>
+						<p>Los operadores de comparación se utilizan para comprobar si algo es verdadero o falso:
+						</p>
+
+						<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th style="text-align: center" scope="col">Operador</th>
+										<th style="text-align: center" scope="col">Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="text-align: center">==</td>
+										<td style="text-align: center">igual a</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">===</td>
+										<td style="text-align: center">igual valor e igual tipo</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">!=</td>
+										<td style="text-align: center">no es igual</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">!==</td>
+										<td style="text-align: center">no es igual en valor ni en tipo</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">></td>
+										<td style="text-align: center">mayor que</td>
+									</tr>
+									<tr>
+										<td style="text-align: center"><</td>
+										<td style="text-align: center">menor que</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">>=</td>
+										<td style="text-align: center">mayor o igual a</td>
+									</tr>
+									<tr>
+										<td style="text-align: center"><=</td>
+										<td style="text-align: center">menor o igual a</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--//table-responsive-->
+
+
+						<h5>Veamos un código de ejemplo:</h5>
+						<textarea id="myTextareaVarExa6">
+let variable1;
+let variable2;
+let variable3;
+let resultado;
+
+variable1 = 5;
+variable2 = 8;
+variable3 = "cinco";
+
+resultado = variable1 == variable2;
+
+alert("variable1 y variable2 son iguales? -> " + resultado);
+
+resultado = (variable1 > variable2);
+
+alert("variable1 es mayor que variable2? -> " + resultado);
+
+resultado = (variable1 < variable2);
+
+alert("variable1 es menor que variable2? -> " + resultado);
+
+resultado = (variable1 != variable2);
+
+alert("variable1 es distinta que variable2? -> " + resultado);
+
+resultado = (variable1 === variable3);
+
+alert("variable1 es igual en tipo y valor que variable3? -> " + resultado);</textarea>
+						<script>
+							var editorVarExa6 = CodeMirror.fromTextArea(myTextareaVarExa6, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa6.getValue())"> Ejecutar
+						</button>
+						<div class="alert alert-primary" role="alert">
+							<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #7 : A
+							partir de la caja de código usada más arriba, ¿Te animás a agregar un ejemplo más pero
+							usando el operador <b>!==</b> y que de como resultado <code>true</code>?.
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-4-4">
+						<h2 class="section-heading">Operadores Lógicos</h2>
+						<p>Los operadores lógicos, al igual que los operadores de comparación, también son usados
+							para comprobar si algo es verdadero o falso:</p>
+
+						<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th style="text-align: center" scope="col">Operador</th>
+										<th style="text-align: center" scope="col">Descripción</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="text-align: center">&&</td>
+										<td style="text-align: center">'y' lógico (AND)</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">||</td>
+										<td style="text-align: center">'ó' lógico (OR)</td>
+									</tr>
+									<tr>
+										<td style="text-align: center">!</td>
+										<td style="text-align: center">'no' lógico (NOT)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+
+						<h5>Veamos un código de ejemplo:</h5>
+						<textarea id="myTextareaVarExa7">
+/*Imaginen un sitio web que para poder registrarnos debemos cumplir una serie de requisitos:
+- Tener más de 18 años
+- Tener computadora
+- No ser estudiante
+
+Pero hay otro requisito que automaticamente les permite poder registrarse sin cumplir los anteriores:
+- Ser hincha de boca
+
+Cómo podemos hacer eso?...*/			
+
+let mayorDeEdad = false;
+let tienePC = false;
+let esEstudiante = false;
+let hinchaDeBoca = true;
+let resultado;							
+								
+resultado = ((mayorDeEdad) && (tienePC) && (!esEstudiante) || (hinchaDeBoca));
+								
+alert("Puede el usuario registrarse? -> " + resultado);</textarea>
+						<script>
+							var editorVarExa7 = CodeMirror.fromTextArea(myTextareaVarExa7, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorVarExa7.getValue())"> Ejecutar
+						</button>
+						<div class="alert alert-primary" role="alert">
+							<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #8 : A
+							partir de la caja de código usada más arriba, cambiando
+							<code>hinchaDeBoca = false</code>,
+							que valores deberían tener el resto de las variables:
+							<code>mayorDeEdad, tienePC y esEstudiante</code> para que <code>resultado</code> muestre
+							<code>true</code>?¿Te animás a resolverlo?.
+						</div>
+					</section><!--//section-->
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+					
+				</article>
+
+				<article class="docs-article" id="section-5">
+					<header class="docs-header">
+						<h1 class="docs-heading">Videos<span class="docs-time"></span></h1>
+						<section class="docs-intro">
+							<p>A continuación les dejamos un pequeño resumen de los temas que vimos en esta sección en
+								formato de video!!</p>
+							
+
+							<div id="accordion">
+								<div class="card">
+								  <div class="card-header">
+									<a class="card-link" data-toggle="collapse" href="#collapseOne">
+										Video de variables parte 1
+									</a>
+								  </div>
+								  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+									<div class="card-body">
+										<div class="video-container">
+											<iframe class="video" src="https://www.youtube.com/embed/uGgwITOrSgg"
+												allowfullscreen></iframe>
+										</div>
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+								  <div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+										Video de variables parte 2
+								  </a>
+								  </div>
+								  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+										<div class="video-container">
+											<iframe class="video" src="https://www.youtube.com/embed/92feY2ml4DQ"
+												allowfullscreen></iframe>
+										</div>
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+								  <div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+										Video de variables parte 3
+									</a>
+								  </div>
+								  <div id="collapseThree" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+										<div class="video-container">
+											<iframe class="video" src="https://www.youtube.com/embed/DuxK7JW7tb8" 
+												allowfullscreen></iframe>
+										</div>
+									</div>
+								  </div>
+								</div>
+							  </div>
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+
+				</article>
+
+				<article class="docs-article" id="section-6">
+					<header class="docs-header">
+						<h1 class="docs-heading">A trabajar!</h1>
+						<section class="docs-intro">
+							<p>Ahora que ya vimos el concepto de variable y como utilizarlo dentro de JavaScript, vamos
+								a emplear los conocimientos en distintos desafios de programación que involucren
+								variables. Para ello, ingrese a su <a href="https://codesandbox.io/" target="_blank" >CodeSandbox</a> y dentro de la carpeta R2 que hicimos en el encuentro anterior,
+								cree un archivo por cada ejercicio propuesto más abajo. Cada archivo debe tener por nombre la palabra "ejercicio_nivel_".<br>
+								Por ejemplo: <i>ejercicio_nivel_0.js - ejercicio_nivel_1.js - ejercicio_nivel_2.js - etc</i> 
+							</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Nivel 0: Nuestra primera variable sencilla</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Crear una variable llamada <b>mensaje</b> para almacenar un mensaje de saludo, asignarle el mensaje:<br>
+							 <i>"Esta es mi primera variable! Hola mundo!"</i><br>
+							 y luego usar dicha variable para mostrar su contenido por pantalla mediante el uso del <i>alert()</i>;
+						</div>
+					</section>
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Nivel 1: Más variables!</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Crear todas las variables que consideres necesarias para poder guardar la siguiente información sobre un producto: <br>
+							<ul>
+								<li>Su nombre</li>
+								<li>Su precio</li>
+								<li>Una descripción</li>
+								<li>Su fabricante</li>
+								<li>Su modelo</li>
+								<li>Su país de origen</li>
+							</ul>
+							Asignarle a cada una un valor adecuado y luego, mostrarlas por pantalla usando <i>alert</i>.
+							<b>Usar nombre de variables representativos!!</b>
+						</div>
+					</section>
+					<section class="docs-section" id="item-6-3">
+						<h2 class="section-heading">Nivel 2: Nuestra primera variable con entrada</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							<b>Recuerde realizar los ejercicios dentro de la carpeta R2, respetando los nombres de archivo que se especificaron al comienzo de esta sección: <i>ejercicio_nivel_0.js - ejercicio_nivel_1.js - ejercicio_nivel_2.js - etc</i> </b>
+							<ol>
+								<li>Crear una variable para almacenar el nombre de un usuario, hacer que el usuario introduzca
+									su nombre usando <i>prompt</i>, y luego usar dicha variable para mostrar la información por
+									pantalla mediante el uso del <i>alert</i>.
+								</li>
+								<li>
+									Ahora agregue tres variables más al programa y pida al usuario que ingrese un valor numérico, mediante el uso del <i>prompt</i>, para dos de estas. Luego, realice la suma de los 
+									valores numéricos, y almacene su resultado en la tercer variable. Mostrar el resultado por pantalla usando la sentencia <i>alert</i> con el siguiente formato: <i>"El resultado 
+									de la suma de los dos valores es numéricos es"</i>, y luego el valor resultante de la suma en otro <i>alert</i>.
+								</li>
+								<li>
+									Agregar las modificaciones que considere necesarias para que el coódigo anterior, también pueda almacenar y mostrar el resultado de la multiplicación, resta y división de los números 
+									ingresados por el usuario. Mostrar el resultado de cada operación mediante la sentencia <i>alert</i>, anteponiendo un cartelito que diga <i>"El resultado de multiplicación es:</i> y el resultado,
+									<i>El resultado de la resta es:</i> y el resultado.. y así. 
+								</li>
+								<li>
+									Agregue las modificaciones que considere necesarias en el código anterior, para que además emplee las operaciones de incremento, decremento, potencia
+									y módulo. Debe mostrar por pantalla los resultados de las operaciones usando <i>alert</i>, pero anteponiendo un mensaje que anuncie la operación que se utilizó para calcular dicho resultado.
+								</li>
+							</ol>
+							
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-6-4">
+						<h2 class="section-heading">Nivel 3: Muchos más datos, muchos más tipos</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Se necesita crear un programa que nos permita solicitar y almacenar varios datos de
+							usuario para poder registrarlo en un sistema, usar <i>prompt</i> para solicitar la
+							información. Los datos que se necesitan son:
+							<ul>
+								<li>Nombre</li>
+								<li>Apellido</li>
+								<li>Edad</li>
+								<li>DNI</li>
+								<li>Altura</li>
+							</ul>
+							Luego se deben mostrar los datos por pantalla mediante alert
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-6-5">
+						<h2 class="section-heading">Nivel 4: Aprender a comparar, comparando :)</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Recuerde realizar los ejercicios dentro de la carpeta R2, respetando los nombres de archivo que se especificaron al comienzo de esta sección: <i>ejercicio_nivel_0.js - ejercicio_nivel_1.js - ejercicio_nivel_2.js - etc</i> </b>
+							<ol>
+								<li>
+									Dentro de la carpeta <b>R2</b> crear un archivo llamado <i>ejercicio_nivel_4_OperadoresComparacion.js</i>, copiar el siguiente código y responder en los comentarios marcados con <b>// Mi respuesta:</b> el resultado que debería devolver cada operación de comparación, <b>sin ejecutar!!</b>. <br>
+									Luego verficar las respuestas contestadas ejecutando el código y corregirlas de ser necesario.
+
+									<div class="docs-code-block">
+										<!-- ** Embed github code starts ** -->
+										<script src="https://gist.github.com/Guille2407/1009f9d9ff7c6b04c34a17cdbdc1ace2.js"></script>
+										<!-- ** Embed github code ends ** -->
+									</div>
+								</li>
+								<li>
+									Dentro de la carpeta <b>R2</b> crear un archivo llamado <i>ejercicio_nivel_4_IgualDistinto.js</i>, crear un programa que utilice el operador de comparación <b>==</b> y <b>!=</b>, almacenando el resultado en una variable 
+									que luego se muestre por pantalla mediante <i>alert</i>. El programa debe contar con un resultado <b>true</b> y un resultado <b>false</b> para cada operador de comparación. Puede realizarse con cualquier tipo de dato que desee, y los datos pueden 
+									ser escritos directamente en el código, o ser pedidos al usuario mediante la sentencia <i>prompt</i>.
+								</li>
+								<li>
+									Dentro de la carpeta <b>R2</b> crear un archivo llamado <i>ejercicio_nivel_4_MayorMenor.js</i>, crear un programa que utilice el operador de comparación <b>></b>, <b>>=</b>, <b><</b>, <b><=</b> almacenando el resultado en una variable 
+									que luego se muestre por pantalla mediante <i>alert</i>. El programa debe contar con un resultado <b>true</b> y un resultado <b>false</b> para cada operador de comparación. Puede realizarse con cualquier tipo de dato que desee, y los datos pueden 
+									ser escritos directamente en el código, o ser pedidos al usuario mediante la sentencia <i>prompt</i>.
+								</li>
+							</ol>
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-6-6">
+						<h2 class="section-heading">Nivel 5: (NOT|AND|OR)</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Recuerde realizar los ejercicios dentro de la carpeta R2, respetando los nombres de archivo que se especificaron al comienzo de esta sección: <i>ejercicio_nivel_0.js - ejercicio_nivel_1.js - ejercicio_nivel_2.js - etc</i> </b>
+							<ol>
+								<li>
+									Dentro de la carpeta <b>R2</b> crear un archivo llamado <i>ejercicio_nivel_5_OperadoresLogicos.js</i>, copiar el siguiente código y responder en los comentarios marcados con <b>// Mi respuesta:</b> el resultado que debería devolver cada operación lógica, <b>sin ejecutar!!</b>. <br>
+									Luego verficar las respuestas contestadas ejecutando el código y corregirlas de ser necesario.
+
+									<div class="docs-code-block">
+										<!-- ** Embed github code starts ** -->
+										<script src="https://gist.github.com/Guille2407/31e5776dd075ec34c02f1ed7b8d55c57.js"></script>
+										<!-- ** Embed github code ends ** -->
+									</div>
+								</li>
+								<li>
+									Dentro de la carpeta <b>R2</b> crear un archivo llamado <i>ejercicio_nivel_5_AND.js</i>, crear un programa que utilice el operador lógico <b>&&</b>, almacenando el resultado en una variable 
+									que luego se muestre por pantalla mediante <i>alert</i>. El programa debe contar con un resultado <b>true</b> y un resultado <b>false</b>. Puede realizarse con cualquier tipo de dato que desee, y los datos pueden 
+									ser escritos directamente en el código, o ser pedidos al usuario mediante la sentencia <i>prompt</i>.
+								</li>
+								<li>
+									Dentro de la carpeta <b>R2</b> crear un archivo llamado <i>ejercicio_nivel_5_OR.js</i>, crear un programa que utilice el operador lógico <b>||</b>, almacenando el resultado en una variable 
+									que luego se muestre por pantalla mediante <i>alert</i>. El programa debe contar con un resultado <b>true</b> y un resultado <b>false</b>. Puede realizarse con cualquier tipo de dato que desee, y los datos pueden 
+									ser escritos directamente en el código, o ser pedidos al usuario mediante la sentencia <i>prompt</i>.
+								</li>
+								<li>
+									Dentro de la carpeta <b>R2</b> crear un archivo llamado <i>ejercicio_nivel_5_NOT.js</i>, crear un programa que utilice el operador lógico <b>!</b>, almacenando el resultado en una variable 
+									que luego se muestre por pantalla mediante <i>alert</i>. El programa debe contar con un resultado <b>true</b> y un resultado <b>false</b>. Puede realizarse con cualquier tipo de dato que desee, y los datos pueden 
+									ser escritos directamente en el código, o ser pedidos al usuario mediante la sentencia <i>prompt</i>.
+								</li>
+								<li>
+									Dentro de la carpeta <b>R2</b> crear un archivo llamado <i>ejercicio_nivel_5_AND_OR_NOT.js</i>, crear un programa que utilice una combinación de los operadores lógicos <b>&&</b>, <b>||</b>,<b>!</b> almacenando el resultado en una variable 
+									que luego se muestre por pantalla mediante <i>alert</i>. El programa debe contar con un resultado <b>true</b> y un resultado <b>false</b>. Puede realizarse con cualquier tipo de dato que desee, y los datos pueden 
+									ser escritos directamente en el código, o ser pedidos al usuario mediante la sentencia <i>prompt</i>.
+								</li>
+							</ol>
+						</div>
+					</section>
+					<!--//section-->
+
+					
+
+					<section class="docs-section" id="item-6-7">
+						<h2 class="section-heading">Nivel 6: Atrapando al tramposo</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							En un conocido videojuego online hay un usuario que es muy conocido por ser tramposo. Los
+							desarrolladores del videojuego tienen algunos datos del usuario
+							deshonesto y te solicitan que les crees un pequeño programita que les alerte a ellos cuando
+							el tramposo quiere conectarse al juego para que lo puedan bloquear, sólo si
+							se da el caso de que coincida la información. Usar <i>prompt</i> para pedir la información
+							al usuario. Los datos del tramposo son:
+							<li>Usuarios conocidos: pepito1307 - ggisi24 - soyMuyBueno22022</li>
+							<li>Direcciones IP: 192.168.1.0 - 192.168.1.2</li>
+							<li>Emails: pedrogamer2004@gmail.com - whiterabbit01@gmail.com -
+								soydemasiadobueno07@outlook.com</li>
+						</div>
+					</section>
+					<!--//section-->
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+
+				</article>
+				<!--//docs-article-->
+
+
+				<article class="docs-article" id="section-7">
+					<header class="docs-header">
+						<h1 class="docs-heading">Adicionales</h1>
+						<section class="docs-intro">
+							<p>Ahora que ya estás a full con los ejercicios de variables, te proponemos una serie de
+								ejercicios adicionales para poner aún más a prueba tus conocimientos y profundizar lo
+								aprendido. Suerte!</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">Adicional 1</h2>
+						<h5 class="mt-5">Ejercicio propuesto: Juntos, no separados</h5>
+						<div class="alert alert-warning" role="alert">
+							En un programa de una empresa que guarda varios datos de empleados, tienen el problema de
+							que para poder mostrar los datos necesitan usar un alert por cada dato guardado. ¿Pódrias
+							ayudarles a que su programa funcione mostrando todos los datos del usuario pero en un solo
+							alert? Los datos son:
+							<li>Nombre</li>
+							<li>Apellido</li>
+							<li>Legajo</li>
+							<li>Antigüedad</li>
+							<li>Teléfono</li>
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-7-2">
+						<h2 class="section-heading">Adicional 2</h2>
+						<h5 class="mt-5">Ejercicio propuesto: Programa incompleto</h5>
+						<div class="alert alert-warning" role="alert">
+							Software INC contrató a un programador para hacer un pequeño programa para que guardara
+							información importante de sus usuarios. El programador les aviso que ya
+							habia terminado y se fue. Al ver el programa se dieron cuenta que éste sólo pedía parte de
+							la información que le habian solicitado. Para no perder el trabajo ya hecho por el
+							otro programador, Software INC te pide que utilices la información disponible en 
+							el sistema para obtener los datos que faltan.
+							La información que ya tienen es:
+							<li>Nombre de usuario</li>
+							<li>Año de creación de la cuenta</li>
+							<li>Año de nacimiento</li><br>
+							La información que necesitan obtener es:
+							<li>Años de Antigüedad</li>
+							<li>Edad</li>
+							<li>Si es mayor de edad</li>
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-7-3">
+						<h2 class="section-heading">Adicional 3</h2>
+						<h5 class="mt-5">Ejercicio propuesto: Las horas del mundo</h5>
+						<div class="alert alert-warning" role="alert">
+							Una persona de negocios que viaja mucho por el mundo, necesita un programa que le permita
+							saber, a partir de la hora actual de la Argentina, que hora es
+							en Tokio (+11 hs), París (+5 hs) y Nueva York (-1 hs).
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-7-4">
+						<h2 class="section-heading">Adicional 4</h2>
+						<h5 class="mt-5">Ejercicio propuesto: Conversor de unidades</h5>
+						<div class="alert alert-warning" role="alert">
+							Una persona que es muy olvidadiza, siempre se le olvida como convertir centímetros a metros.
+							Necesita que le programes un conversor de unidades que a partir de una cantidad de
+							de centímetros ingresada por teclado, le convierta y le muestre cuanto equivale en metros.
+							<i>Recordar que 1 metro = 100 centímetros</i>
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-7-5">
+						<h2 class="section-heading">Adicional 5</h2>
+						<h5 class="mt-5">Ejercicio propuesto: El dato del dato del dato del dato del...</h5>
+						<div class="alert alert-warning" role="alert">
+							Una contadora que tiene un forma de trabajar muy particular, necesita que le hagas un
+							programa que se acomode a su forma de trabajar:
+							A partir del monto de una compra (que ingresa el usuario), se necesita guarda el resultado
+							de esa compra divido por los 12 meses del año. Luego ese resultado es usado para calcular
+							una proyección de costos, que se calcula multiplicando el valor anterior por 1.28. Ese
+							último valor es utilizado para el cálculo de un indice de pérdidas que se
+							calcula usando el monto de compra, multiplicado por la proyección de costos y elevándolo al
+							cuadrado. Finalmente a ese valor debe extraersele el 50%, que es el valor
+							del indice estimación de ganacias. <b>Mostrar el resultado final en un alert!!</b>
+						</div>
+					</section>
+					<!--//section-->
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-8">
+					<header class="docs-header">
+						<h1 class="docs-heading">Desafío Dipli! - ¿Cuál es el Número?</h1>
+						<section class="docs-intro">
+							<div class="row" id="item-1-3">
+								<div class="col-6">
+									<h5>General</h5>
+									<p>
+										Dipli, ¿Cuál es el Número?, es un juego simple donde un contrincante juega contra Dipli. 
+										El juego consiste en adivinar el número que imaginó Dipli realizando diferentes intentos, en los cuales arriesga un valor entre  0 y 100.
+										 Si el contrincante logra acertar, ganará la partida… por el contrario ganará Dipli. 
+									</p>
+									<p>
+										Existen varias modalidades, con distintas innovaciones. La versión internacional, también llamada «pares polacos», está reglamentada por la Federación Internacional de  Dipli, 
+										¿Cuál es el Número? y se juega sólo con números pares y valores entre 0 y 200. 
+										También está la modalidad «Andina Patagónica», que admite valores bajo cero  entre -20 y 40.
+									</p>
+									
+								</div>
+							
+								<div class="col-6">
+										<img width="70%" class="info-img" src="assets/images/desafioDipli.gif" alt="info" /> 
+								</div>
+								<h5>Otras reglas:</h5>
+									<ul>
+										<li>El contrincante no debe arriesgar más de un valor en cada  intento. </li>
+										<li>Un jugador siempre deberá ver la respuesta de Dipli, antes de realizar un nuevo intento.</li>
+										<li>Dipli no puede cambiar de número durante una partida.</li>
+										<li>Dipli no puede imaginar números fuera del rango del juego.</li>
+										<li>Si la partida se prolonga por encima de una cantidad de intentos Dipli será quien gana. </li>
+									</ul>
+									<p>¿Cuál será tu versión del juego? Charlalo con tu Facilitador o Facilitadora :)</p>
+									<p></p>
+
+									<h5>Para trabajar en el desarrollo del desafio Dipli, seguí los siguientes paso:</h5>
+									<ol>
+										<li>Ingresar al entorno Codesandbox, dentro de la carpeta <code>Dipli</code> crear una carpeta <code>R2</code>.</li>
+										<li>Dentro de la carpeta <code>Dipli/R2</code>, crear un script <code>desafio_dipli_2.js</code>.</li>
+									</ol>
+
+									<h4>Desafío - parte I</h4>
+									<p>
+										Inicia el Juego. Dipli necesita dar la bienvenida al juego, mostrar las reglas, pedir al contrincante que imagine un valor y luego le cuente que había imaginado en 7 ¿Acertaste?.
+										 Finalmente salude invitando a volver a jugar.<br>
+										 <b>Restricciones:</b> Dipli prefiere que usemos diferentes mensajes para comunicarse con el contrincante, En este sentido desea que los mensajes sean más de 3 y menos de 6.
+										
+									</p>
+									<h4>Desafío - parte II</h4>
+									<p>
+										Evolucionar el desarrollo anterior para que Dipli imagine un nuevo número en cada ejecución. El juego es igual, solo que el valor que se muestra es generado al azar.
+										Para ello puede utilizar la siguiente sentencia: 
+									</p>
+									<p><code>unNumeroAleatorio = Math.floor(Math.random()*(unValorMax-unValorMin+1)+unValorMin);</code></p>
+									<p>donde <code>unValorMax</code> y <code>unValorMin</code> son variables que nos sirven para que los números que se generen se encuentren entre dentro del rango <code>[unValorMin y unValorMax]</code>. <br>
+										<b>Restricciones:</b> Dipli prefiere que usemos alguna modalidad del juego, por ejemplo «pares polacos»,  «Andina Patagónica» u otra que se nos ocurra a nosostros.
+									</p>
+									<h4>Desafío - parte III</h4>
+									<p>
+										Evolucionar el desarrollo anterior para que el contrincante pueda ingresar su valor y Dipli le muestre por cuanto falló. Tal vez, puede ser un poco más amable y saludar al contrincante por su nombre.
+										<b>Restricciones:</b> Dipli prefiere que mostremos mensajes amigables como <i>"Fallaste por …"</i>. <i>"Espero que en la próxima estés mejor"</i>. Utilizando tres mensajes diferentes.
+									</p>
+									<h4>Desafío - parte IV</h4>
+									<p>
+										Evolucionar el desarrollo anterior para que muestre mensajes como este <i>"Ganó Dipli:</i> <code>False</code>", <i>"Ganó Contrincante:</i> <code>True</code>", <i>"El número que imaginó Dipli es más grande:</i> <code>False</code>". Imagine un nuevo número en cada ejecución.<br>
+										<b>Restricciones:</b> Dipli prefiere que informemos esto usando TRUE / FALSE… cosas de Dipli. Además un mensaje diferente para cada caso.
+									</p>
+							</div>
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-9">
+					<header class="docs-header">
+						<h1 class="docs-heading">Repaso!</h1>
+						<section class="docs-intro">
+							<p>Recordemos un poco sobre variables</p>
+
+							<p><i>¿Cómo podemos representar a las variables en la memoria</i><br>
+								<span class="spoiler2"><b>Como bloques o cajas, donde cada una posee con un nombre que
+										la identifica y que dentro contiene el dato o la información</b></span>
+							</p>
+
+							<p>En JavaScript, al declarar variables ¿Es necesario escribir el tipo de dato que va a
+								almacenar?<br>
+								<span class="spoiler2"><b>En la mayoría de los lenguajes de programación, es necesario.
+										Pero en JavaScript no</b></span>
+							</p>
+
+							<p>¿Cuáles son los tipos datos maneja JavaScript?<br>
+								<span class="spoiler2"><b>Number, String, Boolean, Null, Undefined, Symbol</b>></span>
+							</p>
+
+							<p>El operador <b>+</b> si es usado con números, actúa como suma. Pero, ¿Cómo se comporta si
+								es usado con tipo String?<br>
+								<span class="spoiler2"><b>Actúa uniendo ambos String, también se conoce como concatenar
+										String</b></span>
+							</p>
+
+							<p>¿Cómo hace un programa para saber si algo es verdadero o falso?<br>
+								<span class="spoiler2"><b>Se utilizan datos del tipo Boolean, donde <b>true</b>
+										significa <b>verdadero</b> y <b>false</b> significa <b>falso</b></b></span>
+							</p>
+
+							<p>Si la variable <i>haceFrio</i> es boolean. ¿Qué operador debería utilizar para definir
+								otra variable <i>haceCalor</i>, como el opuesto de haceFrio?<br>
+								<span class="spoiler2"><b>El operador es de negación <b>!</b> y sería así: haceCalor =
+										!haceFrio </span>
+							</p>
+
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+
+				</article>
+				<!--//docs-article-->
+
+				<footer class="footer">
+				    <div class="container text-center py-5">
+				      <!--   <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>-->
+				        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
+				        <!--<ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul>//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
+
+</body>
+
+</html>

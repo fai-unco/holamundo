@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+	<!-- Codemirror -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
+	</link>
+	<!-- <link rel="stylesheet" href="./assets/plugins/code-mirror/code-mirror-V5.52.2.min.js">
+	</link> -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js">
+	</script>
+	<script type="text/javascript" src="./assets/plugins/code-mirror/code-mirror-javascript.min.js">
+	</script>
+	<link rel="stylesheet" href="./assets/plugins/code-mirror/material-ocean.css">
+	</link>
+	<link rel="stylesheet" href="./assets/plugins/code-mirror/material.css">
+	</link>
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+							type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								 src="assets/images/logo-diplo1.png" width="200" alt="logo"><span
+								  class="logo-text">#<span class="text-alt">Alternativas</span></span></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+
+				</div>
+				<!--//docs-top-utilities-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
+
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								  class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Estructuras de
+							control Alternativas</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Condicional Simple: if
+							<!-- Explicación del concepto o tema -->
+						</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Condicional con alternativa:
+							if-else</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Condición múltiple: switch </a>
+					</li>
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Videos</a></li> -->
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								  class="theme-icon-holder me-2"><i class="fas fa-video"></i></span>Videos</a></li>
+					<!--<li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Section Item 1.5</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Section Item 1.6</a></li> -->
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								  class="theme-icon-holder me-2"><i class="fas fa-hammer"></i></span>A trabajar!</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Nivel 1: Refactorizando nuestro
+							código</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Nivel 2: Programando el
+							tiempo</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Nivel 3: Notificando salidas </a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Nivel 4: A rendir Examen! :o</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Nivel 5: Analizando condicionales
+							con alternativas</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-6">Nivel 6: Categorizando
+							usuarios</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-7">Nivel 7: Menú de atención al
+							usuario</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-8">Nivel 8: Calculadora</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-9">Nivel 9: Alarma</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-10">Nivel 10: Cambiando colores</a>
+					</li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
+								  class="theme-icon-holder me-2"><i class="fab fa-gripfire"></i></span>Desafíos
+							Adicionales</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Adicional 1: IMC </a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Adicional 2: Tipo de sustancia
+						</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Adicional 3: Más refactor</a>
+					</li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								  class="theme-icon-holder me-2"><i class="fas fa-brain"></i></span>desafío Dipli!</a>
+					</li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								  class="theme-icon-holder me-2"><i class="fas fa-book"></i></span>Repaso!</a></li>
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li> -->
+					<!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li> -->
+				</ul>
+
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">Estructuras de Control Alternativas
+							<!-- <span class="docs-time">Last updated: 2022-06-01</span>
+								<span class="docs-time">Last updated: 2019-06-01</span> -->
+						</h1>
+
+						<!-- INTRODUCCION  -->
+						<section class="docs-intro">
+							<h2>Tomando decisiones en tu código</h2>
+							<div class="d-flex justify-content-around">
+								<div class="p-2">
+									<p>
+										<!-- Sabés por qué estás aprendiendo Javascript? principalmente porque vos así lo decisite,
+								si si... así como te digo estás acá porque vos elegiste estar -->
+										Te pusiste a pensar la cantidad de veces en el día que tomás decisiones que
+										pueden afectar a tu vida o incluso la vida de los demás?
+										<!-- Los seres humanos tomanos decisiones todo el tiempo que afectan nuestras vidas, -->
+										Desde las menos relevantes como <i>" ¿Me pongo la remera azul o la verde?",</i>
+										<!-- "¿Me sirvo otro plato de comida?" -->
+										hasta las más cruciales como <i>"¿Renuncio a mi trabajo para dedicarme a ser un
+											programador freelance, mientras viajo por el mundo?"</i>
+										<!-- ¿Renuncio a mi trabajo para dedicarme a trabajar excusivamente como programador de
+								Javascript o sigo con mi trabajo y continúo capacitandome?. -->
+										<br><br>
+										<!-- Muchas veces el código también necesita tomar decisiones (o poner condiciones) y llevar
+								a cabo diferentes acciones acordes. Estas decisiones modifican el flujo del programa. -->
+										<!-- dependiendo de distintas entradas. -->
+										<!-- Por ejemplo, si estás programando un juego, en el que llevas la cuenta del numero de
+								vidas que tiene el jugador, cuando ese valor llegue a 0, entonces se termina el juego. -->
+										Pensemos que estamos programando un juego en que cada vez que un jugador pierde
+										una vida necesitamos avisarle si puede seguir jugando o no. Es decir que
+										mientras le queden vidas, él podría seguir jugando, pero en caso contrario,
+										tenemos que avisarle que el juego ha terminado.
+										<!-- Ahora bien, considerando los conceptos visto hasta ahora, se te ocurre de qué forma
+								podemos resolver esto?... -->
+										Este es el momento en el que, como programadores, necesitamos empezar a tomar
+										decisiones sobre nuestro código. Estas decisiones (también llamadas
+										<i>condiciones</i>) te van a modificar el flujo del programa, ya que te
+										permiten elegir qué acciones deberá realizar el código en cada caso.
+										<br>
+										A continuación te mostramos los diferentes tipos de estructuras condicionales
+										que existen y cómo se pueden utilizar en Javascript.
+									</p>
+								</div>
+								<div class="img-responsive align-self-center p-2">
+									<img class="rounded img-responsive" src="assets/images/alternativas/Decision.png"
+										 width="250">
+								</div>
+							</div>
+						</section>
+					</header>
+
+					<!-- ALTERNATIVA IF -->
+					<section class="docs-section" id="item-1-1">
+						<!-- <h2 class="section-heading">Tipos de Estructuras de Control Alternativas</h2> -->
+
+						<h2 class="section-heading">Condicional Simple: <i>if</i></h2>
+						<p> Con la estructura de control if podés indicarle al programa que tome
+							cierto camino, siempre y cuando la <i>condición</i> sea verdadera.
+							Llamamos <i>condición</i> a cualquier expresión de tipo Boolean (que se evalúe como true o
+							false).
+						</p>
+
+						<div class="d-flex justify-content-around border">
+							<div class="img-responsive p-2">
+								<img class="img-responsive" src="assets/images/alternativas/alternativaIfDF.png"
+									 width="250">
+							</div>
+
+							<div class="align-self-center p-2 small">
+								<pre class="shadow rounded">
+<code><span>bloque de código anterior</span>
+<span> inicio alternativa</span>
+<span> si (condición es verdadera) entonces</span>
+	<span>  bloque de código</span>
+	<span> (se ejecuta si la condición es verdadera)</span>
+<span> fin alternativa</span>
+								</code> </pre>
+								<!-- <i> <span> bloque de código anterior </span> <br>
+									<span> <b>inicio</b> alternativa</span><br>
+									<span> <b>si (condición es verdadera)</b> entonces</span><br>
+									<span> <i class="fas fa-long-arrow-alt-right fa-lg"></i><b> bloque de código </b>(se
+										ejecuta
+										si la condición es
+										verdadera)</span><br>
+
+									<span> <b>fin</b> alternativa</span><br>
+								</i> -->
+							</div>
+						</div>
+						<br>
+
+						<h4> Sintaxis</h4>
+						<p> Una declaración if en Javascript la escribimos así:</p>
+						<pre class="shadow rounded">
+<code class="javascript">if (condición) {
+ 	// código a ejecutar si la condición es verdadera
+ }</code></pre>
+						<p>Las estructuras alternativas también pueden utilizarse de forma anidadas con otras
+							alternativas. </p>
+						<br>
+						<div class="callout-block callout-block-success content">
+							<h4 class="callout-title">
+								<span class="callout-icon-holder me-1"> <i class="fas fa-thumbs-up"></i> </span>
+								Tip
+							</h4>
+							<p> Recordá que cuando dentro de las llaves ({ }) sólo tenés una línea, se pueden
+								omitir dichas llaves. Aún así, siempre es recomendable ponerlas si tenemos dudas o
+								no estamos seguros.</p>
+						</div>
+
+						<div class="callout-block callout-block-warning">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1"> <i class="fas fa-bullhorn"></i> </span>
+									Tené cuidado!!
+								</h4>
+								<p>Javascript es un lenguaje <b>Case Sensitive</b>, es decir, diferencia entre
+									mayúsculas y minúsculas. Tené en cuenta que <b>if</b> está en minúsculas. Las letras
+									mayúsculas (If o IF)
+									generarán un error.</p>
+							</div>
+						</div>
+
+						<!--------------- EJEMPLOS IF -------------->
+						<br>
+						<h4> Ejemplos</h4>
+						<ol>
+							<li>
+								<p> <b> Condicional simple:</b> Siguiendo con el ejemplo que propusimos inicialmente,
+									en el que estamos programando un juego y cuando el jugador se queda sin vidas
+									necesitamos avisarle que el juego se terminó. Es decir,
+									<!-- cada vez que el jugador pierde una vida,  -->
+									si sabemos la cantidad de vidas que le quedan, cuando ese valor es menor a 1, el
+									juego se termina (lo podemos representar con el mensaje "juego terminado");
+								</p>
+								<textarea id="myTextareaIf1">
+function estadoJuego(vidas) {
+let mensaje = '';
+if (vidas < 1 ) { // si vidas es menor o igual a 0 
+		mensaje='juego terminado' ; 
+	} 
+	return mensaje; 
+}
+
+let vidas = 0; // numero de vidas (prueba cambiar su valor) 
+let estado = estadoJuego(vidas); 
+if (estado !== '' ) { // si estado no es un string vacío, entonces la mostramos 
+	alert(estado); 
+}
+</textarea>
+								<script>
+									var editorIf1 = CodeMirror.fromTextArea(myTextareaIf1, {
+										lineNumbers: true,
+										tabSize: 4,
+										mode: 'javascript',
+										theme: 'material'
+									});
+								</script>
+								<button class="btn btn-sm btn-primary" style="margin: 0.4% 0%;"
+										onclick="eval(editorIf1.getValue())">Ejecutar
+									<i class="fas fa-play-circle fa-lg"></i>
+								</button>
+
+								<div class="callout-block callout-block-info">
+									<div class="content">
+										<h4 class="callout-title">
+											<span class="callout-icon-holder me-1">
+												<i class="fas fa-history"></i>
+											</span>
+											Volviendo en el tiempo...
+										</h4>
+										<!-- <p> Recordá que las variables declaradas por "let" tienen por alcance el bloque
+											donde se han definido, es decir que si defines una variable dentro del
+											bloque de la sentencia if sólo será visible dentro del mismo.</p> -->
+
+										<p>
+											En Javascript, cuando evaluamos una expresión booleana donde su valor
+											resultante sea:
+										</p>
+										<div class="d-flex justify-content-between">
+											<div class="flex-column  d-flex w-100">
+												<ul>
+													<li> NaN </li>
+													<li> undefined </li>
+												</ul>
+											</div>
+											<div class="flex-column d-flex w-100">
+												<ul>
+													<li> null </li>
+													<li> 0 (cero) </li>
+												</ul>
+											</div>
+											<div class="flex-column d-flex w-100">
+												<ul>
+													<li> '' o "" (string vacío) </li>
+												</ul>
+											</div>
+										</div>
+										<p>da como resultado <i>false</i>. Es decir, que si el <i>condicional</i> de una
+											alternativa es alguno de los valores antes mencionados, entonces NO ejecuta
+											el bloque de código de la estructura <i>if</i>, ya que su condición es
+											<i>false.</i><br>
+											<!-- Con esto queremos decir que
+											puedes simplemente usar el nombre de una variable para probar si es true, o
+											si al
+											menos existe (i.e. no está definido.) <br> -->
+										</p>
+									</div>
+								</div>
+								<div class="alert alert-primary" role="alert">
+									<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafío #1 :
+									<p> Si observamos el ejemplo anterior, se encuentra la variable <i>estado</i>
+										comparada con un string vacío, línea 11: <i>if (estado !== ' ')</i>, pero
+										podríamos generalizar su comparación y utilizarla como <i>if (estado)</i>, ya
+										que para este ejemplo su uso es similar. <br>
+										Para ver esto, probemos modificando el código del ejemplo (sobre la línea 11)
+										por lo siguiente:<br>
+										<i>if (estado) { </i>
+										<br>
+										y veamos cómo se comporta... <br>
+									</p>
+								</div>
+								<div class="alert alert-primary" role="alert">
+									<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafío #2 :
+									<p> Ahora que ya lo probamos, veamos qué ocurre si dejamos el código original, pero
+										NO inicializamos la variable <i>mensaje</i> utilizada en la función estadoJuego
+										(línea 2), es decir que la línea 2 quedaría de la siguiente manera:
+										<br> <i>let mensaje;</i><br>
+										y si además vamos modificando los valores en la
+										variable <i>vidas</i>, encontrás alguna diferencia?
+									</p>
+								</div>
+
+								<br>
+								<!-- <p> En el ejemplo anterior podemos observar que la
+				varible <i>mensaje</i> sólo es visible dentro del bloque de código de la sentencia
+				<i>if</i> donde fue declarada. Es decir, que si intentaras usar la variable
+				<i>mensaje</i> por fuera del if (ejemplo en la línea 6), sin volver a declararla, el
+				programa no la reconocería.
+			</p> -->
+							</li>
+
+							<li>
+								<p> <b> Condicional simple anidada:</b> Qué pasaría si necesitamos enviar un mensaje
+									al jugador, no sólo cuando se quede sin vidas, si no que queremos enviarle otro
+									cuando le quede la última vida?<br>
+									Para este caso vamos a necesitar enviar un mensaje para cuando la cantidad de vidas
+									sea 1 (podría ser 'Te queda la última vida') y otro para cuando la cantidad de vidas
+									sea menor a 0 ('Juego Terminado').
+								</p>
+								<textarea id="myTextareaIf2">
+function estadoJuego(vidas) {
+	let mensaje = '';
+	if (vidas <= 1) { 	// si vidas es menor o igual a 1
+		mensaje = 'Te queda la última vida';
+		if (vidas <= 0) { 	// si vidas es menor o igual a 0 
+			mensaje = 'Juego Terminado' ; // modificamos el valor de "mensaje"
+		} 
+	} 
+	return mensaje;
+}
+
+let vidas = 0;
+let estado = estadoJuego(vidas);
+if (estado !=== '') {
+	alert(estado);
+}
+								</textarea>
+								<script>
+									var editorIf2 = CodeMirror.fromTextArea(myTextareaIf2, {
+										lineNumbers: true,
+										tabSize: 4,
+										mode: 'javascript',
+										theme: 'material'
+									});
+								</script>
+								<button class="btn btn-sm btn-primary" style="margin: 0.4% 0%"
+										onclick="eval(editorIf2.getValue())"> Ejecutar
+									<i class="fas fa-play-circle fa-lg"></i>
+								</button>
+								<br><br>
+								<div class="alert alert-primary" role="alert">
+									<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafío #3 :
+									<p>En el ejemplo anterior utilizamos una <i>estructura if</i> dentro de otra
+										(estructuras if
+										anidadas), se te ocurre otra forma de resolverlo? <br>
+										Pista: podés ayudarte pensado qué valores podría tomar la variable "vidas" al
+										momento de
+										hacer las comparaciones, y utilizar tantas sentencias <i>if</i> como creas
+										necesarias (podés
+										o no utilizar estructuras anidadas).
+									</p>
+								</div>
+							</li>
+						</ol>
+
+						<!-- <div>
+							<h4 class="section-heading">Video</h4>
+							<h5>Acá podemos ver una explicación cortita de las estructuras condicionales if:</h5>
+							<div style="margin: 0.5% 0% 4% 3%;">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/4ldxbq6YPtk"
+										title="YouTube video player" frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+							</div>
+						</div> -->
+					</section>
+
+					<!-- ALTERNATIVA IF-ELSE -->
+
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Condición con alternativa: <i>if-else </i></h2>
+
+						<p> Ahora bien, qué sucede si quisieras establecer una alternativa a la <i>condición</i> del
+							<i>if</i>. Es decir, si quisieras tomar un camino si la <i>condición</i> es verdadera, pero
+							si no lo es... seguir por otro camino? <br>
+							Para eso utilizamos la expresión <i>if</i> seguida de otra llamada <i>else</i>. De esta
+							forma vamos poder establecer que se realice:
+						<ul>
+							<li> una acción que llamaremos A, si se cumple la <i>condición</i>, </li>
+							<li> una acción llamada B, si no se cumple la <i>condición</i>. </li>
+						</ul>
+						</p>
+						<div class="d-flex justify-content-around border">
+							<div class="img-responsive p-2">
+								<img class="img-responsive" src="assets/images/alternativas/alternativaIfElseDF.png"
+									 width="250">
+							</div>
+							<div class="align-self-center p-2 small">
+								<pre class="shadow rounded">
+<code><span>bloque de código anterior</span>
+<span> inicio alternativa</span>
+<span> si (condición es verdadera) entonces</span>
+	<span> bloque de código A </span>
+	<span> (se ejecuta si la <i>condición</i> es verdadera)</span>
+<span> si (condición es falsa) entonces</span>
+	<span> bloque de código B </span> 
+	<span> (se ejecuta si la <i>condición</i> es falsa)</span>
+<span> fin alternativa</span>
+								</code>	</pre>
+								<!-- <i>
+									bloque de código anterior <br>
+									<b>inicio</b> alternativa <br>
+									<b> si (condición es verdadera)</b> entonces<br>
+									<i class="fas fa-long-arrow-alt-right fa-lg"></i><b> bloque de código A</b>
+									</b>
+									(se ejecuta si la condición es verdadera)<br>
+									<b> si (condición es falsa</b>) entonces<br>
+									<i class="fas fa-long-arrow-alt-right fa-lg"></i><b> bloque de código B
+									</b>
+									(se ejecuta si la condición es falsa)<br>
+									<b>fin</b> alternativa
+								</i> -->
+							</div>
+						</div>
+						<br>
+
+						<h4> Sintaxis</h4>
+						<p> Una declaración if-else se escribe de la siguiente manera:</p>
+						<pre class="shadow rounded">
+<code class="javascript">if (condición) {
+	// A: código a ejecutar si la condición es verdadera
+else {
+	// B: ejecuta este otro código si la condición es falsa
+}</code> </pre>
+
+
+						<!--------------- EJEMPLOS IF-ELSE -------------->
+						<br>
+						<h4> Ejemplos</h4>
+						<ol>
+							<li>
+								<!-- if-else -->
+								<p> Ahora imagina que seguimos programando un juego, pero esta vez queremos avisarle al
+									jugador si puede seguir jugando o no cada vez que pierda una de sus vidas.
+									Es decir, cada vez que el jugador pierda una vida, si le quedan vidas recibe un
+									mensaje para que siga jugando, pero si se queda sin vidas, el juego se termina, por
+									lo que recibe el mensaje de 'Juego Terminado'.
+								</p>
+								<p>Pasemos esto un poco en limpio...</p>
+
+								<div class="d-flex bd-highlight">
+									<div class="p-2 flex-shrink-0 bd-highlight"><small>
+											Si la cantidad de vidas del jugador es:</small></div>
+									<div class="p-2 w-100 bd-highlight">
+										<ul>
+											<li> <small>menor a 1 => se termina el juego => Juego Terminado</small>
+											</li>
+											<li> <small> mayor o igual a 1 => el juego no ha terminado => Sigue
+													jugando!</small>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<br>
+								<textarea id="myTextareaIfElse1">
+function estadoJuego(vidas) {
+	let mensaje = '';
+	if (vidas < 1 ) { 		// si vidas es menor o igual a 0 
+		mensaje = 'Juego Terminado' ; 
+	}
+	else {
+		mensaje = 'Sigue jugando!' ; 
+	}
+	return mensaje; 
+}
+									
+ let vidas = prompt('El jugador acaba de perder una vida, ¿Cuántas vidas le quedan?');
+ let estado = estadoJuego(vidas);
+ alert(estado);			// vidas es menor o igual a 0
+</textarea>
+								<script>
+									var editorIfElse1 = CodeMirror.fromTextArea(myTextareaIfElse1, {
+										lineNumbers: true,
+										tabSize: 3,
+										mode: 'javascript',
+										theme: 'material'
+									});
+								</script>
+								<button class="btn btn-sm btn-primary" style="margin: 0.4% 0%;"
+										onclick="eval(editorIfElse1.getValue())"> Ejecutar
+									<i class="fas fa-play-circle fa-lg"></i>
+								</button>
+
+								<!------------------ TIPS --------->
+								<div class="callout-block callout-block-info content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder me-1"> <i class="fas fa-info-circle"></i>
+										</span>
+										Otra sintaxis if-else
+									</h4>
+									<p> Existe otra sintaxis definida para una estructura de control if-else
+										llamada <b>operador ternario</b> que tiene una forma mucho más corta y, en
+										algunos casos, más legible. Aunque es una opción que sólo se recomienda utilizar
+										cuando son sentencias alternativas más simples.
+										<br>
+										variable1 = condición <b>?</b> condición es true <b>:</b> condición es
+										false;
+									</p>
+									<pre class="shadow rounded">
+<code class="javascript" style="background-color:black !important;">let mensaje = vidas <=  ? "Juego Terminado!" :"Sigue jugando!";
+ alert(mensaje);</code></pre>
+									<p>En este caso, la variable <i>mensaje</i> va a almacenar un string u otro
+										dependiendo del contenido de la variable <i>vidas</i>.</p>
+								</div>
+							</li>
+							<li>
+								<p> Continuando con el ejemplo anterior, ahora vamos a agregarle un poco más de
+									complejidad.
+									<br>
+									Supongamos que una vez que el jugador pierde una vida, si éstas son menores o
+									iguales a 0 le informamos que perdió. Pero si al jugador le quedan pocas
+									vidas (menos de 3), ahora queremos advertirle que juegue con cuidado. Sin embargo,
+									si le quedan 3 o más vidas, sólo querés animarlo a que siga jugando.
+								</p>
+								<p>Volvamos a pasarlo en limpio...</p>
+								<p><small>Si cantidad de vidas del jugador es:</small></p>
+								<div class="d-flex bd-highlight">
+									<div class="p-2 flex-shrink-0 bd-highlight">
+										<ul>
+											<li> <small>menor o igual a 0 => "Juego Terminado"</small></li>
+											<li> <small>es mayor a 0 => el juego no ha terminado</small></li>
+										</ul>
+									</div>
+									<div class="p-2 w-100 bd-highlight">
+										<ul>
+											<li> <small>es mayor o igual a 3 =>"A no preocuparse... Sigue jugando!"
+												</small>
+											</li>
+											<li> <small>es menor a 3 => "Ten cuidado, te quedan pocas vidas!"</small>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<textarea id="myTextareaIfElse2">
+function estadoJuego(vidas) {
+	let mensaje = '';
+	if (vidas <= 0) { 
+		mensaje = 'Juego Terminado'; // vidas es menor o igual a 0 
+	} 
+	else { 
+		if (vidas >= 3) {
+			mensaje = 'A no preocuparse... Sigue jugando!'; // vidas es mayor o igual a 3
+		}
+		else {
+			mensaje = 'Ten cuidado! te quedan pocas vidas...'; // vidas es menor a 3
+		}
+	}
+	return mensaje;
+}
+
+let vidas = prompt('El jugador acaba de perder una vida, ¿Cuántas vidas le quedan?');
+let estado = estadoJuego(vidas);
+alert(estado);
+</textarea>
+								<script>
+									var editorIfElse2 = CodeMirror.fromTextArea(myTextareaIfElse2, {
+										lineNumbers: true,
+										tabSize: 3,
+										mode: 'javascript',
+										theme: 'material'
+									});
+								</script>
+								<button class="btn btn-sm btn-primary" style="margin: 0.4% 0%;"
+										onclick="eval(editorIfElse2.getValue())"> Ejecutar
+									<i class="fas fa-play-circle fa-lg"></i>
+								</button>
+							</li>
+						</ol>
+
+						<!-- </section> -->
+						<h3 class="mb-3">Condición con alternativa múltiple (if-else if)</h3>
+						<p> Es posible que necesitemos crear una alternativa múltiple con más de 2 condiciones, es decir
+							que necesitamos especificar una nueva <i>condición</i> (if) si la primera es falsa.
+							En definitiva, luego de una sentencia <i>else</i> necesitamos realizar una nueva
+							<i>condición</i> (if).
+							Como vimos en el ejemplo anterior, muchas veces necesitamos tener otra condición
+							<i>if</i> luego de una sentencia alternativa <i>else</i>. A este tipo de estructuras se la
+							conoce como sentencia <b>else if</b>.
+							<!-- por ejemplo, para establecer la calificación específica. Para ello, podemos anidar varios
+							if/else uno dentro de otro, de la siguiente forma:  -->
+						</p>
+						<h4> Sintaxis</h4>
+						<p> Una declaración if-else if se escribe de la siguiente manera:</p>
+						<pre class="shadow rounded">
+<code class="javascript">if (condición1) {
+	// bloque de código que se ejecuta si condición1 es verdadera (condición1 === true)
+} else if (condición2) {
+	 // bloque de código que se ejecuta si condición1 es falsa y condición2 es verdadera 
+	 // (condición1 === false && condición2 === true)
+} else {
+	// bloque de código que se ejecuta si condición1 y condición2 son es falsas
+	// (condición1 === false && condición2 === false)
+}</pre></code>
+
+						<h4> Ejemplo</h4>
+						<p>Si retomamos el último ejemplo (número 2), en el que tenemos una sentencia alternativa
+							<i>else</i> (línea 6) continuada de una condicional <i>if</i> (línea 7),
+							<!-- se te ocurre de qué forma podemos reescribir el ejemplo. -->
+							podemos considerar volver a escribir el código de la siguiente manera:
+						</p>
+						<textarea id="myTextareaIfElseIf">
+function estadoJuego(vidas) {
+	let mensaje = '';
+	if (vidas <= 0) { 
+		mensaje = 'Juego Terminado'; // vidas es menor o igual a 0 
+	} 
+	else if (vidas >= 3) {
+		mensaje = 'A no preocuparse... Sigue jugando!'; // vidas es mayor o igual a 3
+	}
+	else {
+		mensaje = 'Ten cuidado! te quedan pocas vidas...'; // vidas es menor a 3
+	}
+ 	return mensaje;
+}
+								
+let vidas = prompt('El jugador acaba de perder una vida, ¿Cuántas vidas le quedan?');
+let estado = estadoJuego(vidas);
+alert(estado);
+</textarea>
+						<script>
+							var editorIfElseIf = CodeMirror.fromTextArea(myTextareaIfElseIf, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" style="margin: 0.4% 0%;"
+								onclick="eval(editorIfElseIf.getValue())"> Ejecutar
+							<i class="fas fa-play-circle fa-lg"></i>
+						</button>
+					</section>
+
+					<!-- ALTERNATIVA Switch -->
+
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Condición múltiple: <i>switch</i></h2>
+						<p> Hasta ahora hemos aprendido muchas estructuras, incluso todas las alternativas necesarias
+							para poder empezar a tomar decisiones en el código.
+							Pero qué pasaría si en el juego que estamos programando van a haber jugadores de distintos
+							países, y cada vez que un jugador pierda el juego, querés avisarle que el "juego
+							finalizó" en un idioma que pueda interpretar.
+							Si consideramos que inicialmente hay 3 idiomas (ESP: Español, ING: Inglés y ALE: Alemán),
+							cómo lo podemos representar?
+							<br>
+							Veamos una posible solución...
+						</p>
+						<textArea id="textAreaSwitch0">
+function finJuego(idioma) {
+	let mensaje = '';
+	if (idioma === 'ESP') { 
+		mensaje = 'Juego Terminado' ; 
+	} 
+	else {
+		if (idioma === 'ING') {
+			mensaje = 'Game Over';
+		} 
+		else {
+			if (idioma === 'ALE') {
+				mensaje = 'Spiel Vorbei';
+			}
+		}
+	}
+	return mensaje;
+}
+
+let idioma = 'ING';
+let vidas =  0;	// vidas que le quedan al jugador
+if(vidas <= 0){
+	let respuesta = finJuego(idioma);
+	alert(respuesta);
+}
+</textArea>
+						<script>
+							var editorSwitch = CodeMirror.fromTextArea(textAreaSwitch0, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" style="margin: 0.4% 0%;"
+								onclick="eval(editorSwitch.getValue())"> Ejecutar
+							<i class="fas fa-play-circle fa-lg"></i>
+						</button>
+
+						<p> Este ejemplo ya lo deducimos rápido, incluso quizás se te ocurre otra forma de resolverlo
+							con las estructuras que ya vimos. Pero qué pasaría si la cantidad de idiomas son más, por
+							ejemplo unos 10 idiomas distintos... se te ocurre cuántas estructuras de control
+							alternativas necesitaríamos?...<br>
+							Y veamos... por 3 idiomas => 3 estructuras <i>if</i>...<br>
+							Sí, si pensaste bien... vamos a necesitar al menos 10 estructuras de control
+							condicionales!!!<br>
+							¿Te animás a sumarlas en el ejemplo anterior? te damos una ayuda con las abreviaturas que
+							podés utilizar:
+							<br>
+						<div class="d-flex bd-highlight">
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>ESP: Español</small></li>
+									<li> <small>ING: Inglés</small></li>
+								</ul>
+							</div>
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>ALE: Alemán</small></li>
+									<li> <small>POR: Portugués</small></li>
+
+								</ul>
+							</div>
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>FRA: Fancés</small> </li>
+									<li> <small>RUS: Ruso</small></li>
+								</ul>
+							</div>
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>CHN: Chino</small></li>
+									<li> <small>JPN: Japonés</small></li>
+								</ul>
+							</div>
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>ARB: Árabe</small></li>
+									<li> <small>TUR: Turco</small> </li>
+								</ul>
+							</div>
+						</div>
+						</p>
+						<p>
+							Bien, ahora que ya lo resolviste y podes ver "claramente" el código... no te parece que esto
+							resulta muy difícil de leer? el código se torna bastante extenso y, dependiendo de cómo lo
+							hayas resuelto, posiblemente tengas estructuras cada vez más anidadas entre si, lo que lo
+							hace muy difícil de seguir. Ufff... ni pensar si nos piden que agreguemos más idiomas!
+							<br>
+							Pero tenemos una solución para esto! Con la idea de reducir la sintaxis de este tipo de
+							problemas, es que existen las estructuras con condicionales múltiples, en Javascript es
+							llamada sentencia <i>switch</i>.
+							<br>
+							La sentencia <i>switch</i> es utilizada cuando se desea realizar múltiples condiciones sobre
+							una misma expresión.
+						</p>
+						<div class="d-flex justify-content-around border">
+							<div class="img-responsive p-2">
+								<img class="img-responsive" src="assets/images/alternativas/alternativaSwitchDF.png"
+									 width="500">
+							</div>
+							<div class="align-self-center p-2 small">
+								<pre class="shadow rounded">
+<code><span>bloque de código anterior</span>
+<span> inicio switch</span>
+ <span> si (Espresión === X1) entonces</span>
+	<span>  bloque de código X1</span>
+ <span> si (Espresión === x2) entonces</span>
+	<span> bloque de código x2</span>
+	<span> . </span>
+	<span> . </span>
+	<span> . </span>
+ <span> si (Espresión === Xn) entonces</span>
+	<span> bloque de código Xn</span>
+ <span> si (Espresión no es igual a </span>
+ <span>    X1, X2,... o Xn) entonces</span>
+	<span> bloque de código default optativo (n+1) </span>	
+<span> fin alternativa</span></code> </pre>
+								<!-- <i>
+									bloque de código anterior<br>
+									<b> inicio</b> switch<br>
+									<b>si (Espresión === X1)</b> entonces<br>
+									<i class="fas fa-long-arrow-alt-right fa-lg"></i> bloque de código X1<br>
+									<b>si (Espresión === X2)</b> entonces<br>
+									<i class="fas fa-long-arrow-alt-right fa-lg"></i> bloque de código x2<br>
+									<b>si (Espresión === X3)</b> entonces<br>
+									<i class="fas fa-long-arrow-alt-right fa-lg"></i> bloque de código
+									X3<br><br>
+									<i class="fas fa-ellipsis-v"></i><br><br>
+									<b>si (Espresión === Xn) </b>entonces<br>
+									<i class="fas fa-long-arrow-alt-right fa-lg"></i> bloque de código
+									Xn<br>
+									<b> fin</b> alternativa
+								</i> -->
+							</div>
+
+						</div>
+						<br>
+						<h4> Sintaxis</h4>
+						<p> Una declaración <i>switch</i> en Javascript se escribe de la siguiente manera:</p>
+						<pre class="shadow rounded">
+<code class="javascript">switch(expression) {
+	case x1:
+		// bloque de código 1
+		break;
+	case x2:
+		// bloque de código 2
+		break;
+		.
+		.
+		.
+	case xn:
+		// bloque de código n
+		break;
+	default:
+	// bloque de código n+1
+}</code></pre>
+						<div>
+							<p>Ahora veamos una descripción de las características de este tipo de estructuras:</p>
+							<ul>
+								<li>
+									Cuando se lee la sentencia switch se verifica la igualdad estricta (===) entre
+									el caso <i>case</i> <br> (x1, x2, ..., xn) y la expresión <i>expression</i>. Si uno
+									de los casos coincide con la expresión <i>expression</i>, se ejecutará el bloque de
+									código dentro de la cláusula del caso <i>case</i>, hasta que encuentre el final de
+									la declaración switch o hasta encontrar una interrupción break. Es decir, que si
+									<i>expression === x1 </i> es verdadero, entonces se ejecutará el <i>bloque de código
+										1</i>, pero si <i>expression === x1 </i> es falso, se seguirá con la misma
+									comparación para los demás casos <i>case</i> (x2, ..., xn), hasta dar con alguno que
+									sea verdadero.
+								</li>
+								<li>
+									Si más de un caso coincide con la instrucción switch, se ejecutará el primer
+									caso <i>case</i> que coincida con la expresión <i>expression</i>.
+									Si ninguno de los casos coincide con la expresión, se ejecutará la cláusula
+									predeterminada default.
+								</li>
+								<li> La instrucción <i>break</i> está asociada con cada etiqueta <i>case</i> y
+									permite salir de la estructura de código case que estemos ejecutando, por lo que una
+									vez que ejecutemos la instrucción <i>break</i> se finaliza la ejecución de la
+									estructura switch.
+								</li>
+							</ul>
+						</div>
+						<h4>Ejemplo</h4>
+						<p> Bien, ahora veamos cómo podemos resolver el ejemplo anterior, con esta nueva estructura.
+							<br>
+							Repasemos un poco el problema...
+							<br>
+							Seguimos programando un juego en el que cada vez que un jugador se quede sin vidas
+							necesitamos avisarle que el juego se ha terminado. Pero este mensaje debe ser en un idioma
+							que el jugador entienda. Ya vimos cómo podemos implementarlo para 3 idiomas distintos, vos
+							lo probaste con 10, pero ahora queremos que estos 10 idiomas sean comparados con estructuras
+							condicionales múltiples.
+							<!-- Entonces, vamos a transformar todos las posibles
+							estructuras alternativas que ya hemos aprendido en una sola llamada switch. -->
+							<br>
+						</p>
+						<p><small>Consideremos los siguientes idiomas (con sus abreviaturas como identificadores):
+							</small></p>
+						<div class="d-flex bd-highlight">
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>ESP: Español</small></li>
+									<li> <small>ING: Inglés</small></li>
+								</ul>
+							</div>
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>ALE: Alemán</small></li>
+									<li> <small>POR: Portugués</small></li>
+
+								</ul>
+							</div>
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>FRA: Fancés</small> </li>
+									<li> <small>RUS: Ruso</small></li>
+								</ul>
+							</div>
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>CHN: Chino</small></li>
+									<li> <small>JPN: Japonés</small></li>
+								</ul>
+							</div>
+							<div class="p-2 flex-shrink-0 bd-highlight">
+								<ul>
+									<li> <small>ARB: Árabe</small></li>
+									<li> <small>TUR: Turco</small> </li>
+								</ul>
+							</div>
+						</div>
+						<textArea id="textAreaSwitch1">
+function finJuego(idioma) {
+	let mensaje = '';
+	switch (idioma) {
+		case 'ESP': 
+			mensaje = 'Juego Terminado' ;
+			break;
+		case 'ING':
+			mensaje = 'Game Over';
+			break;
+		case 'ALE':
+			mensaje = 'Spiel Vorbei';
+			break;
+		case 'POR':
+			mensaje = 'Fim de Jogo';
+			break;
+		case 'FRA':
+			mensaje = 'Jeu Terminé';
+			break;
+		case 'RUS':
+			mensaje = 'игра завершена';
+			break;
+		case 'CHN':
+			mensaje = '游戏结束';
+			break;
+		case 'JPN':
+			mensaje = 'ゲームオーバー';
+			break;
+		case 'ARB':
+			mensaje = 'انتهت اللعبة';
+			break;
+		case 'TUR':
+			mensaje = 'Oyun bitti';
+			break;
+		default:
+			mensaje = 'No se reconoce idioma';
+	} 
+return mensaje;
+}
+					
+let idioma = 'ING'; // probá cambiar la abreviatura del idioma
+let vidas = 0;
+if(vidas <= 0){
+	let respuesta = finJuego(idioma);
+	alert(respuesta);
+}
+</textArea>
+						<script>
+							var editorSwitch1 = CodeMirror.fromTextArea(textAreaSwitch1, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" style="margin: 0.4% 0%;"
+								onclick="eval(editorSwitch1.getValue())"> Ejecutar
+							<i class="fas fa-play-circle fa-lg"></i>
+						</button>
+						<p> Como podemos observar ahora la sintaxis del código es mucho más simple, incluso si
+							necesitaramos agregar nuevos idiomas ya no resultaría tan difícil de seguir.
+							¿Te animás a agregarle dos idiomas más al ejemplo anterior? te dejo dos orientativos por si
+							querés usarlos: <br>
+							CAT: Catalán. Traducción de 'Juego terminado' => 'joc acabat'. <br>
+							POL: Polaco. Traducción de 'Juego terminado' => 'koniec gry'. <br>
+						</p>
+						<div class="callout-block callout-block-info">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1"> <i class="fas fa-info-circle"></i> </span>
+									<!--//icon-holder-->
+									También se aplica
+								</h4>
+								<p> La instrucción <i>break</i> es opcional, pero si no está presente la ejecución
+									continuará a través de las sentencias <i>case</i>, aunque no se encuentre
+									coincidencia. Es decir, ejecutará todas las sentencias siguientes hasta encontrar
+									una instrucción <i>break</i> o hasta que finalice la estructura switch.
+									<br>
+									Podemos omitir el uso de <i>break</i> para "agrupar" casos <i>case</i>, es decir
+									podemos decidir ejecutar cierto bloque de código para un conjunto de casos
+									<i>case</i> y otro/s bloque/s de código distinto para otros casos <i>case</i>.
+								</p>
+							</div>
+						</div>
+						<div class="alert alert-primary" role="alert">
+							<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafío #4 :
+							<p> Ahora te propongo el siguiente caso... qué pasaría si en vez del idioma que sabe el
+								jugador,
+								ahora sabemos sólo su nacionalidad, es decir, no sabemos qué idioma puede leer pero lo
+								podemos deducir por su nacionalidad. También sabemos que en más de un país se utiliza el
+								mismo idioma, entonces podríamos "agrupar" varias nacionalidades en uno.
+								Por ejemplo un jugador de nacionalidad argentina, española o uruguaya utiliza el idioma
+								español. En cambio, un jugador de nacionalidad portuguesa o brasilera utilizan el idioma
+								portugués. <br>
+								Ahora que sabemos esto, y considerando la utilización de las sentencias <i>break</i> que
+								se mencionó anteriormente, se te ocurre cómo podemos avisarle al jugador que el juego ha
+								terminado en un idioma que pueda entender?<br>
+								Pista: empecemos analizando los casos a contemplar:
+							<ul>
+								<li>si la <i>nacionalidad</i> es argentina, española o uruguaya (idioma es español) =>
+									"juego terminado"</li>
+								<li>si la <i>nacionalidad</i> es brasilera o portuguesa (idioma es portugués) => "fim de
+									jogo"
+								</li>
+								<li>si la <i>nacionalidad</i> es inglesa, estadounidense o canadiense (idioma es inglés)
+									=> "Game Over"</li>
+							</ul>
+							</p>
+						</div>
+					</section>
+				</article>
+
+				<article class="docs-article" id="section-5">
+					<header class="docs-header">
+						<h1 class="docs-heading">Videos<span class="docs-time"></span></h1>
+						<section class="docs-intro">
+							<p>A continuación les dejamos un pequeño resumen de los temas que vimos en esta sección en
+								formato de video!!</p>
+
+
+							<div id="accordion">
+								<div class="card">
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
+											Video de Alternativas (Parte 1)
+										</a>
+									</div>
+									<div id="collapseOne" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+											<div class="video-container">
+												<iframe class="video" src="https://www.youtube.com/embed/wEig_deZWLE"
+														title="Video Alternativas if" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+											Video de Alternativas (Parte 2)
+										</a>
+									</div>
+									<div id="collapseTwo" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+											<div class="video-container">
+												<iframe class="video" src="https://www.youtube.com/embed/9-_ivY6jpOc"
+														title="Video Alternativas if-else" allowfullscreen></iframe>
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header">
+										<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+											Video de Alternativas (Parte 3)
+										</a>
+									</div>
+									<div id="collapseThree" class="collapse" data-parent="#accordion">
+										<div class="card-body">
+											<div class="video-container">
+												<iframe class="video" src="https://www.youtube.com/embed/Bva_k81y3DM"
+														allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+
+				</article>
+
+				<article class="docs-article" id="section-2">
+					<header class="docs-header">
+						<h1 class="docs-heading">A trabajar!</h1>
+						<section class="docs-intro">
+							<p>Ahora que ya vimos el concepto de estructuras alternativas y cómo utilizarlas dentro de
+								JavaScript, vamos a emplear estos conocimientos, en conjunto con todo lo que hemos
+								aprendido en los recorridos anteriores, para resolver distintos desafíos de
+								programación.
+								<br>
+								En la carpeta R3, vamos a crear un archivo para cada ejercicio en el que podés nombrarlo
+								de la siguiente forma "alternativas_nivelx.js", donde x es el número del nivel que tiene
+								el ejercicio.
+							</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Nivel 1: Refactorizando nuestro código</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Volvamos a repensar el ejercicio de nivel 2, 3 y 5 resuelto en funciones, en donde
+							planteamos la fórmula del área y el perímetro de algunas figuras geométricas.
+							Pero esta vez el usuario debe poder elegir qué fórmula quiere que el programa realice, es
+							decir, debe ingresar una opción para el tipo de figura geométrica, por ejemplo: <br>
+							C: Cuadrado. <br>
+							R: Rectángulo. <br>
+							T: Triangulo. <br>
+							O: Circunferencia. <br>
+							También debe poder elegir el tipo de calculo a realizar ingresando es A para el área o P
+							para el perímetro. <br>
+							Nota: se pueden cambiar las letras a ingresar por números o palabras.
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Nivel 2: Programando el tiempo</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Necesitamos crear una aplicación que realice la conversión de horas, desde el formato
+							de 24 hs al formato de 12 hs (AM/PM). <br>
+							El usuario debería ingresar una hora entre 00 y 23 hs. Y luego visualizarla en formato de 12
+							horas. <br>
+							Se deberá avisarle al usuario si la hora ingresada está fuera de rango. Por ejemplo: si el
+							usuario ingresa 26 hs, no puede estar dentro del formato de 24 hs. <br>
+							Horas ingresadas => Resultado: <br>
+							0 => 12 AM <br>
+							1 => 1 AM <br>
+							… <br>
+							11=> 11 AM <br>
+							12 => 12 PM <br>
+							13 => 1 PM <br>
+							... <br>
+							23 => 11 PM <br>
+							<br>
+							Pista: Se puede pensar una función para calcular las horas y otra para el formato (AM/PM).
+						</div>
+					</section>
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Nivel 3: Notificando Salidas </h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Es necesario programar una aplicacion para el celular, que indique sólo a los usuarios
+							mayores de edad si puede salir de su domicilio, de acuerdo a la terminación de su dni
+							(último
+							número) y el día de la semana. La aplicación ya está armada, pero falta lo más importante...
+							el código que controla y le avisa al usuario si puede salir o no. <br>
+							Para esto el usuario ingresa su edad, ultimo número del dni y un número con el día de la
+							semana: <br>
+							1: Lunes, <br>
+							2: Martes, <br>
+							3: Miércoles, <br>
+							4: Jueves, <br>
+							5: Viernes, <br>
+							6: Sabado, <br>
+							7: Domingo. <br> <br>
+							Las salidas quedan determinado de la siguiente manera: <br>
+							- Lunes, Miércoles o Viernes pueden salir los usuarios con terminación del dni par. <br>
+							- Martes, Jueves y Sábados pueden salir los usuarios con terminación del dni impar. <br>
+							- Domingo pueden salir todos los usuarios, incluso los menores de edad. <br>
+							<br>
+							Tip: podemos saber si un número es par si al dividirlo por 2 el resto es 0.
+						</div>
+					</section>
+					<section class="docs-section" id="item-2-4">
+						<h2 class="section-heading">Nivel 4: A rendir Examen! :o </h2>
+						<h5 class="mt-5">Parte 1:</h5>
+						<div class="alert alert-primary" role="alert">
+							Necesitamos avisarle a los estudiantes de la materia de programación, si deben rendir o no
+							recuperatorio. <br>
+							En base a la nota que el estudiante haya obtenido en el examen, se debe enviar un mensaje
+							que les indique el resultado del examen de la siguiente forma: si la nota es mayor a 5 el
+							examen está aprobado :D y no debe rendir recuperatorio, pero en caso contrario el examen
+							está desaprobado :/ y debe rendir recuperatorio.
+							<br>
+						</div>
+						<h5 class="mt-5">Parte 2:</h5>
+						<div class="alert alert-primary" role="alert">
+							Ya terminamos de cursar programación y resulta que todos los estudiantes aprobaron los
+							examenes o recuperatorios!!! :D <br>
+							Ahora necesitamos avisarle a cada estudiantes si promociona o no la materia, es decir que
+							los que promocionen no debe rendir examen final. <br>
+							Para esto le vamos a pedir la nota de 3 examenes, donde si el promedio de esas 3 notas es
+							mayor o igual a 8, entonces el alumno promociona la materia, pero si el promedio es menor a
+							8, entonces no promociona la materia.
+							<br>
+							Pista: promedio de 3 numeros se calcula con la suma de los numeros y la división por 3.
+							Promedio = (num1 + num2 + num3)/3.
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-2-5">
+						<h2 class="section-heading"> Nivel 5: Analizando condicionales con alternativas</h2>
+						<div class="alert alert-primary" role="alert">
+							<p> A continuación te proponemos que crees 3 archivos, en los que vas a necesitar copiar el
+								código que te presentamos para cada uno. Así, cuando lo ejecutes, puedas ir
+								respondiendo las preguntas que se plantean en cada caso. </p>
+							<h5>1 - Mostrando información de un año (Archivo alternativas_nivel3_1.js): </h5>
+
+							<textarea id="textArearNivel4_1">
+//funcion que nos brinda información de un año
+function infoAnio(anio, dias) {
+  let info;
+  if (dias !== 366) {
+    info= "El año " + anio + " es biciesto.";
+  } else {
+    info="El año " + anio + " no es biciesto.";
+  }
+  return info;
+}
+
+let anio = Number(prompt("Ingresá un año:"));
+let diasAnio = Number(
+  prompt("Ingresá la cantidad de días que tiene el año " + anio + ":")
+);
+let datosAnio = infoAnio(anio, diasAnio);
+alert(datosAnio);
+</textarea>
+							<script>
+								CodeMirror.fromTextArea(textArearNivel4_1, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material'
+								});
+							</script>
+							<p> <br>
+								Los años biciestos son aquellos en los que el año tiene un día más (366). <br>
+								I) te parece que la función infoAnio está mostrando bien la infomación?
+								Si no está bien, te proponemos corregirla para que se comporte adecuadamente. <br>
+								II) Si ahora además, necesitamos saber si el año ingresado, cuando no es biciesto, es un
+								número par o impar, te animás a sumar esa nueva información? <br>
+								Por ejemplo: <br>
+								- si ingreso año 2022 con 365 dias debería mostrarme: <br>
+								"El año 2022 no es biciesto y es par." <br>
+								- Pero si ingreso el año 2020 debería mostrar: <br>
+								"El año 2020 es biciesto." <br>
+							</p>
+						</div>
+						<!-- Niveo 3 Ejercicio 2 -->
+						<div class="alert alert-primary" role="alert">
+							<h5>2 - Analizando letras (Archivo alternativas_nivel4_2.js):</h5>
+							<textarea id="textArearNivel4_2">
+// funcion que nos da un mensaje informando sobre una letra
+function analizarLetra(letra) {
+  let letraA = letra === "a";
+  let letraE = letra === "e";
+  let letraI = letra === "i";
+  let letraO = letra === "o";
+  let letraU = letra === "u";
+  let esMayuscula;
+  let letraVocal = letraA;
+  let respuesta = "La letra " + letra;
+  if (letraVocal) {
+    esMayuscula = letra.toUpperCase() === letra;
+    if (esMayuscula) {
+      //verificamos si la vocal es mayúscula
+      respuesta =  respuesta + " es una vocal mayúscula";
+    } else {
+		respuesta = respuesta + " es una vocal minúscula";
+    }
+  } else {
+    respuesta = respuesta + " es una consonante";
+  }
+  return respuesta;
+}
+
+// ----------- acá comienza nuestro código principal ----------------------------
+
+// ingresamos una letra
+let letra = prompt(
+  "ingresa una letra para enviar por parámetro a la función analizarLetra:"
+);
+alert(analizarLetra(letra));
+</textarea>
+							<script>
+								CodeMirror.fromTextArea(textArearNivel4_2, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material'
+								});
+							</script>
+							<br>
+							<p> Tips: la funcion toUpperCase() de javascript devuelve un valor convertido en mayúscula
+								de la cadena (string) que realiza la llamada. <br>
+								Ej: "Diplo".toUpperCase() retorna "DIPLO". <br>
+								I) Si al ejecutar el código ingresás alguno de los siguientes letras (minúsculas): a - e
+								- i - o - u, te parece que el código está respondiendo bien? <br>
+								Si te parece que algo no está bien, podrás corregirlo para que funcione con esas letras?
+								<br>
+								II) Ahora si quiero ingresar las vocales en mayúscula (A-E-I-O-U), el código te responde
+								correctamente?
+								Si te parece que no, podés modificarlo para que contemple estos casos?
+							</p>
+						</div>
+						<div class="alert alert-primary" role="alert">
+							<h5>3 - Comparando (Archivo alternativas_nivel4_3.js): </h5>
+							<textarea id="textArearNivel4_3">
+/**
+ * Imagino que venís a full ejecutando código, así que acá bajamos un cambio... ;) 
+ * Supongamos que las últimas 2 líneas de script no están comentadas. 
+ * Te proponemos, que antes de ejecutar el código, lo analices y respondas lo siguiente:
+ * si se ingresa cada uno de los siguientes números, qué opción (1 o 2) elegís en cada uno?
+ * Dejá tu respuesta en cada caso:
+ * numUsuario = 0 => opcion:
+ * numUsuario = 5 => opcion:
+ * numUsuario = 6 => opcion:
+ * numUsuario = 10 => opcion:
+ * numUsuario = 1 => opcion:
+ * numUsuario = -2 => opcion:
+ * Finalmente, descomentá las ultimas 2 lineas del script, así ya podés ir ejecutando el código para verificar tus respuestas...
+ */
+// realizamos comparaciones
+function comparacion(numero) {
+  let resultado;
+  const falso = false;
+  if (!falso && 10 <= 15 - numero && numero > 0) {
+    resultado = 1;
+  } else {
+    resultado = 2;
+  }
+  return resultado;
+}
+
+// funcion que muestra si la opción elegida era la correcta o no
+function mostrarResultado(resultado, opcion, numero) {
+  let datosFuncion = "en la funcion \n comparacion(" + numero + ")";
+  if (resultado === opcion) {
+    alert("Muy bien!!! elegiste la opción correcta " + datosFuncion);
+  } else {
+    alert("Cuidado! la opción correcta " + datosFuncion + " es: " + resultado);
+  }
+}
+
+// ----------- acá comienza nuestro código principal ----------------------------
+
+let numUsuario, opcion, resultado;
+numUsuario = Number(prompt("Ingresá un número para enviar por parámetro a la función comparacion:"));
+opcion = Number(
+  prompt( "Analiza el resultado que te parezca emitirá la función comparacion("   
+  		 + numUsuario + 
+  		"). \n Luego ingresá un número (1 - 2) de acuerdo al opción que elijas: "
+  ));
+// resultado = comparacion(numUsuario);
+// mostrarResultado(resultado, opcion, numUsuario);
+
+</textarea>
+							<script>
+								CodeMirror.fromTextArea(textArearNivel4_3, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material'
+								});
+							</script>
+							<br>
+							<p> Imagino que venís a full ejecutando código, así que acá bajamos un cambio... ;) <br>
+								Supongamos que las últimas 2 líneas de script no están comentadas. Te proponemos, que
+								antes de ejecutar el código, lo analices y respondas lo siguiente: <br>
+								si se ingresa cada uno de los siguientes números, qué opción (entre 1 y 2) elegís en
+								cada uno? <br>
+								Dejá tu respuesta en cada caso: <br>
+								numUsuario = 0 => opcion: <br>
+								numUsuario = 5 => opcion: <br>
+								numUsuario = 6 => opcion: <br>
+								numUsuario = 10 => opcion: <br>
+								numUsuario = 1 => opcion: <br>
+								numUsuario = -2 => opcion: <br>
+								Finalmente, descomentá las ultimas 2 lineas del script, así ya podés ir ejecutando el
+								código para verificar tus respuestas...
+							</p>
+						</div>
+					</section>
+
+					<section class="docs-section" id="item-2-6">
+						<h2 class="section-heading">Nivel 6: Categorizando usuarios</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							YouTube clasifica a sus usuarios como usuarios espectadores o creadores. Donde los usuarios
+							espectadores son aquellos que sólo utilizan la plataforma para ver videos, pero nunca han
+							generado contenidos, es decir no han subido un video. Por el contrario, los usuarios
+							creadores son los que al menos subieron un video a la plataforma.
+							Cada vez que un usuario realiza una búsqueda, el algoritmo encargado de esta acción, debe
+							priorizar los resultados dependiendo de la edad del usuario y su tipo (creador o
+							espectador). <br>
+							Para esto necesita asignarle una categoría al usuario. Dichas categorías se especifican con
+							números, de la siguiente manera: <br>
+							1: usuario es menor a 12 años. <br>
+							2: la edad está entre 12 y 17 y el usuario es creador. <br>
+							3: la edad está entre 12 y 17 y el usuario es espectador. <br>
+							4: la edad es mayor a 17 años y el usuario es creador. <br>
+							5: la edad es mayor a 17 años y el usuario es espectador. <br>
+							Como el algoritmo actualmente esta sufriendo algunas fallas, están pidiendo a programadores
+							de todo el mundo que cree un script que les permita poder categorizar los usuarios y
+							avisarle la categoría que le corresponde. <br>
+							Te animás a resolverlo?
+						</div>
+					</section>
+
+					<section class="docs-section" id="item-2-7">
+						<h2 class="section-heading">Nivel 7: Menú de atención al usuario</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Una reconocida empresa de telefonía celular necesita que se programe un menú de opciones
+							para utilizar en su línea telefónica de atención al usuario. El menú se compone de
+							los siguientes items: <br>
+							1: Valor de su última factura. <br>
+							2: Conocer fecha del próximo vencimiento de su factura. <br>
+							3: Comunicarse con gestion de ventas. <br>
+							4: Comunicarse con un operador de atención al cliente. <br>
+							5: Comunicarse con un operador de soporte técnico. <br>
+							0: Terminar la llamada. <br>
+							Una vez que el usuario elija una opción se deberá mostrar un mensaje acorde a dicha
+							elección.
+							Por ejemplo, si el usuario elige la opción 3 se podría mostrar el mensaje: <br> <i>"En
+								instantes será atendido por uno de nuestros representantes en ventas."</i> <br>
+							En caso de que el usuario ingrese un valor que no está contemplado en el menú, se le deberá
+							informar que la opción es incorrecta.
+
+						</div>
+					</section>
+
+					<section class="docs-section" id="item-2-8">
+						<h2 class="section-heading">Nivel 8: Calculadora</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Es necesario programar una calculadora que realice las 4 operaciones de suma, resta,
+							multiplicación y división. El usuario que utilice la calculadora deberá ingresar los números
+							a operar y el tipo de operación que desea realizar. Además, una vez que ingresó los datos
+							debería poder ver el resultado del cálculo realizado.
+							<br>
+							Por ejemplo si desea sumar los números 20 y 10, entonces ingresa los números y el
+							tipo de operación suma. Luego debería visualizar el resultado de la suma: 30. <br>
+							<br>
+							Tip: Cada uno debe elegir cómo representar las operaciones, por ejemplo la operación suma se
+							puede representar mediante una letra (s), palabra (suma), simbolo (+) o número (1).
+						</div>
+					</section>
+
+					<section class="docs-section" id="item-2-9">
+						<h2 class="section-heading">Nivel 9: Alarma</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Un usuario tiene diversos horarios en la semana para levantarse, ya que algunos días trabaja
+							de forma remota y otros debe asistir a la oficina. Por lo que necesita que la alarma que usa
+							para despertarse en la mañana suene en horarios distintos, de acuerdo a si ese día debe ir a
+							la oficina o si trabaja desde su casa. <br>
+							Además, los días sabados o domingo prefiere levantarse un poco más tarde, ya que no
+							debe trabajar. <br>
+							Los días y horarios en los que debe sonar su alarma son los siguientes: <br>
+							- Lunes, miercoles y viernes, trabaja desde su casa, por lo que necesita levantarse a las
+							7:30 AM. <br>
+							- Martes y jueves, como debe asistir a la oficina, tiene que levantarse a las 7 AM. <br>
+							- Fines de semana prefiere que su alarma suene a las 9 AM. <br>
+							Te animás a programar la alarma para que muestre un mensaje con el horario que va a sonar,
+							dependiendo de la información que ingrese el usuario, donde indica día de la semana?
+						</div>
+					</section>
+
+					<section class="docs-section" id="item-2-10">
+						<h2 class="section-heading">Nivel 10: Cambiando colores</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-primary" role="alert">
+							Te pronpongo un ejercicio totalmente distinto. <br>
+							Necesitamos poder modificar el color de fondo de la página web donde se proyecta tu archivo
+							html. <br>
+							El cambio de color se puede hacer mediantela siguiente función: <br>
+							<code>
+								function cambiarFondo(color) { <br>
+									document.body.style.backgroundColor = color;<br>
+									} <br>
+							</code>
+							<br>
+							Esta función se encarga de asignarle un nuevo estilo de color al fondo de la página que
+							actualmente es blanco. <br>
+							El parametro color puede tomar los siguientes string de valores: <br>
+							"green" => se verá en verde <br>
+							"red" => se verá en rojo <br>
+							"blue" => se verá en azul <br>
+							"yellow" = > se verá en color amarillo <br>
+							En este caso vas a tener que pedirle al usuario que ingrese un color entre las distintas
+							opciones que le des a elegir, y de acuerdo al color elegido deberías poder cambiar el color
+							de fondo de la página web en tu codeSanbox.
+
+						</div>
+					</section>
+
+				</article>
+
+
+				<article class="docs-article" id="section-3">
+					<header class="docs-header">
+						<h1 class="docs-heading">Adicionales</h1>
+						<section class="docs-intro">
+							<p>Ahora que ya estás a full con los ejercicios de alternativas, te proponemos una serie de
+								desafíos para poner aún más a prueba tus conocimientos y profundizar lo aprendido.
+								Suerte!</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-3-1">
+						<h2 class="section-heading"> Adicional 1: IMC </h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-warning" role="alert">
+							Un médico necesita saber el estado de sus pacientes, de acuerdo al peso y la altura que
+							tengan cuando asisten al turno, y de esta forma, puede pedirle los estudios que crea
+							apropiados. <br>
+							Para esto, una de las cosas que les permite saber el estado de sus pacientes es el Índice de
+							Masa Corporal (IMC). De acuerdo al valor del IMC, necesita que le mostremos un mensaje con
+							el estado que tiene el paciente, de la siguiente forma: <br>
+							Si el IMC es menor a 18.5 entonces "Peso inferior al normal". <br>
+							Si el IMC está entre 18.5 y 24.9, entonces "Peso normal". <br>
+							Si el IMC está entre 25.0 y 29.9, entonces "Peso superior al normal". <br>
+							Si el IMC es mayor o igual a 30, entonces "Obesidad". <br> <br>
+							Cálculo del IMC = 1000 x peso/altura².<br>
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading"> Adicional 2: Tipo de sustancia</h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-warning" role="alert">
+							El PH es un valor numérico que puede medir la alcalinidad o acidez de una sustacia. La
+							escala del PH varía del 0 al 14, y se puede clasificar una sustacia de acuerdo a su PH, de
+							la siguiente forma: <br>
+							- Neutro si el valor de PH es 7. <br>
+							- Ácido si el PH es menos de 7 o <br>
+							- Alcalino si el PH es más de 7. <br>
+							El usuario necesita que programemos un script para saber la clasificación de las sustacias
+							de acuerdo al valor de PH que ingrese. <br>
+							Nota: Debemos advertirle al usuario si el valor que ingresó está fuera del rango esperado (0
+							al 14); <br>
+							<br>
+							Ejemplo de posibles pruebas que realice el usuario, ingresando el PH de las siguientes
+							sustancias: <br>
+							Jugo de limón PH = 2.4 => ácido <br>
+							Leche PH = 6.5 => ácido <br>
+							Agua PH = 7 => Neutro <br>
+							Detergente PH = 10.5 => alcalino <br>
+						</div>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Adicional 3: Más refactor </h2>
+						<h5 class="mt-5">Ejercicio propuesto:</h5>
+						<div class="alert alert-warning" role="alert">
+							Ahora que ya conocés todas las estructuras alternativas, te animás a revisar los ejercicios
+							de Nivel 1 y 2, y si te parece apropiado realizar el refacator que creas necesario.
+						</div>
+					</section>
+
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+
+				</article>
+				<article class="docs-article" id="section-4">
+					<header class="docs-header">
+						<h1 class="docs-heading">Desafío Dipli! - ¿Cuál es el Número?</h1>
+						<section class="docs-intro">
+							<div class="row" id="item-1-3">
+								<div class="col-6">
+									<p>Considerando todo lo que hemos aprendido durante este recorrido, te proponemos
+										que pienses en el desafío Dipli del recorrido de funciones y trates de
+										incorporar las nuevas estructuras aprendidas: Alternativas. <br>
+										Además de respetar las reglas ya planteadas en desafíos anteriores, también
+										vamos aconsiderar que el desadío Dipli responda a las siguientes reglas:
+									<ul>
+										<li>
+											El jugador debería poder jugar al menos 3 veces (tener al menos 3 intentos),
+											pero los siguientes intentos sólo deberán ser posible si en el primero no
+											ganó.
+										</li>
+										<li>Antes de cada nuevo intento el jugador deberá saber que no acertó el
+											anterior.
+										</li>
+										<li>Al comienzo del juego se le debe informar al jugador el rango de valores que
+											puede ingresar.
+											Si el jugador ingresa valores fuera del rango pierde ese turno, y se le debe
+											avisar que perdió esa oportunidad por estar fuera del rango de valores que
+											puede elegir Dipli.
+										</li>
+									</ul>
+									</p>
+
+									<h5 class="callout-title">
+										<i class="fas fa-check-circle"></i>
+										TIPS!
+									</h5>
+									<p>
+										Ahora que ya incorporamos nuevas herramientas podemos cambiar algunos
+										mensajes, como por ejemplo: <br>
+										<i>"Ganó Dipli: true", "Ganó Contrincante: false"</i>, <br>
+										puede ser modificado por: <i>"El ganador es Dipli"</i>, o el que mejor
+										te parezca ;) <br>
+										<br>
+										Suerte y a disfrutar programando!
+										<i class="fas fa-laptop-code"></i>
+										<i class="far fa-heart"></i>
+									</p>
+									<!-- </div> -->
+								</div>
+								<div class="col-6">
+									<img width="70%" class="info-img" src="assets/images/desafioDipli.gif" alt="info" />
+								</div>
+							</div>
+						</section>
+						<!--//docs-intro-->
+					</header>
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-5">
+					<header class="docs-header">
+						<h1 class="docs-heading">Repaso!</h1>
+						<section class="docs-intro">
+							<ul>
+
+								<p>Veamos que recordamos de lo que transitamos en este recorrido:</p>
+								<li>
+									<p>En una estructura alternativa, la condición es una expresión de qué tipo?
+									</p>
+									<span class="spoiler2">Boolean</span>
+								</li>
+								<li>
+									<p>En una estructura alternativa cuándo se ejecuta la sentencia else?</p>
+									<span class="spoiler2">Cuando la condición es falsa (false).</span>
+								</li>
+								<li>
+									<p> Qué alert se va a observar: <br>
+										<code> let variable = 0;
+									<br> if (variable) { alert("Ingresa if"); }
+									<br> else { alert("Ingresa else"); }
+								</code>
+									</p>
+									<span class="spoiler2"> El alert que contiene el string: "Ingresa else"
+									</span>
+								</li>
+								<li>
+									<p> Qué alert se va a observar: <br>
+										<code>	let variable = 2;
+									<br> if (variable) { alert("Ingresa if"); }
+									<br> else { alert("Ingresa else"); }
+								</code>
+									</p>
+									<span class="spoiler2"> El alert que contiene el string: "Ingresa if"
+									</span>
+								</li>
+								<li>
+									<p>Con qué tipo de Estructura se pueden realizar múltiples condiciones sobre
+										una misma expresión?</p>
+									<span class="spoiler2">Estructura condicional múltiple (switch)</span>
+								</li>
+								<li>
+									<p> Una instrucción switch(dato){...} qué operador utiliza para comparar el
+										contenido de "dato" con el valor de cada caso (case)?
+									</p>
+									<span class="spoiler2">Operador de comparación igual valor y tipo (===).</span>
+								</li>
+
+							</ul>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+				</article>
+
+				<footer class="footer">
+					<div class="container text-center py-5">
+						<!--   <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>-->
+						<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
+								 alt="Licencia de Creative Commons" style="border-width:0"
+								 src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />
+						Este obra está bajo una <a rel="license"
+						   href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative
+							Commons Reconocimiento 4.0 Internacional</a>.
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Diplomatura Hola Mundo: Arreglos</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Diplomatura Hola Mundo ! - Arreglos ">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+
+    <!-- Google Font -->
+    <link href="../css/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <script type="text/javascript" src="./entorno_files/codemirror.min.js.descarga">
+	</script>
+	<script type="text/javascript" src="./entorno_files/javascript.min.js.descarga">
+	</script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="../css/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+ 
+<link rel="stylesheet" href="./entorno_files/codemirror.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/material.css"> 
+    
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/logo-diplo1.png" width="200" alt="logo"><span class="logo-text">#<span class="text-alt">Arreglos</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Arreglos</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Declaración y asignación</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Acceso</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Recorridos</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Propiedades y operaciones</a></li>
+				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2">
+				    	<span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Videos</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Declaración y acceso</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Desafío</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Nivel 1</a></li>
+				     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Nivel 2</a></li>
+				     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Nivel 3</a></li>
+				 <!--     <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Nivel 3</a></li>-->
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>Desafío Dipli</a></li>
+					<!--     <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+			   <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5">
+				    	<span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Repaso</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+-->
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+
+	    <div class="docs-content" style="background-image: url('assets/images/fondo.png')">
+	    
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Arreglos </h1>
+					    <section class="docs-intro">
+
+
+						 <p>Cuando necesitamos almacenar un valor numérico,  un caracter o una cadena de caracteres, declaramos una variable con un nombre significativo que nos permite almacenar ese tipo de dato. </p>
+<img src="assets\images\arreglos\2.png" alt="como representar una coleccion de datos" width="50%" align="right">					
+
+
+						<p>Pero ... ¿ cómo hacemos para almacenar, manipular u operar una gran cantidad de elementos de un mismo tipo ? Por ejemplo: cómo haríamos para almacenar 30 números generados de manera aleatoria ? Si utilizamos una variable para cada uno de los números aleatorios, necesitamos definir 30 variables para almacenar cada número generado !</p>
+						<p>Para resolver esta situación los datos son agrupados en una nueva estructura de datos denominada arreglo  (o array), que nos permite gestionar una colección de elementos de un mismo tipo ( por ejemplo: numérico o alfanumérico). Como toda variable debemos identificarla con un nombre significativo, de manera tal que el programador a partir de su nombre pueda representar la información que contiene.</p>
+						<img src="assets\images\arreglos\1.png" alt="Representación de arreglos"   width="45%" align="left">
+						<p>Ahora podemos pensar en definir una variable del tipo de datos Array que contenga una colección de 30 números aleatorios. Para acceder a cada uno de los elementos del array se utiliza un índice, a partir del cual vamos a poder manipular cada uno de los datos almacenados (los índices en js comienzan desde la posición 0).
+						</p>
+						</section><!--//docs-intro-->
+
+						
+				    <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">¿ Cómo declaramos una variable de tipo Array ?</h2>
+
+				<p> La declaración de una variable de tipo  Array se realiza de la misma forma que se declara cualquier otra variable, asignándole un nombre significativo que represente al conjunto de datos que va a contener. </p>
+			
+				<code class="JavaScript">
+    					let nombreVariable = Array();
+    			</code>
+
+				<p> De esta manera podemos definir una variable "col_numeros_aleatorios" como una estructura del tipo Array de 10 elementos numéricos, de la siguiente manera: </p>
+			<p>
+				<code class="JavaScript">
+    					let numeros_aleatorios = Array(10);
+    			</code>
+    		</p>
+    		<h2 class="section-heading">¿ Cómo asignamos valores a  una variable de tipo Array ?</h2>
+
+				<p> Si los valores que va a contener el arreglo se conocen de antemano, podemos asignarlos de manera inmediata en una única sentencia. Por ejemplo para asignarle una secuencia de 10 números seleccionados al azar a la variable definida anteriormente podemos hacerlo de la siguiente manera: 
+</p>
+				<p><code class="JavaScript">
+          				numeros_aleatorios = [20, 88, 17, 33, 20, 55, 12, 20, 78, 17];
+
+  				</code></p>
+  				<p> También podemos asignar cada uno de elementos del arreglo accediendo a cada una de las posiciones del arreglo a partir de su índice como sigue:</p>
+  				<code class="JavaScript">
+          			numeros_aleatorios[0] = 20; // la 1ra posición del arreglo contiene el valor 20.  <br>
+          				numeros_aleatorios[1] = 88;//  la 2da posición del arreglo contiene el valor 88. <br>
+          				numeros_aleatorios[2] = 17;//  la 3ra posición del arreglo contiene el valor 17. <br>
+          				numeros_aleatorios[3] = 33;//  la 4ta posición del arreglo contiene el valor 33. <br>
+          				numeros_aleatorios[4] = 20;//  la 5ta posición del arreglo contiene el valor 20. <br>
+          				numeros_aleatorios[5] = 55;//  la 6ta posición del arreglo contiene el valor 55. <br>
+          				numeros_aleatorios[6] = 12;//  la 7ma posición del arreglo contiene el valor 12. <br>
+          				numeros_aleatorios[7] = 20;//  la 8va posición del arreglo contiene el valor 20. <br>
+          				numeros_aleatorios[8] = 78;//  la 9na posición del arreglo contiene el valor 78. <br>
+          				numeros_aleatorios[9] = 17;//  la 10ma posición del arreglo contiene el valor 17. <br>
+
+  				</code>
+  				<div class="callout-block callout-block-success">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<svg class="svg-inline--fa fa-thumbs-up fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg><!-- <i class="fas fa-thumbs-up"></i> Font Awesome fontawesome.com -->
+									</span>
+									<!--//icon-holder-->
+									Tip
+								</h4>
+								<p>El primer elemento de un arreglo en javaScript, se encuentra en el índice 0 del arreglo.</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+  			
+			<section class="docs-section" id="item-1-2">
+				<h2 class="section-heading">¿ Cómo accedemos a cada uno de los elementos del arreglo ? </h2>
+				<p> Ya sabemos como crear una variable del tipo Array en JavaScript y cómo asignarle un conjunto de elementos. Ahora es el momento de saber como acceder a cada uno de los elementos que contiene o almacena un arreglo. Cada uno de los elementos tiene asociado  un índice, que indica la posición del elemento dentro del arreglo (comenzando desde la posición 0). Por lo tanto cada uno de los elementos del arreglo "col_numeros_aleatorios" que creamos,  podemos obtenerlos de la siguiente manera: </p>
+
+<textarea id="myTextarea" style="display: none;"> 
+function visualizar_Elementos(Arreglo_Numeros){
+    for (indice=0; indice<10; indice++){
+      alert("En la posición " +indice + " se encuentra el número: "+ Arreglo_Numeros[indice]);
+    }
+}
+numeros_aleatorios = [20, 88, 17, 33, 20, 55, 12, 20, 78, 17];
+visualizar_Elementos(numeros_aleatorios);
+</textarea>
+<script>
+	var editor2 = CodeMirror.fromTextArea(myTextarea, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<button class="btn btn-sm btn-primary" onclick="eval(editor2.getValue())"> Ejecutar </button>
+
+
+		<p> Ahora ya estamos en condiciones de definir una variable que contenga 30 números generados de manera aleatoria, y luego vamos a visualizar cada uno de sus elementos .
+		</p>
+<p>
+<textarea id="myTextarea_3" style="display: none;"> function visualizar_Elementos(Arreglo_Numeros,longitud){
+    for (indice=0; indice<longitud; indice++){
+      alert("En la posición " +indice + " se encuentra el número: "+ Arreglo_Numeros[indice]);
+    }
+}
+	function generarSecuenciaAleatoria(cant_elem){
+	let min = 1;
+	let max = 99;
+	let num; 
+ 	Arreglo_Numeros =  Array(cant_elem);
+ 	for (indice=0; indice<cant_elem; indice++){
+	  let num = Math.floor(Math.random()*(max-min+1)+min);
+      Arreglo_Numeros[indice]=num;
+      //alert("En la posición " +indice + " se guardo el número: "+ Arreglo_Numeros[indice]);
+    }
+    return Arreglo_Numeros;
+} 
+
+let cant_numeros = 30;
+ASecuencia_Aleatoria = generarSecuenciaAleatoria(cant_numeros);
+
+visualizar_Elementos(ASecuencia_Aleatoria,cant_numeros);
+</textarea>
+<script>
+	var editor_3 = CodeMirror.fromTextArea(myTextarea_3, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<button class="btn btn-sm btn-primary" onclick="eval(editor_3.getValue())"> Ejecutar </button>
+	</p>
+</section>
+
+
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Recorridos</h2>
+<p>El recorrido de un arreglo nos hace posible poder operar con  sus elementos y realizar búsquedas. Puede ser necesario que el recorrido se realiace desde el elemento que se encuentra en la posición inicial, hasta el que se encuenta en la última posición; o desde la posición inicial hasta que se cumpla alguna determinada condición.  </p>
+<p>Cuando necesitamos recorrer todos los elementos de un arreglo para resolver un problema, debemos realizar un recorrido exhaustivo.
+	</p>	
+	<p>Cuando necesitamos recorrer un arreglo hasta que se cumpla una condición determinada, el recorrido de la estructura es parcial.
+</p>
+	<h5 class="mt-5">¿Cómo saber cuántas veces salió un número?</h5>
+						
+							<p>
+Si ahora queremos saber cuántas veces se encuentra el número 24 dentro del arreglo "numeros_aleatorios" , debemos recorrer cada uno de los elementos del arreglo y cada vez que encontramos el número 24 debemos incrementar en 1 la cantidad veces encontrado. En esta oportunidad tenemos que recorrer toda la estructura de dato (arreglo), desde la posición 0 hasta su (longitud - 1). </p>
+
+
+<textarea id="myTextarea_5" style="display: none;"> function buscarNumero(Arr_Numeros, num_buscado){
+    cant_elem = Arr_Numeros.length;
+    indice = 0;
+    cant = 0;
+ 	for (indice=0; indice<cant_elem; indice++){	
+ 		if( num_buscado == Arr_Numeros[indice]) {
+ 			cant = cant+1;
+		}
+   
+	}
+	 return cant;
+} 
+numeros_aleatorios = [20, 88, 17, 33, 20, 55, 12, 20, 78, 17];
+let buscado = 20;
+repuesta = buscarNumero(numeros_aleatorios,buscado);
+alert("El número "+buscado+" se encuentra "+repuesta+" veces en el arreglo de números");
+
+</textarea>
+<script>
+	var editor_5 = CodeMirror.fromTextArea(myTextarea_5, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<button class="btn btn-sm btn-primary" onclick="eval(editor_5.getValue())"> Ejecutar </button>
+							<h5 class="mt-5">¿Cómo saber si un número se encuentra dentro del arreglo ?</h5>
+<p>Una manera es ir obteniendo cada uno de los elementos de la secuencia y verificando si el número obtenido coincide con el buscado. Por ejemplo si queremos saber si el 23 se encuentra dentro del arreglo numeros_aleatorios, obtenemos el número que se encuentra en la posición 0  y verificamos si el número de esa posición es el 23. Si la respuesta es verdadera debemos cortar el proceso de búsqueda caso contrario continuamos la búsqueda  hasta encontrar el número o llegar al último elemento del arreglo.</p>
+
+
+<textarea id="myTextarea_4" style="display: none;"> function buscarNumero(Arr_Numeros, num_buscado){
+    cant_elem = Arr_Numeros.length;
+    indice = 0;
+    encontre = false;
+ 	while( ! encontre && indice < cant_elem ){ 	
+ 		if( num_buscado == Arr_Numeros[indice]) {
+ 			encontre = true;
+ 		}
+ 		indice = indice+1;
+	}
+    return encontre;
+} 
+numeros_aleatorios = [20, 88, 17, 33, 20, 55, 12, 20, 78, 17];
+let buscado = 5;
+repuesta = buscarNumero(numeros_aleatorios,buscado);
+if (repuesta){
+	alert("El número "+buscado+" se encuentra en el arreglo de números ");
+}else{
+	alert("El número "+buscado+" NO se encuentra en el arreglo de números ");
+}
+</textarea>
+<script>
+	var editor_4 = CodeMirror.fromTextArea(myTextarea_4, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<button class="btn btn-sm btn-primary" onclick="eval(editor_4.getValue())"> Ejecutar </button>
+<div class="callout-block callout-block-success">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<svg class="svg-inline--fa fa-thumbs-up fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg><!-- <i class="fas fa-thumbs-up"></i> Font Awesome fontawesome.com -->
+									</span>
+									<!--//icon-holder-->
+									Tip
+								</h4>
+								<p>La estructura repetitiva utilizada para recorrer el arreglo debe tener en cuenta que el recorrido no alcance la longitud del arreglo.</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+	
+
+						
+
+
+					</section>	
+					<section class="docs-section" id="item-1-4">
+						<h2 class="section-heading">Propiedades y operaciones</h2>
+					<p>A continuación vamos a listar algunas propiedades y operaciones que vamos a poder utilizar en nuestras implementaciones.  ¡ A conocerlas !</p>	
+						<h5 class="mt-5">length</h5>
+						<p> La propiedad length nos indica la cantidad de elementos contenidos en un arreglo y se actualiza con cada nuevo elemento. </p>
+<img src="assets\images\arreglos\3.png" alt="Representación de arreglos"   width="40%" align="right">
+
+						<h5 class="mt-5">unshift</h5>
+					    <p>Nos permite agregar un elementos al principio de un arreglo, que se envía por parámetro.</p>
+
+                       <h5 class="mt-5">push</h5>
+						<p>Nos permite agregar un elementos al final de  un arreglo, que se envía por parámetro.</p>
+					<img src="assets\images\arreglos\4.png" alt="Representación de arreglos"   width="40%" align="left">
+
+
+					  <h5 class="mt-5">pop</h5>
+					    <p>Nos permite eliminar el último elemento de un arreglo y lo retorna.</p>
+                      
+                      <h5 class="mt-5">shift</h5>
+					    <p>Nos permite eliminar el primer elemento de un arreglo y lo retorna.</p>
+
+					<!--//section-->
+					</section>	
+			    </article>
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Videos</h1>
+					    <section class="docs-intro">
+							<!--//	<iframe width="560" height="315" src="./alternativas_files/4ldxbq6YPtk.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>-->
+
+
+
+						</section>
+						<div class="row">
+          
+        <div class="col-6">
+
+                            <h5>Diplo2022 R6 Arreglos 1:Iniciando con Array en JS</h5>
+                            <p>Nos iniciamos en la estructura de datos Array en JS: creación, asignación de elementos y acceso. ¡Hola Mundo de los arreglos !.</p>
+                            <div class="embed-responsive embed-responsive-16by9">
+                             	 	<iframe width="768" height="432" src="https://www.youtube.com/embed/twR_nTnzjWg" title="Diplo2022 R6 Arreglos 1:Iniciando con Array en JS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                          </div>
+							
+		</div>	
+	</div>
+						</header>
+				</article><!--//docs-article-->
+			    
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Desafios</h1>
+					    <section class="docs-intro">
+						    <p>Llegamos a la sección más interesante, al momento en que ponemos en práctica todo lo que aprendimos sobre arreglos.  </p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+ 
+            <h2 class="section-heading" id="item-5-1">Nivel 1: Definimos e inicializamos nuestros primeros arreglos</h2>
+ 
+	<p>Crear una carpeta R6 e implementar un script nivel1.js con la siguiente funcionalidad</p>
+<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">Numeros pares:</h4>
+                                <p> Defina una variable del tipo Array en JS que contenga los primeros 5  números pares.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+                        <div class="callout-block callout-block-success">
+ 						<div class="content">
+                                <h4 class="callout-title">Vocales Mayúsculas:</h4>
+                                <p> Defina una variable del tipo Array en JS que contenga todas las vocales en mayúscula.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title"> Trayectos de la Diplo:</h4>
+                                <p> Defina una variable del tipo Array en JS en la cual almacene cada uno de los trayectos de la Diplo: Entorno, Secuencias, Modularización, Alternativas, Repetitivas, Arreglos</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">Impares true:</h4>
+                                <p> Defina una variable del tipo Array de 9 elementos en JS, en la cual almacene el valor de verdad true para las posiciones del arreglo impar y el valor de verdad false para las posiciones del arreglo par. </p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+</section> 
+
+	<section class="docs-section" id="item-3-2">
+					
+					
+            <h2 class="section-heading" id="item-3-2">Nivel 2: Crear / Cargar / Visualizar Arreglos </h2>
+            	<p>Dentro de la carpeta R6 implementar un script nivel2.js e implementar las siguientes funciones:</p>
+
+						<div class="callout-block callout-block-success">
+ 						<div class="content">
+                  <h4 class="callout-title">Visualizar elementos de un arreglo</h4>
+                               
+ 						<p> Implementar la función visualizarArreglo  que recibe por parámetro un arreglo, la cantidad de elementos que contiene y visualiza a cada uno de ellos. </p>
+
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+          
+<div class="callout-block callout-block-success">	
+
+                            <div class="content">
+                                <h4 class="callout-title">Retornar un arreglo de números pares:</h4>
+                                <p> Implementar la función cargarNumerosPares que recibe por parámetro  la cantidad de elementos que se desean almacenar (n), crea un arreglo y se solicitan al usuario cada uno de los elementos a almacenar. Se debe corroborar que el elemento a incorporar al arreglo sea un número par, caso contrario continuar con la carga hasta completar los n  números que se desean almacenar.</p>
+                                <p>La función debe retornar el arreglo creado con cada uno de los elementos almacenados</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+                        <div class="callout-block callout-block-success">
+ 						<div class="content">
+                                <h4 class="callout-title">Retornar un arreglo de vocales Mayúsculas:</h4>
+                                <p> Implementar la función cargarVocalesMayusculas que recibe por parámetro  la cantidad de elementos que se desean almacenar (n), crea un arreglo  y se solicitan al usuario cada uno de los elementos a almacenar. Se debe corroborar que el elemento a incorporar al arreglo sea una vocal en mayúscula, caso contrario almacenar el caracter '-'.</p>
+                                 <p>La función debe retornar el arreglo creado con cada uno de los elementos almacenados</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">Retornar un arreglo con los trayectos de la Diplo:</h4>
+
+ <p> Implementar la función cargarTrayectosDiplo que recibe por parámetro  la cantidad de elementos que se desean almacenar (n), crea un arreglo  y se solicitan al usuario cada uno de los elementos a almacenar. Se debe corroborar que el elemento a incorporar al arreglo sea una cadena de caracteres que se corresponde con algunos de los trayectos de la Diplo: Entorno, Secuencias, Modularización, Alternativas, Repetitivas, Arreglos , caso contrario almacenar la cadena 'N/C'.</p>
+                                 <p>La función debe retornar el arreglo creado con cada uno de los elementos almacenados</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">Retornar un arreglo con los resultados del juego</h4>
+                               
+ <p> Implementar la función cargarResultado que recibe por parámetro  la cantidad de elementos que se desean almacenar (n), crea un arreglo  y se solicitan al usuario cada uno de los elementos a almacenar. Se debe corroborar que el elemento a incorporar al arreglo sea un valor booleano donde el valor true representa que el usuario adivino la trivia (i) caso contrario el valor a almacenar es false. </p>
+                                 <p>La función debe retornar el arreglo creado con cada uno de los elementos almacenados</p>
+
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+
+
+<div class="callout-block callout-block-success">
+ <div class="content">
+                                <h4 class="callout-title">Implementando un menú principal ..</h4>
+                               
+								 <p> Implementar un menú principal que visualiza una opción por cada una de las funciones implementadas y las invoque según sea necesario. </p>
+
+								 <p>Tener en cuenta que la opción del menú que se corresponde con la invocación a la función que visualiza el arreglo, puede ser invocada en cualquier momento. El arreglo a visualizar se debe corresponder con el último arreglo generado</p>
+
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+
+
+					</section><!--//section-->
+				
+				
+				 
+					<section class="docs-section" id="item-3-3">
+
+
+						  <h2 class="section-heading" >Nivel 3: Recorridos  de Arreglos</h2>
+            	<p>Dentro de la carpeta R6 implementar un script nivel3.js e implementar las siguientes funciones:</p>
+						<div class="callout-block callout-block-success">
+ <div class="content">
+                                <h4 class="callout-title">Calculando la sumatoria </h4>
+                               
+								 <p>  Implementar la función retornarSumatoria que recibe por parámetro  un arreglo de números y retorna la sumatoria de cada uno de sus elementos.  </p>
+ <p>¿Qué tipo de recorrido se utilizó  para la implementación de la función?</p>
+								 
+
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+					
+				
+
+						<div class="callout-block callout-block-success">
+ <div class="content">
+                                <h4 class="callout-title">Buscando la primer ocurrencia de un números </h4>
+                               
+								 <p>  Implementar la función buscarPrimerOcurrenciaNumero que recibe por parámetro  un arreglo de números y un  número; y la función retorna la posición del arreglo en la que se encuentra la primera  ocurrencia.  </p>
+ <p>¿Qué tipo de recorrido se utilizó  para la implementación de la función?</p>
+								 
+
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+                        					<div class="callout-block callout-block-success">
+ <div class="content">
+                                <h4 class="callout-title">Buscando la última ocurrencia de un  números </h4>
+                               
+								 <p>  Implementar la función buscarUltimaOcurrenciaNumero que recibe por parámetro  un arreglo de números y un  número; y la función retorna la posición del arreglo en la que se encuentra la última ocurrencia de ese número.  </p>
+								 <p>¿Qué tipo de recorrido se utilizó  para la implementación de la función?</p>
+
+								 
+
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+					<div class="callout-block callout-block-success">
+ <div class="content">
+                                <h4 class="callout-title">Retornando arreglos </h4>
+                               
+								 <p>  Implementar la función retornarArregloPosiciones que recibe por parámetro  un arreglo de caracteres  y un caracter, y la función retorna un arreglo con las posiciones en las que aparece ese elemento.  </p>
+
+								 
+
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+	<div class="callout-block callout-block-success">
+ 						<div class="content">
+                  <h4 class="callout-title">Utilizando propiedades de arreglos</h4>
+                               
+<p></p> 						
+En un salón  se encuentra un grupo de 8  personas y se deben formar 2 equipos que van a competir y solo habrá 1 ganador. Luego se van a sortear a 2 referentes quienes serán  las encargadas de ir seleccionando por turno a un miembro de su equipo. El propósito es implementar una aplicación para utilizar en la competencia.
+</p> <p>
+Para ello se va utilizar un arreglo que inicialmente contendrá  la cadena formada por '#' de manera tal que a la izquierda se encuentran los nombres del equipo A y a la derecha se encuentran los nombres de los miembros del equipo B.
+</p> <p>
+Además se cuenta con un arreglo de preguntas que deben ser respondidas durante la competencia por los equipos de manera tal que:
+El equipo que responde correctamente hace que el equipo contrario pierda un jugador.
+Si el equipo responde de manera incorrecta, pierde un jugador.
+El juego termina cuando uno de los 2 equipos se queda sin integrantes.
+</p> <p>
+Implementar una función  que permita cargar un arreglo con las preguntas de la competencia y lo retorne. Utilizaremos las siguientes  preguntas como ejemplo:
+<ol>
+<li>Cuales son los nombres de los facilitadores de la Diplo ?.</li>
+<li>El último trayecto de la Diplo es Variables ?.</li>
+<li>En JavaScript los arreglos son una estructura alternativa?</li>
+<li>Cual es la mejor estructura repetitiva que mejor se adapta  a la búsqueda exhaustiva?</li>
+</ol>
+</p> <p>
+Implementar una función  retornarCopia que recibe por parámetro un arreglo y retorna otro que es una copia del recibido por parámetro. 
+</p> <p>
+Implementar la función  cargarArregloJugadores que va a incorporar a cada uno de los miembros de cada equipo. 
+</p> <p>
+Implementar la función actualizarArreglo que recibe por parámetro el equipo que respondió correctamente la pregunta y retorna el arreglo de jugadores actualizado según  corresponda.
+</p> <p>
+Implementar la función visualizarEquipoGanador que va a informar el equipo que ganó la competencia y a cada uno de sus jugadores. 
+</p> <p>
+Implementar un menú que visualice todas las funciones y que permita registrar cada una de las acciones que se desencadenan  en la competencia.
+</p> 
+<p><i>(*) En la implementación de la funciones utilizar las propiedades de arreglos vistas en el trayecto.</i></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+
+
+
+
+					</section> 
+				 
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					  <h1 class="section-heading">Desafío Dipli - ¿Cuál es el Número?</h1>
+				
+
+				    
+						<section class="docs-intro">
+							<div class="row" id="item-9-1">
+								<div class="col-6">
+<p>
+Considerando todo lo que hemos aprendido durante todo el trayecto de Arreglos, te proponemos que  trates de incorporar esta nueva estructura de datos a este último desafío Dipli. Además de respetar las reglas ya planteadas en desafíos anteriores, también vamos a considerar que el desafío Dipli responda a las siguientes reglas:
+</p>
+<p>
+VIDAS: Diplo va a desafiar al jugador dándole la posibilidad de seleccionar la cantidad de vidas que cree necesarias para ganarle a Dipli. <br>
+Cada una de los intentos del jugador se van a almacenar de manera tal que al finalizar el juego se pueda presentar un resumen que visualice la siguiente información:<br>
+<p>
+<ul>
+<li>Intento 1: número ingresado .... fallo por ....</li>
+<li>Intento 2: número ingresado .... fallo por ....</li>
+<li>....</li>
+<li>Intento n: número ingresado .... fallo por .... </li>
+</ul>
+Finalmente si:
+<ul>
+<li>El usuario  pierde entonce Dipli le dice al usuario: “Claramente la cantidad de intentos no fueron suficientes”</li>
+<li>Si el usuario gana entonces Dipli le dice al usuario: “Te desafío a que lo intentes con menos vidas !”</li>
+</ul>
+
+Suerte y a disfrutar programando con Dipli! <i class="fas fa-laptop-code"></i>
+										<i class="far fa-heart"></i>
+</div>
+<div class="col-6">
+	       <img width="70%" class="info-img" src="assets/images/desafioDipli.gif" alt="info" />
+	</div>
+<p>
+Dejanos tu comentario del Desafío Dipli que nos acompañó en todos los trayectos de la diplo en el siguiente enlace:<br>
+👉
+<a href="https://docs.google.com/document/d/1TtnP8_2-RjzJ1butPnpnGfwBlacgUAQMscol2TM3Db0/edit?usp=sharing">aquí</a> 👈. </p>
+<p>Si queres compartir algo más sobre tu experiencia en la Diplo, es más que bienvenido tu comentario. Es muy valioso saber cómo viviste tu experiencia, nos ayuda a mejorar.
+</p>
+
+	
+</header>
+				</article>
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				      
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png"></a><br>Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
+
+
+
+
+				        <!--<ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul>//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+

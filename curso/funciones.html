@@ -1,0 +1,1116 @@
+<head>
+	<title>Diplomatura Hola Mundo: Funciones</title>
+	
+		<!-- Meta -->
+		<!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Diplomatura Hola Mundo ! - Funciones ">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Google Font -->
+    <link href="../css/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <script type="text/javascript" src="./entorno_files/codemirror.min.js.descarga">
+	</script>
+	<script type="text/javascript" src="./entorno_files/javascript.min.js.descarga">
+	</script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./entorno_files/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+ 
+<link rel="stylesheet" href="./entorno_files/codemirror.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/material.css"> 
+	<link id="theme-style" rel="stylesheet" href="assets/plugins/code-mirror/material-ocean.css"> 
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="assets/images/logo-diplo1.png" width="200" alt="logo"><span
+								class="logo-text">#<span class="text-alt">FUNCIONES</span></span></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+
+				</div>
+				<!--//docs-top-utilities-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
+
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Funciones</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Declaración de funciones</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Con variables</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Parámetros</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Retornando un valor</a></li>
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Section Item 1.5</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-6">Section Item 1.6</a></li> -->
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-video"></i></span>Videos</a></li>
+					
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-hammer"></i></span>A trabajar!</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Nivel 1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2-1">Nivel 2</a></li>
+					<ul>
+						<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2-1">1. Siguiendo al conde Dooku</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2-2">2. El maestro Yoda</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2-3">3. Yar Yar Bin</a></li>
+					</ul>
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Nivel 2</a></li> -->
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-3-1">Nivel 3</a></li>
+					<ul>
+						<li class="nav-item"><a class="nav-link scrollto" href="#item-2-3-1">1. Refactorizando nivel 2</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#item-2-3-2">2. Siguiendo al conde Dooku parte 2</a></li>
+						
+					</ul>
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Nivel 3</a></li> -->
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Nivel 4</a></li>
+
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-5-1">Nivel 5</a></li>
+					<ul>
+						<li class="nav-item"><a class="nav-link scrollto" href="#item-2-5-1">1. Refactorizando Siguiendo al conde Dooku parte 2</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#item-2-5-2">2. Formación Especial</a></li>
+						
+					</ul>
+					
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-6-1">Nivel 6</a></li>
+					<ul>
+						<li class="nav-item"><a class="nav-link scrollto" href="#item-2-6-1">1. Construyendo el cuartel de la república</a></li>
+						<li class="nav-item"><a class="nav-link scrollto" href="#item-2-6-2">2. Actualizaron a 3CPO</a></li>
+						
+					</ul>
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7">Nivel 7</a></li> -->
+
+
+					<!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								class="theme-icon-holder me-2"><i class="fas fa-hammer"></i></span>Adicionles!</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Adicional 1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Adicional 2</a></li> -->
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Section Item 2.3</a></li> -->
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3">
+						<span class="theme-icon-holder me-2">
+							<i class="fab fa-gripfire"></i>
+						</span>
+						Desafio Dipli</a>
+					</li>
+					
+					<!-- <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Desafio 2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Desafio 3</a></li> -->
+					<!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-cogs"></i></span>Integrations</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span
+								class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">Section Item 6.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Section Item 6.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Section Item 6.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span
+								class="theme-icon-holder me-2"><i class="fas fa-tablet-alt"></i></span>Mobile</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Section Item 7.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Section Item 7.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">Section Item 7.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span
+								class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Resources</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Section Item 8.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Section Item 8.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-8-3">Section Item 8.3</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span
+								class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-1">Section Item 9.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-2">Section Item 9.2</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-9-3">Section Item 9.3</a></li> -->
+				</ul>
+
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content" style="background-image: url('assets/images/fondo.png')">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">Funciones<span class="docs-time">Last updated: 2019-06-01</span></h1>
+						<section class="docs-intro">
+							<p>
+								Muy a menudo necesitamos realizar acciones similares en muchos lugares del script.
+
+								Por ejemplo, debemos mostrar un mensaje atractivo cuando un visitante inicia sesión,
+								cierra sesión y tal vez en otros momentos.
+
+								Las funciones son un concepto fundamental en la programación  que permiten crear bloques de códigos reutilizables, es decir, código dividido en piezas más pequeñas y manejables, lo que facilita la lectura, la comprensión y la modificación del código.
+
+								Ya hemos visto ejemplos de funciones integradas, como alert(message), prompt(message, default) 	que se utilizan para interactuar con el usuario a través de ventanas emergentes. Pero también podemos crear nuestras propias funciones.
+							</p>
+						</section>
+					</header>
+					<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Declaración de funciones</h2>
+						<img class="info-img" src="assets/images/desafios.png" width="100%"  alt="info" />
+						
+						<p>
+							La palabra reservada function va primero, luego el nombre de la función, una lista de
+							parámetros entre paréntesis (pueden ser 0 más, separados por comas) y finalmente
+							el código de la función entre llaves, también llamado “el cuerpo de la función”.
+						</p>
+
+						<textarea id="myTextareaF2">function name(parametro1,parametro2 parametro3... parametroN){
+...body...
+}
+</textarea>
+						<script>
+							var editorF2 = CodeMirror.fromTextArea(myTextareaF2, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material-ocean'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorF2.getValue())"> Ejecutar
+						</button>
+<p>Se ven de la siguiente manera</p>
+						<textarea id="myTextareaF1">function actualizacion(){
+	alert('Me estan actualizando');
+}
+actualizacion();
+</textarea> 
+						<script>
+							var editorF1 = CodeMirror.fromTextArea(myTextareaF1, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material-ocean'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorF1.getValue())"> Ejecutar
+						</button>
+						<p>
+							Nuestra nueva función puede ser llamada por su nombre: actualizacionDeMemoriaDipli().
+
+							Por ejemplo:
+						</p>
+						<textarea id="myTextareaF3">function actualizacionDeMemoriaDipli(){
+	alert('Me estan actualizando');
+}
+actualizacionDeMemoriaDipli();
+
+							
+							</textarea>
+						<script>
+							var editorF3 = CodeMirror.fromTextArea(myTextareaF3, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material-ocean'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorF3.getValue())"> Ejecutar
+						</button>
+						<div class="alert alert-primary" role="alert">
+						<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #1 : A partir de la
+						caja de código usada más arriba, ¿Como podemos hacer que nos informe cuando termino la actualizacion?¿Te animás a modificarlo?
+					</div>
+
+						<p>La llamada actualizacionDeMemoriaDipli() ejecuta el código de la función. Aquí veremos el mensaje dos veces.
+
+							.</p>
+							<textarea id="myTextareaF15">function actualizacionDeMemoriaDipli(){
+	alert('Me estan actualizando');
+}
+actualizacionDeMemoriaDipli();
+actualizacionDeMemoriaDipli();
+
+							
+							</textarea>
+						<script>
+							var editorF15 = CodeMirror.fromTextArea(myTextareaF15, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material-ocean'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorF15.getValue())"> Ejecutar
+						</button>
+
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Importante
+								</h4>
+								<p>Este ejemplo demuestra claramente uno de los propósitos principales de las funciones: evitar
+							la duplicación de código…
+
+							Si alguna vez necesitamos cambiar el mensaje o la forma en que se muestra, es suficiente
+							modificar el código en un lugar: la función que lo genera</p>
+
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<!-- <div class="callout-block callout-block-warning"> -->
+						<!-- <div class="content"> -->
+						<!-- <h4 class="callout-title"> -->
+						<!-- <span class="callout-icon-holder me-1"> -->
+						<!-- <i class="fas fa-bullhorn"></i> -->
+						<!-- </span>//icon-holder -->
+						<!-- Warning -->
+						<!-- </h4> -->
+						<!-- <p>Nunc hendrerit odio quis dignissim efficitur. Proin ut finibus libero. Morbi posuere fringilla felis eget sagittis. Fusce sem orci, cursus in tortor <a href="#">link example</a> tellus vel diam viverra elementum.</p> -->
+						<!-- </div>//content -->
+						<!-- </div>//callout-block -->
+
+						<div class="callout-block callout-block-success">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-thumbs-up"></i>
+									</span>
+									<!--//icon-holder-->
+									¿Sabías qué...?
+								</h4>
+								<p>El proceso de crear una función también lo llamamos modularización</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+					</section>
+					<!--//section-->
+<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Variables</h2>
+						<h5>Locales</h5>
+						<p>Una variable declarada dentro de una función sólo es visible dentro de esa función.
+
+							Por ejemplo:</p>
+						<textarea id="myTextareaF4">function saludoDipli(){
+	let saludo = "Hola a todos soy Dipliii ^.^"
+	alert(saludo);
+}
+saludoDipli();
+alert(saludo)// ERROR la variable es local para esta función
+							
+						</textarea>
+						<script>
+							var editorF4 = CodeMirror.fromTextArea(myTextareaF4, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material-ocean'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorF4.getValue())"> Ejecutar
+						</button>
+						<div class="alert alert-primary" role="alert">
+						<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #2 : A partir de la
+						caja de código usada más arriba, ¿Como podemos hacer para que se produzca 2 veces el saludo?¿Te animás a modificarlo?
+					</div>
+
+
+						<h5>Externas</h5>
+						<p>Una función también puede acceder a una variable externa, por ejemplo:</p>
+						<textarea id="myTextareaF5">let usuario=prompt("Ingresa tu nombre")
+function dipliPersonalizado(){
+	let saludo = 'Hola '+usuario;
+	alert(saludo);
+}
+dipliPersonalizado();
+							
+						</textarea>
+						<script>
+							var editorF5 = CodeMirror.fromTextArea(myTextareaF5, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material-ocean'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorF5.getValue())"> Ejecutar
+						</button>
+						<div class="alert alert-primary" role="alert">
+						<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #3 : A partir de la
+						caja de código usada más arriba, ¿Comó podemos hacer para que Dipli ademas se despida de nosotros?¿Te animás a modificarlo?
+					</div>
+
+
+
+						<p>La función tiene acceso completo a la variable externa. Puede modificarlo también.
+
+							Por ejemplo:</p>
+						<textarea id="myTextareaF6">let usuario=prompt("Ingresa tu nombre")
+function dipliPersonalizado2(){
+	usuario = 'Pepe'
+	let saludo = 'Hola '+usuario;
+	alert(saludo);
+}
+dipliPersonalizado2();
+alert(usuario);
+							
+						</textarea>
+						<script>
+							var editorF6 = CodeMirror.fromTextArea(myTextareaF6, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material-ocean'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorF6.getValue())"> Ejecutar
+						</button>
+						
+						<p>La variable externa sólo se usa si no hay una local.
+
+							Si una variable con el mismo nombre se declara dentro de la función, le hace sombra a la
+							externa. Por ejemplo, en el siguiente código, la función usa la variable usuario local. La
+							exterior se ignora:</p>
+						<textarea id="myTextareaF7">let usuario=prompt("Ingresa tu nombre")
+function dipliPersonalizado2(){
+	let usuario = 'Pepe'
+	let saludo = 'Hola '+usuario;
+	alert(saludo);
+}
+dipliPersonalizado2(usuario);
+alert(usuario);
+													
+						</textarea>
+						<script>
+							var editorF7 = CodeMirror.fromTextArea(myTextareaF7, {
+								lineNumbers: true,
+								tabSize: 3,
+								mode: 'javascript',
+								theme: 'material-ocean'
+							});
+						</script>
+						<button class="btn btn-sm btn-primary" onclick="eval(editorF7.getValue())"> Ejecutar
+						</button>
+						<div class="alert alert-primary" role="alert">
+						<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #4 : A partir de la
+						caja de código usada más arriba, ¿Que tengo que hacer para que las 2 veces aparezca el mismo nombre?¿Te animás a modificarlo?
+					</div>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Variables globales
+								</h4>
+								<p>Variables declaradas fuera de cualquier función, como la variable externa usuario en
+									el código anterior, se llaman globales.
+
+									Las variables globales son visibles desde cualquier función (a menos que se les
+									superpongan variables locales con el mismo nombre).
+
+									Es una buena práctica reducir el uso de variables globales. El código moderno tiene
+									pocas o ninguna variable global. La mayoría de las variables residen en sus
+									funciones. Aunque a veces puede justificarse almacenar algunos datos a nivel de
+									proyecto.</p>
+
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+						<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+
+						<section class="docs-section" id="item-1-3">
+							<h2 class="section-heading">Parámetros</h2>
+							<h5>Parámetros</h5>
+							<p>
+								Podemos pasar datos arbitrarios a funciones usando parámetros.
+
+								En el siguiente ejemplo, la función tiene dos parámetros: nombre y apellido.
+							</p>
+
+							<textarea id="myTextareaF8">let nombre=prompt("Ingresa tu nombre")
+let apellido=prompt("Ingresa tu apellido")
+function dipliPersonalizado(nombre, apellido){
+	let saludo = 'Hola '+ nombre + " "+ apellido + " soy Dipli";
+	alert(saludo);
+}
+dipliPersonalizado(nombre, apellido);
+dipliPersonalizado(apellido, nombre);
+								
+							</textarea>
+							<script>
+								var editorF8 = CodeMirror.fromTextArea(myTextareaF8, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material-ocean'
+								});
+							</script>
+							<button class="btn btn-sm btn-primary" onclick="eval(editorF8.getValue())"> Ejecutar
+							</button>
+							<div class="alert alert-primary" role="alert">
+						<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #5 : A partir de la
+						caja de código usada más arriba, ¿Si los parámetros de la función al momento de llamarla tiene otro nombre,funciona?¿Te animás a modificarlo?
+					</div>
+							<p>Cuando la función se llama (*), los valores dados se copian en variables locales
+								nombre y apellido. Y la función las utiliza.
+								<textarea id="myTextareaF9">let nombre=prompt("Ingresa tu nombre")
+let apellido=prompt("Ingresa tu apellido")
+function dipliPersonalizado(nombre, apellido){
+	nombre="*" + nombre + "*"
+	let saludo = 'Hola '+ nombre + " "+ apellido + " soy Dipli";
+	alert(saludo);
+}
+dipliPersonalizado(nombre, apellido);//*
+alert(nombre);
+									
+								</textarea>
+								<script>
+									var editorF9 = CodeMirror.fromTextArea(myTextareaF9, {
+										lineNumbers: true,
+										tabSize: 3,
+										mode: 'javascript',
+										theme: 'material-ocean'
+									});
+								</script>
+								<button class="btn btn-sm btn-primary" onclick="eval(editorF9.getValue())"> Ejecutar
+								</button>
+							<p>Cuando un valor es pasado como un parámetro de función, también se denomina argumento.
+
+								Para poner los términos claros:</p>
+							<p>Aquí hay un ejemplo más: tenemos una variable nombre y la pasamos a la función. Tenga en
+							cuenta: la función cambia nombre, pero el cambio no se ve afuera, porque una función siempre
+							obtiene una copia del valor:</p>
+							<textarea id="myTextareaF16">let nombre=prompt("Ingresa tu nombre")
+
+function dipliPersonalizado(nombre, apellido){
+	nombre="*" + nombre + "*"
+	let saludo = 'Hola '+ nombre + " "+ apellido + " soy Dipli";
+	alert(saludo);
+}
+dipliPersonalizado(nombre, "Diplomando");
+alert(nombre);
+									
+								</textarea>
+								<script>
+									var editorF16 = CodeMirror.fromTextArea(myTextareaF16, {
+										lineNumbers: true,
+										tabSize: 3,
+										mode: 'javascript',
+										theme: 'material-ocean'
+									});
+								</script>
+								<button class="btn btn-sm btn-primary" onclick="eval(editorF16.getValue())"> Ejecutar
+								</button>
+
+							<li>Un parámetro es una variable listada dentro de los paréntesis en la declaración de una
+								función (es un término para el momento de la declaración).</li>
+							<li>Un argumento es el valor que es pasado a la función cuando esta es llamada (es el
+								término para el momento en que se llama).</li>
+
+							<p>Declaramos funciones listando sus parámetros, luego las llamamos pasándoles argumentos.
+
+								En el ejemplo de arriba, se puede decir: "la función dipliPersonalizado es declarada con dos
+								parámetros, y luego llamada con dos argumentos: nombre y "Diplomando".</p>
+
+
+						</section>
+
+<img src="assets\images\separadorVisual.svg" width="100%" alt="Separador Visual">
+						<section class="docs-section" id="item-1-4">
+							<h2 class="section-heading">Devolviendo un valor</h2>
+
+							<p>
+								Una función puede devolver un valor al código de llamada como resultado.
+
+								El ejemplo, en este caso, calcula nuestro número de la suerte a partir de nuestra fecha de nacimiento:
+							</p>
+
+							<textarea id="myTextareaF10">function numeroSuerte(dia, mes, anio){
+	let unidad, decena, centena, millar, suma, suerte;
+	suma=dia+mes+anio;
+	unidad= suma % 10;
+	suma=Math.trunc(suma/10);
+	decena = suma % 10;
+	suma=Math.trunc(suma/10);
+	centena = suma % 10;
+	millar=Math.trunc(suma/10);
+
+	suerte=unidad+decena+centena+millar;
+	return suerte;
+}
+let dia=parseInt(prompt("Ingresa tu dia de nacimiento"));
+let mes=parseInt(prompt("Ingresa tu mes de nacimiento"));
+let anio=parseInt(prompt("Ingresa tu anio de nacimiento"));
+let numSuerte=numeroSuerte(dia, mes,anio);
+alert('Su numero de la suerte es '+numSuerte);
+								
+							</textarea>
+							<script>
+								var editorF10 = CodeMirror.fromTextArea(myTextareaF10, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material-ocean'
+								});
+							</script>
+							<button class="btn btn-sm btn-primary" onclick="eval(editorF10.getValue())"> Ejecutar
+							</button>
+							<div class="alert alert-primary" role="alert">
+						<i class="fas fa-fire-alt" style="color: rgb(218, 116, 34)"></i> Minidesafio #6 : A partir de la
+						caja de código usada más arriba, ¿Que pasa si no usamos Math.trunc?¿Te animás a modificarlo?
+					</div>
+							<p>La directiva return puede estar en cualquier lugar de la función. Cuando la ejecución lo
+								alcanza, la función se detiene y el valor se devuelve al código de llamada (asignado al
+								resultado anterior). Como buena práctica de programación Dipli nos recomienda colocarlo al final de la función.
+
+								No es bueno que hayan muchos casos de return en una sola función.</p>
+							<textarea id="myTextareaF11">function verificarEdad(edad){
+									
+	let mayorDeEdad= edad>18;
+	return mayorDeEdad;
+}
+let edad= prompt('Que edad tenes?');
+alert(verificarEdad(edad));
+							</textarea>
+							<script>
+								var editorF11 = CodeMirror.fromTextArea(myTextareaF11, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material-ocean'
+								});
+							</script>
+							<button class="btn btn-sm btn-primary" onclick="eval(editorF11.getValue())"> Ejecutar
+							</button>
+							<p>Es posible utilizar return sin ningún valor. Eso hace que la función salga o termine
+								inmediatamente.
+
+								Por ejemplo:</p>
+							<textarea id="myTextareaF12">function verificarEdad2(edad){									
+
+	return;
+}
+let edad= prompt('Que edad tenes?');
+alert(verificarEdad2(edad));
+							</textarea>
+							<script>
+								var editorF12 = CodeMirror.fromTextArea(myTextareaF12, {
+									lineNumbers: true,
+									tabSize: 3,
+									mode: 'javascript',
+									theme: 'material-ocean'
+								});
+							</script>
+							<button class="btn btn-sm btn-primary" onclick="eval(editorF12.getValue())"> Ejecutar
+							</button>
+
+							<div class="callout-block callout-block-info">
+
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder me-1">
+											<i class="fas fa-info-circle"></i>
+										</span>
+										<!--//icon-holder-->
+										Una función con un return vacío, o sin return, devuelve undefined
+									</h4>
+									<p>
+										Si una función no devuelve un valor, es lo mismo que si devolviera undefined:
+									</p>
+									<textarea id="myTextareaF13">function nada(){}
+alert(nada()===undefined);
+
+										
+									</textarea>
+									<script>
+										var editorF13 = CodeMirror.fromTextArea(myTextareaF13, {
+											lineNumbers: true,
+											tabSize: 3,
+											mode: 'javascript',
+											theme: 'material-ocean'
+										});
+									</script>
+									<button class="btn btn-sm btn-primary" onclick="eval(editorF13.getValue())">
+										Ejecutar
+									</button>
+									<p>Un return vacío también es lo mismo que return undefined:</p>
+									<textarea id="myTextareaF14">function nada(){
+	return;
+}
+alert(nada()===undefined);
+																				
+									</textarea>
+									<script>
+										var editorF14 = CodeMirror.fromTextArea(myTextareaF14, {
+											lineNumbers: true,
+											tabSize: 3,
+											mode: 'javascript',
+											theme: 'material-ocean'
+										});
+									</script>
+									<button class="btn btn-sm btn-primary" onclick="eval(editorF14.getValue())">
+										Ejecutar
+									</button>
+
+								</div>
+								<!--//content-->
+							</div>
+
+							<div class="callout-block callout-block-danger">
+								<div class="content">
+									<h4 class="callout-title">
+										<span class="callout-icon-holder me-1">
+											<i class="fas fa-exclamation-triangle"></i>
+										</span>
+										Nunca agregue una nueva línea entre return y el valor
+									</h4>
+									<p>Para una expresión larga de return, puede ser tentador ponerlo en una línea
+										separada, como esta:</p>
+
+
+									<div class="img-responsive">
+										<img class="img-responsive" src="assets/images/Funciones/devolviendo6.png">
+									</div>
+									<p>Eso no funciona, porque JavaScript asume un punto y coma después del return. Eso
+										funcionará igual que:</p>
+									<div class="img-responsive">
+										<img class="img-responsive" src="assets/images/Funciones/devolviendo7.png">
+									</div>
+									<p>Entonces, efectivamente se convierte en un return vacío. Deberíamos poner el
+										valor en la misma línea.</p>
+								</div>
+							</div>
+
+							<header class="docs-header">
+					    <!-- <h1 class="docs-heading">Videos<span class="docs-time"></span></h1>
+					    <section class="docs-intro">
+						    <p>A continuación les dejamos un pequeño resumen de los temas que vimos en esta sección en formato de video!!</p>
+							<h5>Vídeo explicativo:</h5>
+						<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/gM1pWtuxXxU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+						</section> --><!--//docs-intro-->
+					</header>
+
+
+						</section>
+
+
+
+
+
+
+
+
+
+<article class="docs-article" id="section-4">
+							<header class="docs-header">
+								<h1 class="docs-heading">Video</h1>
+								<section class="docs-intro">
+										<p>A continuación les dejamos un pequeño resumen de los temas que vimos en esta sección en
+									formato de video!!</p>
+								
+
+									<div id="accordion">
+								<div class="card">
+								  <div class="card-header">
+									<a class="card-link" data-toggle="collapse" href="#collapseOne">
+										Video de funciones parte 1
+									</a>
+								  </div>
+								  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+									<div class="card-body">
+										<div class="video-container">
+											<iframe class="video" src="https://www.youtube.com/embed/rZQFDLktRy0"
+												allowfullscreen></iframe>
+										</div>
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+								  <div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+										Video de funciones parte 2
+								  </a>
+								  </div>
+								  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+										<div class="video-container">
+											<iframe class="video" src="https://www.youtube.com/embed/KZTcMQ_ObrI"
+												allowfullscreen></iframe>
+										</div>
+									</div>
+								  </div>
+								</div>
+								<div class="card">
+								  <div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+										Video de funciones parte 3
+									</a>
+								  </div>
+								  <div id="collapseThree" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+										<div class="video-container">
+											<iframe class="video" src="https://www.youtube.com/embed/hwIoG1t3VRE" 
+												allowfullscreen></iframe>
+										</div>
+									</div>
+								  </div>
+								</div>
+							  </div>
+								</section>
+								<!--//docs-intro-->
+							</header>
+							
+							
+							
+
+
+							
+						</article>
+
+						<article class="docs-article" id="section-2">
+							<header class="docs-header">
+								<h1 class="docs-heading">A trabajar!</h1>
+								
+								<section class="docs-intro">
+									<p>Ahora que ya vimos el concepto de funciones y cómo utilizarlo dentro de
+										JavaScript, vamos a emplear los conocimientos en distintos desafíos de
+										programación que involucren funciones y variables.  Para ello, ingrese a su <a href="https://codesandbox.io/" target="_blank" >CodeSandbox</a> y cree la carpeta R3, luego
+								cree un archivo por cada desfío propuesto, el cual debe de contar con una función por cada mensaje. Cada archivo debe tener por nombre la palabra "ejercicio_nivel_".js, según corresponda <br>
+								</i> </p>
+								</section>
+								<!--//docs-intro-->
+							</header>
+							<section class="docs-section" id="item-2-1">
+								<h2 class="section-heading">Nivel 1: STAR WARS: Mis primeras funciones</h2>
+								<div class="alert alert-primary" role="alert"><p>Anakin le pide a R2D2 que transmita los siguientes mensajes a toda la flota: </p>
+<ul>
+	<li>Coby avisale a Obi-Wan que estamos tras el conde</li>
+	<li>Asoka ve por el flanco derecho para evitar que escape hacia Naboo</li>
+	<li>Rex toma a tus hombres y siganme tras el conde</li>	
+</ul><p>Para ello es necesario crear una función por cada mensaje</p></div>
+								
+					<p>Dentro de la carpeta R3 crear un archivo llamado ejercicio_nivel_1.js, que implemente las funciones correspondientes a cada uno de los mensajes.</p>
+			
+							</section>
+							<section class="docs-section" id="item-2-2-1">
+								<h2 class="section-heading">Nivel 2: Siguiendo al conde Dooku</h2>
+								<div class="alert alert-primary" role="alert"><p>Anakin va tras los pasos del conde, para poder seguirlo debe de entrar al hiperespacio junto con su flota. Para ello le pide a R2D2 que calcule las siguientes figuras geométricas para determinar el tamaño del salto. R2D2 necesita realizar 4
+funciones que muestre por pantalla las fórmulas de área y perímetro de las siguientes formaciones:</p>
+<ul>
+	<li>Cuadrado</li>
+	<li>Rectángulo</li>
+	<li>Triángulo</li>
+	<li>Circunferencia</li>
+</ul>
+</div>
+<p>Dentro de la carpeta R3 crear un archivo llamado ejercicio_nivel_2_area_perimetro.js, que implemente las funciones que retornan las fórmulas para las figuras geométricas detalladas</p>
+								
+								
+							</section>
+							<section class="docs-section" id="item-2-2-2">
+								<h2 class="section-heading">El maestro Yoda</h2>
+								<h5 class="mt-5">Ejercicio propuesto: Las horas de la galaxia</h5>
+
+								<div class="alert alert-primary" role="alert">
+									El maestro Yoda viaja mucho por la galaxia, necesita un programa que le permita
+									saber, a partir de la hora actual de la Capital de la república, qué hora es
+									en Endor (+11 hs), Felucia (+5 hs) y Naboo (-1 hs). Resolverlo utilizando funciones.
+								</div>
+								<p> Dentro de la carpeta R3 crear un archivo llamado  ejercicio_nivel_2_horas.js, que implemente el calculo horario en Endor,Felucia y Naboo </p>
+							</section>
+							<section class="docs-section" id="item-2-2-3">
+						<h2 class="section-heading">Yar Yar Bin</h2>
+						<h5 class="mt-5">Ejercicio propuesto: Conversor de unidades</h5>
+						<div class="alert alert-primary" role="alert">
+							Yar yar bin es muy olvidadizo, siempre se le olvida como convertir centímetros a metros.
+							Necesita que le programes un conversor de unidades utilizando funciones, que a partir de una cantidad de
+							de centímetros ingresada por teclado, le convierta y le muestre cuanto equivale en metros.
+							<i>Recordar que 1 metro = 100 centímetros</i>
+						</div>
+
+						<p>Dentro de la carpeta R3 crear un archivo llamado ejercicio_nivel_2_conversor.js, que implemente la función que permite convertir de cm a metros. </p>
+
+					</section>
+							
+							<!--//section-->
+
+							<section class="docs-section" id="item-2-3-1">
+								<h2 class="section-heading">Nivel 3: Refactorizando nivel 2</h2>
+								<div class="alert alert-primary" role="alert"><p>Despues del descanso y de comprender un tema nuevo, volvemos a realizar los ejercicios del nivel 2, pero en esta oportunidad sin usar variables globales, en su lugar crearemos funciones con parámetros</p>
+</div>
+								
+								
+							</section>
+
+							<section class="docs-section" id="item-2-3-2">
+								<h2 class="section-heading">Siguiendo al conde Dooku parte 2</h2>
+								<div class="alert alert-primary" role="alert"></p>R2D2 le solicita a Anakin que ingrese las dimensiones de la flota que está persiguiendo al conde para poder calcular el tamaño del vórtice del hiperespacio. Con esta información va a realizar varias funciones para poder obtener y mostrar el área y el perímetro de las siguientes formaciones de:</p>
+<ul>
+	<li>Cuadrado</li>
+	<li>Rectángulo</li>
+	<li>Triángulo</li>
+	<li>Circunferencia</li>
+	
+</ul>
+<p>Para este nivel tener en cuenta los siguientes datos, los lados del cuadrado miden 2 cm, los lados del rectángulo miden 2 y 4 cm respectivamente, los lados del triángulo miden 5 cm y el diametro de la circunferencia mide 4 cm</p></div>
+								
+
+								
+							</section>
+
+							<section class="docs-section" id="item-2-4">
+								<h2 class="section-heading">Nivel 4 Atrapando al conde Dooku</h2>
+								<div class="alert alert-primary" role="alert"></p>Anakin ha logrado capturar al conde y se dirije de nuevo a la república para que lo puedan juzgar. Después de una larga batalla su flota se vio diezmada, el comandante Cody(el usuario) es el encargado de ingresar los datos(parámetros) necesarios para que R2D2 pueda calcular y mostrar las siguientes formaciones de custodia(Perímetros):</p>
+<ul>
+	<li>Pentagono (n*lado donde n es la cantidad de lados)</li>
+	<li>Paralelogramo (2* (base+altura))</li>
+	<li>Rombo (4 * lado)</li>
+	<li>Romboide (2 * (Lado1 + Lado2)) </li>
+</ul>
+<p>Para este nivel tener en cuenta que los datos necesarios son parámetros de entrada. La formacion de custodia esta compuesta por el siguiente orden Pentagono-Paralelogramo-Rombo-Rombo-Romboide-Rombo-Rombo-Paralelogramo-Pentagono. </p></div>
+
+								
+							</section>
+							<section class="docs-section" id="item-2-5-1">
+								<h2 class="section-heading">Nivel 5: Refactorizando Siguiendo al conde Dooku parte 2</h2>
+								<div class="alert alert-primary" role="alert"><p>En esta oportunidad las funciones nos retornaran un valor el cual se mostrara por pantalla fuera de la función</p>
+</div>
+								
+								
+							</section>							
+							<section class="docs-section" id="item-2-5-2">
+								<h2 class="section-heading">Nivel 5 Formación especial</h2>
+								<div class="alert alert-primary" role="alert">
+									<p>Obi-Wan le enseña una nueva formación de defensa a Anakin, la misma está copuésta por la formación circular y la formación corona circular. Le explica que esta nueva formación puede cubrir grandes superficies, para ello deben de:</p>
+									<ul>
+										<li>calcular superficie circular</li>
+										<li>calcular superficie de corona circular</li>
+									</ul>
+									</p>Considere que la superficie de la corona circular se obtiene como la resta de las
+superficies de los círculos que comparten su centro. Solicite los datos necesarios fuera de las funciones, e invoque a las funciones necesarias para poder mostrar
+en pantalla el área de una corona circular. </p>
+								</div>								
+							</section>
+
+							<section class="docs-section" id="item-2-6-1">
+								<h2 class="section-heading">Construyendo el cuartel de la república</h2>
+								<div class="alert alert-primary" role="alert">
+									</p>La alianza esta contruyendo un nuevo cuartel en el borde exterior (ver imagen). Para ello necesitan que desarrolles un conjunto de funciones para calcular la superficie total del cuartel, y el costo total sabiendo que tiene un valor de 200 monedas de oro el metro cuadrado de ultracromo</p>
+								</div>
+								<img src="./assets/images/Funciones/cuartelAlianza.jpg" alt="">								
+							</section>
+							
+							<section class="docs-section" id="item-2-6-2">
+								<h2 class="section-heading">Actualizaron a 3CPO</h2>
+								<div class="alert alert-primary" role="alert">
+									</p>3CPO recibió una actualización y está realizando un estudio a los clones de su estado físico. Se desea contar con una función que reciba como parametro la altura y el peso de una clon y retorne el IMC</p>
+								</div>
+								<img src="./assets/images/Funciones/imc.png" alt="">								
+							</section>
+							
+							<!--//section-->
+						</article>
+						<!--//docs-article-->
+						<!-- <article class="docs-article" id="section-5">
+							<header class="docs-header">
+								<h1 class="docs-heading">Adicionales</h1>
+								<section class="docs-intro">
+									<p>Ahora que ya vimos funciones, te proponemos una serie de
+										ejercicios adicionales para poner aún más a prueba tus conocimientos y profundizar lo
+										aprendido. Suerte!</p>
+								</section>
+								
+							</header>
+							
+
+						</article> -->
+
+						<article class="docs-article" id="section-3">
+							<header class="docs-header">
+								<h1 class="docs-heading">Desafío DIPLI</h1>
+								<section class="docs-intro">
+									<p>Ahora que ya estás a full con los ejercicios de funciones, te proponemos una
+										serie de desafios para poner aún más a prueba tus conocimientos y profundizar lo
+										aprendido. Suerte!</p>
+								</section>
+								<!--//docs-intro-->
+							</header>
+							<section class="docs-intro">
+							<div class="row" id="item-1-3">
+								<div class="col-6">
+									<h5>General</h5>
+									<p>
+										Retomamos el desafio Dipli anterior y le aplicamos funciones. Hacemos memoria:
+										Dipli, ¿Cuál es el Número?, es un juego simple donde un contrincante juega contra Dipli. 
+										El juego consiste en adivinar el número que imaginó Dipli realizando diferentes intentos, en los cuales arriesga un valor entre  0 y 100.
+										 Si el contrincante logra acertar, ganará la partida… por el contrario ganará Dipli. 
+									</p>
+									<p>
+										Existen varias modalidades, con distintas innovaciones. La versión internacional, también llamada «pares polacos», está reglamentada por la Federación Internacional de  Dipli, 
+										¿Cuál es el Número? y se juega sólo con números pares y valores entre 0 y 200. 
+										También está la modalidad «Andina Patagónica», que admite valores bajo cero  entre -20 y 40.
+										
+									</p>
+									
+								</div>
+							
+								<div class="col-6">
+										<img width="70%" class="info-img" src="assets/images/desafioDipli.gif" alt="info" /> 
+								</div>
+								<h5>Otras reglas:</h5>
+									<ul>
+										<li>El contrincante no debe arriesgar más de un valor en cada  intento. </li>
+										<li>Un jugador siempre deberá ver la respuesta de Dipli, antes de realizar un nuevo intento.</li>
+										<li>Dipli no puede cambiar de número durante una partida.</li>
+										<li>Dipli no puede imaginar números fuera del rango del juego.</li>
+										<li>Si la partida se prolonga por encima de una cantidad de intentos(3) Dipli será quien gana. </li>
+										
+									</ul>
+									<p>¿Cuál será tu versión del juego? Charlalo con tu Facilitador o Facilitadora :)</p>
+									<p></p>
+
+									<h5>Para trabajar en el desarrollo del desafio Dipli, seguí los siguientes paso:</h5>
+									<ol>
+										<li>Ingresar al entorno Codesandbox, dentro de la carpeta <code>Dipli</code> crear una carpeta <code>R3</code>.</li>
+										<li>Dentro de la carpeta <code>Dipli/R3</code>, crear un script <code>desafio_dipli_1.js</code>.</li>
+									</ol>
+
+									<h4>Desafío - parte I</h4>
+									<p>
+										Inicia el Juego. Implementar las funciones necesarias, siguiendo las recomendaciones vistas hasta el momento para que Dipli nos pueda dar la bienvenida al juego, mostrar las reglas, pedir al contrincante que imagine un valor y luego le cuente si el valor que había imaginado coinicide con el de Dipli. Finalmente salude al contrincante y lo invite a volver a jugar.<br>
+										 <b>Restricciones:</b> Dipli prefiere que usemos diferentes funciones para comunicarse con el contrincante. En este sentido desea que las funciones sean más de 3 y menos de 6.
+										
+									</p>
+									<h4>Desafío - parte II</h4>
+									<p>
+										Evolucionar el desarrollo anterior para que Dipli imagine un nuevo número en cada ejecución. El juego es igual, solo que el valor que se muestra es generado al azar.
+										Para ello puede utilizar la siguiente sentencia: 
+									</p>
+									<p><code>unNumeroAleatorio = Math.floor(Math.random()*(unValorMax-unValorMin+1)+unValorMin);</code></p>
+									<p>donde <code>unValorMax</code> y <code>unValorMin</code> son variables que nos sirven para que los números que se generen se encuentren entre dentro del rango <code>[unValorMin y unValorMax]</code>. <br>
+										<b>Restricciones:</b> Dipli prefiere que usemos alguna modalidad del juego, por ejemplo «pares polacos», «Andina Patagónica» u otra que se nos ocurra a nosostros. Se debe de implementar una función por cada modalidad. No se pueden utilizar variables globales
+									</p>
+									<h4>Desafío - parte III</h4>
+									<p>
+										Evolucionar el desarrollo anterior para que el contrincante pueda ingresar su valor y Dipli le muestre por cuanto falló. Recuerde que una función puede invocar a otra funcón.
+										<b>Restricciones:</b> Dipli prefiere que mostremos mensajes amigables como <i>"Fallaste por …"</i>. <i>"Espero que en la próxima estés mejor"</i>. Utilizando tres mensajes diferentes.
+									</p>
+									<h4>Desafío - parte IV</h4>
+									<p>
+										Evolucionar el desarrollo anterior para que por medio de diferentes funciones se muestre mensajes como este <i>"Ganó Dipli:</i> <code>False</code>", <i>"Ganó Contrincante:</i> <code>True</code>", <i>"El número que imaginó Dipli es más grande:</i> <code>False</code>". Imagine un nuevo número en cada ejecución.<br>
+										<b>Restricciones:</b> Dipli prefiere que informemos esto usando TRUE / FALSE… cosas de Dipli. Además un mensaje diferente para cada caso.
+									</p>
+							</div>
+						</section>
+							<!--//section-->
+
+							<!-- <section class="docs-section" id="item-3-2">
+								<h2 class="section-heading">Desafio 2</h2>
+								<p>Aca otro desafio</p>
+								
+							</section> -->
+							
+							
+
+
+							
+						</article>
+						<!--//docs-article-->
+
+						<footer class="footer">
+							<div class="container text-center py-5">
+								<small class="copyright">Template Copyright &copy; <a
+										href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave
+										Media</a></small>
+								<ul class="social-list list-unstyled pt-4 mb-0">
+									<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i
+												class="fab fa-product-hunt fa-fw"></i></a></li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a>
+									</li>
+								</ul>
+								<!--//social-list-->
+							</div>
+						</footer>
+			</div>
+		</div>
+	</div>
+	<!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
+
+</body>
+
+</html>

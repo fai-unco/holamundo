@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Diplomatura Hola Mundo: Repetitivas</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Diplomatura Hola Mundo ! - Arreglos ">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="../css/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <script type="text/javascript" src="./entorno_files/codemirror.min.js.descarga">
+	</script>
+	<script type="text/javascript" src="./entorno_files/javascript.min.js.descarga">
+	</script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="./entorno_files/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+ 
+<link rel="stylesheet" href="./entorno_files/codemirror.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/material.css"> 
+    
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/logo-diplo1.png" width="200" alt="logo"><span class="logo-text">#<span class="text-alt">Repetitivas</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Repetitivas</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Minidesafío #1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Minidesafío #2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Para Pensar</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Contadores</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Acumuladores</a></li>
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Estructura FOR</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Representación Visual</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Representación Javascript</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Minidesafío #3</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Minidesafío #4</a></li>
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Estructura DO WHILE</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Representación Visual</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Representación Javascript</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Minidesafío #5</a></li>	
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">Para Pensar</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Minidesafío #6</a></li>	
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Estructura WHILE</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Representación Visual</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Representación Javascript</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Retomando el Minidesafío #6</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">Para Pensar</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-5">Diseñar vs Programar</a></li>
+				    	<li href="#item-6-1"><span class="theme-icon-holder me-2"><i class="fas fa-laptop-code"></i></span>Videos</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-1">REPES</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#item-5"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Desafíos FOR</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Nivel 1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Nivel 2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Nivel 3</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-4">Nivel 4</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-5">Nivel 5</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#item-7"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Desafíos DO WHILE</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">Nivel 1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Nivel 2</a></li>
+				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#item-8"><span class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Desafíos WHILE</a></li>
+				    </li>
+				     <li class="nav-item"><a class="nav-link scrollto" href="#item-8-1">Nivel 1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-8-2">Nivel 2</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-lightbulb"></i></span>Desafío Dipli</a></li>
+				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-book-reader"></i></span>Repaso</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
+
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Repetitivas <span class="docs-time">Last updated: 01-06-2022</span></h1>
+					    <section class="docs-intro">
+
+
+					    <div class="row">
+    					<div class="col-6">	
+    					 <!-- INTRO REPES -->
+						    <p>¿Qué son las repetitivas? ¿Qué son las repetitivas? ¿Qué son las repetitivas? ¿Qué son las repetitivas? ¿Qué son las repetitivas? ¿Qué son las repetitivas? </p>
+							<p>Perdón, se me quedó la repetitiva activada...</p>
+						    <p>Empecemos. A veces es necesario hacer una misma tarea una y otra vez. Por ejemplo... cuando escuchamos música en Spotify, podemos activar la opción para que la app nos toque la misma canción una y otra vez.</p>
+						    <p>Lo mismo sucede cuando vas a ver tus seguidores Instagram. La app tiene que hacer muchas veces lo mismo: ir a buscar un seguir y mostrarte su foto de perfil. Y esa acción se repite por cada uno de tus seguidores. </p> 
+
+						    	<p>Entonces ¿cómo se hace eso? ¿Hay una persona mirando si tienen que enviar la misma canción una y otra vez? ¿O hay un programador que está contando cuántos contactos tenes y después tantas instrucciones como seguidores tengas? </p> <p><b>No, lo que hay, es una estructura de código que permite repetir la ejecución de una misma terea hasta que se cumplan determinadas condiciones.</b> Genial, ¿no?</p>
+
+
+
+						</div>
+    					<div class="col-6"><center><img class="info-img" src="assets/images/spotify.png" alt="info" /></center>
+					 </div>
+					 </div>
+						 <!-- INTRO REPES -->
+						 <!-- desafio #1 -->
+					<section class="docs-section" id="item-1-1">
+					 	<h2 class="section-heading">Desafío #01</h2>
+											<p>Dipli quiere saludar y luego, dar UN paso hacia adelante y finalmente avisar que arribó a destino... fácil ¿verdad? Son solo tres instrucciones.</p>						    
+					<img class="info-img" src="assets/images/desafios.png" width="100%"  alt="info" />
+
+					<textarea id="myTextarea1" style="display: none;">
+alert("Hola! aquí comienza mi viaje hacia lo desconocido")
+alert("MOVER ADELANTE")
+alert("Ya llegué!")
+
+					</textarea>
+<script>
+	var editor1 = CodeMirror.fromTextArea(myTextarea1, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor1.getValue())"> Ejecutar </button>
+
+
+					 </section>	
+						 <!-- desafio #1 -->
+
+
+<!-- desafio #1 -->
+					<section class="docs-section" id="item-1-2">
+						
+						<div class="alert alert-primary" role="alert">
+  Excelente! Eso fue fácil. Veamos ahora que nos pide Dipli.
+</div>
+					 	<h2 class="section-heading">Desafío #02</h2>
+											<p>Ahora Dipli quiere hacer lo mismo pero esta vez...dar <i>1500 pasos hacia adelante...</i> ¿y ahora? ¡¿que hacemos?! ¿Te animás a resolver esto? Te ayudamos con los primeros 10 pasitos...</p>						    
+					<img class="info-img" src="assets/images/desafios.png" width="100%"  alt="info" />
+
+<textarea id="myTextarea2" style="display: none;">
+//área inicialización, solo se repite una vez
+alert("Hola, mi nombre es Dipli y aquí comienza mi viaje!")
+//área de repetición
+alert("MOVER ADELANTE #1!")
+alert("MOVER ADELANTE #2!")
+alert("MOVER ADELANTE #3!")
+alert("MOVER ADELANTE #4!")
+alert("MOVER ADELANTE #5!")
+alert("MOVER ADELANTE #6!")
+alert("MOVER ADELANTE #7!")
+alert("MOVER ADELANTE #8!")
+alert("MOVER ADELANTE #9!")
+alert("MOVER ADELANTE #10!")
+//área de fin
+alert("Llegué!!!")
+					</textarea>
+<script>
+	var editor2 = CodeMirror.fromTextArea(myTextarea2, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor2.getValue())"> Ejecutar </button>
+
+
+
+					 </section>	
+
+<section class="docs-section" id="item-1-3">
+
+					 	<h2 class="section-heading">Para Pensar</h2>
+<div class="row" id="item-1-3">
+	<div class="col-6">
+		<center>
+			<img width="82%" class="info-img" src="assets/images/ficha_stop_01.png" alt="info" /> 
+		</center>
+	</div>
+	<div class="col-6">
+		<p>
+		Así es. Necesitamos una nueva herramienta que nos permita resolver situaciones donde un mismo conjunto de instrucciones deben ejecutarse una y otra vez. Esa herramieta la llamamos <b>estructura repetitiva</b>. 
+		</p>
+		<p>
+		Todos los lenguajes de programación suministran alguna forma de estructura repetitiva. Sin ellas, no podríamos controlar el flujo de ejecución de nuestros programas. 	
+		</p>
+		<p>
+			<center><i class="fab fa-android  fa-4x"></i></center><hr>
+		<b>Para pensar: ¿Cómo te imaginás que podría ser una estructura repetitiva?	</b>
+		</p>
+			
+
+
+	</div>
+		<div class="callout-block callout-block-warning">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                 <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                Dos elementos importantes a la hora de repetir
+	                            </h4>
+                                <p> Parece razonable suponer que, en general, para hacer muchas veces lo mismo vamos a necesitar dos cosas: un <b>área de repetición</b> y una <b>condición de repetición</b>. El <b>área de repetición</b> es la parte de nuestro código donde ponemos las instucciones que queremos que se repitan.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+</div>	
+						 <!-- desafio #1 -->
+</section>	
+
+<section class="docs-section" id="item-1-4">
+	<h2 class="section-heading">¿Cómo contamos caramelos en un frasco?</h2>
+	<p>Las estructuras repetitivas funcionan muy parecido a las estructuras mentales que construimos en nuestra mente cuando contamos caramelos de un frasco. Ya sea que estemos repetiendo canciones de una playlist, contando pasos de un robot, o contando caramelos de un frasco, siempre necesitamos 3 elementos: </p>
+	<div class="row">						
+	<div class="col-4">
+	<center>
+		<br>
+			<img width="95%" class="info-img" src="assets/images/caramelos.png" alt="info" /> 
+	</center>
+	</div>
+			<div class="col-8">
+	
+	
+
+
+<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                 <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                INICIALIZACIÓN
+	                            </h4>
+                               <p>¿Que hacemos cuando contamos caramelos de un frasco? Primero seleccionamos un <b>valor de inicialización</b>, es decir, un número desde el que comenzamos a contar. Es el número #0 o a veces el #1. </p>
+                            </div><!	--//content-->
+                        </div><!--//callout-block-->
+
+
+<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                 <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                CONDICIÓN DE REPETICIÓN
+	                            </h4>
+                               <p>Luego, definimos una  <b>condición de repetición</b>, es decir, una expresión que debe cumplirse para seguir repitiendo, en el caso de los caramelos sería: "mientras queden caramelos en el frasco", o lo que es lo mismo, "mientras la cantidad de caramelos en el frasco sea mayor a cero". </b></p>
+
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+
+<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                 <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                INCREMENTO
+	                            </h4>
+                             <p>Finalmente, necesitamos un <b>incremento.</b> El incremento nos permite saber cuándo parar, ya que sin el, la condición de repetición siempre sería verdadera y nunca se detendría nuestra repetitiva. El incremento para la cuenta de caramelos sería de a una unidad. </b></p>	
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+                                                                        
+
+
+
+
+	</div>
+</div>
+</section> 
+
+
+<section class="docs-section" id="item-1-4">
+	<h2 class="section-heading">Contadores</h2>
+	<p>Un contador es una variable a la que siempre le sumamos una unidad. Por ejemplo, si queremos contar pasos de Dipli, podemos tener una variable llamada contadorPasos y sumarle 1 cada vez que dipli de un paso.  </p>
+	<div class="row">						
+	<div class="col-4">
+	<center>
+			<img width="95%" class="info-img" src="assets/images/repe04.png" alt="info" /> 
+	</center>
+	</div>
+			<div class="col-8">
+	
+	
+
+					<textarea id="myTextarea4" style="display: none;">
+//inicalización
+contadorPasos=0
+alert("contadorPasos vale "+ contadorPasos)
+
+//incremento
+contadorPasos = contadorPasos + 1
+alert("ahora contadorPasos vale "+ contadorPasos)
+
+//incremento
+contadorPasos++ 
+alert("y ahora contadorPasos vale "+ contadorPasos)
+				</textarea>
+<script>
+	var editor4 = CodeMirror.fromTextArea(myTextarea4, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor4.getValue())"> Ejecutar </button>
+	
+	</div>
+</div>
+</section> 
+
+
+<section class="docs-section" id="item-1-5">
+	<h2 class="section-heading">Acumuladores</h2>
+	<p>Un acumulador es una variable a la que siempre le asignamos el valor que tenía más una determinada cantidad que puede ser mayor a 1. Por ejemplo, si queremos contar la cantidad de pasos que dio cada robot amigo de Dipli, podemos tener una variable llamada acumuladorAmigos y sumarle grupos de amigos. </p>
+	<div class="row">						
+	<div class="col-4">
+	<center>
+			<img width="95%" class="info-img" src="assets/images/repe05.png" alt="info" /> 
+	</center>
+	</div>
+			<div class="col-8">
+	
+	
+
+					<textarea id="myTextarea5" style="display: none;">
+//inicalización
+acumuladorPasosAmigos=0
+alert("acumuladorPasosAmigos vale "+ acumuladorPasosAmigos)
+
+//incremento
+acumuladorPasosAmigos = acumuladorPasosAmigos + 19
+alert("ahora acumuladorPasosAmigos vale "+ acumuladorPasosAmigos)
+
+//incremento
+acumuladorPasosAmigos = acumuladorPasosAmigos + 5 
+alert("y ahora acumuladorPasosAmigos vale "+ acumuladorPasosAmigos)
+				</textarea>
+<script>
+	var editor5 = CodeMirror.fromTextArea(myTextarea5, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor5.getValue())"> Ejecutar </button>
+	
+	</div>
+</div>
+</section>
+
+</section><!--//docs-intro-->
+</article>
+<article class="docs-article" id="section-2">
+<section class="docs-section" id="section-2">
+	<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                 <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                Hay varias formas de hacer repetitivas
+	                            </h4>
+                                <p>Existen distintas estructuras de control para realizar repetitivas. Vamos a centrarnos en 3: la estructura <b>FOR</b>, la estructura <b>DO WHILE</b> y la estructura <b>WHILE</b></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+						<h2 class="section-heading">REPETITIVAS: La estructura FOR</h2>
+						<p>Existen situaciones donde sabemos exactamente <i>cuántas veces</i> debemos repetir un conjunto de instrucciones. Por ejemplo, para el minidesafio de saludar a los primos de Dipli, el número de repeticiones necesarias es conocido antes de comenzar a repetir. Para estos casos, donde siempre conocemos cuántas veces debemos iterar o repetir, debemos utilizar la estructura FOR.</p> 
+
+</section>						
+
+						
+				    <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Estructura FOR: una representación visual</h2>
+
+				 Para el desafío #2, el área de repetición deberá incluír la instrucción 
+				<code class="JavaScript">
+    					alert("Hola! aquí comienzo mi viaje")
+    			</code> y la <b>condición de repetición</b> será que se hayan realizado 150 pasos hacia adelante. 						
+				</p>
+				
+				<p> Veamos cómo podríamos representar gráficamente la estructura FOR: </p>
+<div class="row">						
+	<div class="col-6">
+	<center>
+			<img width="80%" class="info-img" src="assets/images/repe01.jpg" alt="info" /> 
+	</center>
+	</div>
+			<div class="col-6">
+	<center>
+			<img width="80%" class="info-img" src="assets/images/repe02.jpg" alt="info" /> 
+	</center>
+	</div>
+				
+
+					</section>	
+
+
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Representación en Javascript</h2>
+					
+					
+
+				<p> Ahora que ya sabemos cómo representar visualmente una estructura repetitiva FOR, será más fácil comprender cómo representarla en javascript. Abajo, te mostramos el formato de una instrucción 
+				<code class="JavaScript">
+    					FOR
+    			</code>.  
+				</p>
+				
+				<p>El <code class="JavaScript">
+    					FOR
+    			</code> es una estructura que permite repetir un conjunto de instrucciones un número conocido de veces. </p>
+<div class="row">						
+	<div class="col-4">
+	<center>
+			<img width="95%" class="info-img" src="assets/images/repe03.png" alt="info" /> 
+	</center>
+	</div>
+			<div class="col-8">
+	
+	
+
+					<textarea id="myTextarea3" style="display: none;">
+//área inicialización, solo se repite una vez
+alert("Hola, mi nombre es Dipli y aquí comienza mi viaje!")
+//condición de repetición
+for (var i = 0; i <= 150; i++) {
+	//área de repetición
+	alert("MOVER ADELANTE")
+}
+//área de fin, solo repite una vez
+alert("Llegué a destino...")   
+				</textarea>
+<script>
+	var editor3 = CodeMirror.fromTextArea(myTextarea3, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor3.getValue())"> Ejecutar </button>
+	
+	</div>
+</div>	
+<!--//section-->
+					</section>	
+
+	<section class="docs-section" id="item-2-3">
+					 	<h2 class="section-heading">Minidesafío #3</h2>
+											<p>Dipli quiere saber cuánto valdría la sumatoria de sus amigos. Es decir, si tiene 5 amigos, entonces debemos hacer el siguiente cálculo: <i>1+2+3+4+5</i> y mostrarlo.</p>    
+					<img class="info-img" src="assets/images/desafios.png" width="100%"  alt="info" />
+
+<textarea id="myTextarea6" style="display: none;">
+function sumatoria (amigos){
+	let acumuladorAmigos = 0;  
+	for (i=0; i<=amigos; i++){
+  	//completar aquí
+  }
+  return acumuladorAmigos;
+}
+
+let amigos = prompt("Dipli, cuántos amigos y amigas tenes?")
+let resultado = sumatoria(amigos)
+alert(resultado)
+					</textarea>
+<script>
+	var editor6 = CodeMirror.fromTextArea(myTextarea6, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor6.getValue())"> Ejecutar </button>
+
+
+					 </section>				
+
+	<section class="docs-section" id="item-2-4">
+					 	<h2 class="section-heading">Minidesafío #4</h2>
+											<p>Excelente! Ahora que tenemos una buena idea de cómo usar repetitivas, veamos que se le ocurrió a Dipli.</p> <p> Dipli nos pide que armemos una cadena de texto con los nombres de algunas de las mascotas que el recuerda. ¿Cómo podemos plantear este minidesafío?</p>
+					<img class="info-img" src="assets/images/desafios.png" width="100%"  alt="info" />
+
+<textarea id="myTextarea7" style="display: none;">
+function armarCadenaMascotas (mascotas){
+	let acumuladorNombres = "";  
+  let unNombre;
+	for (i=0; i<mascotas; i++){
+  	   //completar aquí
+    	unNombre = prompt("Dipli, decime el nombre de la mascota Nro. "+i)
+    	
+  }
+  return acumuladorNombres;
+}
+
+let mascotas = prompt("Dipli, cuántas mascotas tuviste?")
+let resultado = armarCadenaMascotas(mascotas)
+alert("Las mascotas de dipli son: "+resultado)
+					
+					</textarea>
+<script>
+	var editor7 = CodeMirror.fromTextArea(myTextarea7, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor7.getValue())"> Ejecutar </button>
+
+
+					 </section>									 
+			    </article>
+
+
+
+
+
+<article class="docs-article" id="section-3">
+			<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                 <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                Repetición condicional
+	                            </h4>
+                                <p>A continuación, estudiaremos dos estructuras repetitivas que permiten repetir sin conocer a priori la cantidad de ciclos que habrán. Llamamos a estas estructuras, repetición condicional, y son la estructura <b>DO WHILE</b> y la estructura <b>WHILE</b></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+<section class="docs-section" id="section-3">
+
+
+						<h1 class="section-heading">REPETITIVAS: La estructura DO WHILE</h1>
+						<p>Como vimos en el minidesafío #4, existen situaciones donde <b>no sabemos</b> exactamente <i>cuántas veces</i> debemos repetir un conjunto de instrucciones. Para estos casos, podemos utilizar otras estructuras repetitivas, por ejemplo, la estructura DO WHILE.</p> 
+
+</section>						
+
+						
+				    <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Estructura DO WHILE: una representación visual</h2>
+
+				 
+				
+				
+				
+				<p> Veamos cómo podríamos representar gráficamente la estructura repetitiva DO WHILE: </p>
+<div class="row">						
+	<div class="col-6">
+	<center>
+			<img width="80%" class="info-img" src="assets/images/doWhile01.png" alt="info" /> 
+	</center>
+	</div>
+			<div class="col-6">
+	<center>
+			<img width="80%" class="info-img" src="assets/images/doWhile02.png" alt="info" /> 
+	</center>
+	</div>
+				
+
+					</section>	
+
+
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">Representación en Javascript</h2>
+					
+					
+
+				<p> Ahora que ya sabemos cómo representar visualmente una estructura repetitiva DO WHILE, será más fácil comprender cómo representarla en javascript. Abajo, te mostramos el formato de una instrucción 
+				<code class="JavaScript">
+    					DO WHILE
+    			</code>.  
+				</p>
+				
+				<p>El <code class="JavaScript">
+    					DO WHILE
+    			</code> es una estructura que permite repetir un conjunto de instrucciones un número desconocido de veces. </p>
+<div class="row">						
+	<div class="col-4">
+	<center>
+			<img width="95%" class="info-img" src="assets/images/doWhile03.png" alt="info" /> 
+	</center>
+	</div>
+			<div class="col-8">
+	
+	
+
+					<textarea id="myTextarea31" style="display: none;">
+//funcion que concatena nombres de mascotas
+function armarCadenaMascotas (){
+  //área de inicialización, solo se ejecuta una vez
+	acumuladorNombres = "";  
+  //área de repetitiva
+	do {
+    unaMascota = prompt("Dipli, decime el nombre de alguna mascota");
+    acumuladorNombres = unaMascota + ", " + acumuladorNombres;
+    continuar = prompt("Dipli, recordás algún otro nombre? ingresa s/n");
+  } while (continuar=='s')
+  //área de salida, solo se ejecuta una vez  
+  return acumuladorNombres;
+}
+//llamamos la función
+resultado = armarCadenaMascotas()
+alert(resultado)
+				</textarea>
+<script>
+	var editor31 = CodeMirror.fromTextArea(myTextarea31, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor31.getValue())"> Ejecutar </button>
+	
+	</div>
+</div>	
+<!--//section-->
+					</section>	
+
+	<section class="docs-section" id="item-3-3">
+					 	<h2 class="section-heading">Minidesafío #5</h2>
+											<p>Es momento de probar nuestras destrezas en el manejo de repetitivas condicionales. Dipli nos propone el siguiente desafío.</p> <p>Dipli quiere hacer una lista de invitación a una fiesta robótica en su taller. Solo invitará a amigos robots que tengan más de 2 ruedas. Nos pide hacer un programa que solicite el nombre del amigo, su cantidad de ruedas, y si corresponde, lo agregue a una lista de invitación. </p>  
+					<img class="info-img" src="assets/images/desafios.png" width="100%"  alt="info" />
+
+<textarea id="myTextarea32" style="display: none;">
+function listaInvitados (){
+  let listaAmigos = "";		
+  let unAmigo = "";
+  let deseaContinuar = ""
+  do {
+  	unAmigo = prompt("Ingresa un amig@")
+  	listaAmigos = listaAmigos + unAmigo + " - "  
+  	deseaContinuar = prompt("Desea continuar? s/n")
+  }while( ... )
+  return listaAmigos;
+}
+
+
+listaFinal = listaInvitados()
+alert(listaFinal)
+					</textarea>
+<script>
+	var editor32 = CodeMirror.fromTextArea(myTextarea32, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor32.getValue())"> Ejecutar </button>
+
+
+					 </section>	
+
+
+<section class="docs-section" id="item-3-4">
+
+					 	<h2 class="section-heading">Para Pensar</h2>
+<div class="row" id="item-1-3">
+	<div class="col-6">
+		<center>
+			<img width="82%" class="info-img" src="assets/images/ficha_stop_02	.png" alt="info" /> 
+		</center>
+	</div>
+	<div class="col-6">
+		<p>
+		La estructura DO WHILE primero ejecuta y después pregunta. Esto está bien... para algunos casos. ¿Qué pasaría si estamos ante una situación en la que se ignore la cantidad de veces que se deberá repetir y que además presente una restricción para las acciones del área de repetición?</b> 
+		</p>
+		<p>
+		En otras palabras, ¿qué pasaría si primero debo preguntar antes de hacer?  	
+		</p>
+		<p>
+			<center><i class="fab fa-android  fa-4x"></i></center><hr>
+		<b>Para pensar: ¿Cómo te imaginás que podría ser una estructura repetitiva que primero pregunte y luego haga?	</b>
+		</p>
+			
+
+
+	</div>
+		<div class="callout-block callout-block-warning">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                 <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                Para recordar
+	                            </h4>
+                                <p> La estructura DO WHILE primero ejecuta y luego pregunta. Por eso, es más apropiada para situaciones donde siempre habrá <b>al menos una ejecución</b> de la repetitiva.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+</div>	
+						 <!-- desafio #1 -->
+</section>
+
+<section class="docs-section" id="item-3-5">
+					 	<h2 class="section-heading">Minidesafío #6</h2>
+											<p>Ohh no... tenemos un problema! Dipli nos propone otro desafío.</p> <p>A Dipli se le ocurrió hacer una lista de invitación a una fiesta robótica en su taller. Solo invitará a amigos robots que tengan más de 2 ruedas. Nos pide hacer un programa que solicite el nombre del amigo, su cantidad de ruedas, y si corresponde, lo agregue a una lista de invitación. Pero atención! Dipli tiene mala memoria! <i>podría no recordar ningún amigo.</i></p>  
+					<img class="info-img" src="assets/images/desafios.png" width="100%"  alt="info" />
+
+<textarea id="myTextarea33" style="display: none;">
+function listaInvitados (){
+	listaAmigos = "";		
+  }
+  return listaAmigos;
+}
+
+
+listaFinal = listaInvitados()
+alert(listaFinal)
+					</textarea>
+<script>
+	var editor33 = CodeMirror.fromTextArea(myTextarea33, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor33.getValue())"> Ejecutar </button>
+
+
+					 </section>	
+
+			    </article>
+
+
+
+
+   <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h2 class="docs-heading">Repetitivas: La estructura WHILE</h2>
+					    <section class="docs-intro">
+						Estamos de acuerdo. Existen situaciones donde primero hay que preguntar y luego ejecutar. Para estos casos, lo más apropiado es utilizar una estructura WHILE. 
+						</section>
+						</header>
+						<section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Estructura WHILE: una representación visual</h2>
+
+				 
+				
+				
+				
+				<p> Veamos cómo podríamos representar gráficamente la estructura repetitiva WHILE: </p>
+<div class="row">						
+	<div class="col-6">
+	<center>
+			<img width="80%" class="info-img" src="assets/images/while01.png" alt="info" /> 
+	</center>
+	</div>
+			<div class="col-6">
+	<center>
+			<img width="80%" class="info-img" src="assets/images/while02.png" alt="info" /> 
+	</center>
+	</div>
+				
+
+					</section>	
+<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">Representación en Javascript</h2>
+					
+					
+
+				<p> Obviamente, la estructura repetitiva WHILE, tiene una forma de representarla en javascript. Abajo, te mostramos el formato de una instrucción 
+				<code class="JavaScript">
+    					WHILE
+    			</code>.  
+				</p>
+				
+				<p>El <code class="JavaScript">
+    					WHILE
+    			</code> es una estructura que permite repetir un conjunto de instrucciones un número desconocido de veces y no siempre ejecuta su área de repetición. </p>
+<div class="row">						
+	<div class="col-4">
+	<center>
+			<img width="95%" class="info-img" src="assets/images/repe06.png" alt="info" /> 
+	</center>
+	</div>
+			<div class="col-8">
+	
+	
+
+					<textarea id="myTextarea41" style="display: none;">
+  //área de inicialización, solo se ejecuta una vez
+	unaInicialización = 1	
+  //área de repetitiva
+	while (unaInicialización <= 3) {
+    	alert("ejecución número "+unaInicialización)
+    	unaInicialización = unaInicialización + 1
+  } 
+  //área de salida, solo se ejecuta una vez  
+  alert("terminamos")
+
+
+				</textarea>
+<script>
+	var editor41 = CodeMirror.fromTextArea(myTextarea41, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor41.getValue())"> Ejecutar </button>
+	
+	</div>
+</div>	
+<!--//section-->
+					</section>	
+
+	<section class="docs-section" id="item-4-3">
+					 	<h2 class="section-heading">Retomando el Minidesafío #6</h2>
+											<p>Vamos a retomar nuestro desafío #6 pero esta vez con el enfoque de la estructura repetitiva WHILE.</p> <p>Recordemos el desafío: A Dipli se le ocurrió hacer una lista de invitación a una fiesta robótica en su taller. Solo invitará a amigos robots que tengan más de 2 ruedas. Nos pide hacer un programa que solicite el nombre del amigo, su cantidad de ruedas, y si corresponde, lo agregue a una lista de invitación. Pero atención! Dipli tiene mala memoria! podría no recordar ningún amigo. </p>  
+					<img class="info-img" src="assets/images/desafios.png" width="100%"  alt="info" />
+
+<textarea id="myTextarea42" style="display: none;">
+//funcion que concatena nombres de invitados, si es que hay
+function armarListaInvitados (){
+  //área de inicialización, solo se ejecuta una vez
+	listaInvitados = "";  
+	recuerda = prompt("Dipli, ¿recordas algún invitado? ingresa s/n")
+  //área de repetitiva
+	while (recuerda == 's') {
+    unNombre = prompt("Dipli, ingresá el nombre del invitado");
+    cantidadRuedas = Number(prompt("Dipli, ingresá la cantidad de ruedas de tu invitado");)
+    if (cantidadRuedas > 2) listaInvitados = unNombre + ", " + listaInvitados;
+    recuerda = prompt("Dipli, recordás algún otro nombre? ingresa s/n");
+  } 
+  //área de salida, solo se ejecuta una vez  
+  return listaInvitados;
+}
+//llamamos la función
+resultado = armarListaInvitados()
+alert(resultado)
+					</textarea>
+<script>
+	var editor42 = CodeMirror.fromTextArea(myTextarea42, {    
+	  lineNumbers: true,
+	  tabSize: 2,
+	  mode: 'javascript',
+	  theme: 'material'
+  });
+</script> 
+<br>
+<button class="btn btn-sm btn-primary" onclick="eval(editor42.getValue())"> Ejecutar </button>
+
+
+					 </section>	
+
+
+<section class="docs-section" id="item-4-4">
+
+					 	<h2 class="section-heading">Para Pensar</h2>
+<div class="row" id="item-1-3">
+	<div class="col-6">
+		<center>
+			<img width="82%" class="info-img" src="assets/images/ficha_stop_03.png" alt="info" /> 
+		</center>
+	</div>
+	<div class="col-6">
+		<p>
+		Podríamos hacer una primera clasificación entre estructuras repetitivas a partir de la información disponible de la cantidad de repeticiones. Si conocemos cuántas veces se deberá iterar (es decir, repetir) entonces sería mejor utilizar una estructura FOR. Si no conocemos la cantidad de repeticiones al momento de comenzar a iterar, será necesario seleccionar una estructura DO WHILE o la estructura WHILE. La selección entre ambas dependerá de si se debe iterar una o más veces, o bien, cero o más veces. 
+		
+		</p>
+		
+		<p>
+			<center><i class="fab fa-android  fa-4x"></i></center><hr>
+		<b>Para pensar: ¿Por qué es importante seleccionar bien la estructura repetitiva?	</b>
+		</p>
+			
+
+
+	</div>
+		<div class="callout-block callout-block-success " id="item-4-5">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                 <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                Para recordar
+	                            </h4>
+                                <p> Siempre debemos tomarnos un tiempo para diseñar el algoritmo y seleccionar las mejores estructuras de control.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+<h2 class="section-heading">Diseñar vs Programar</h2>
+<div class="row">
+	<div class="col-6">
+		<p>
+		Cuando hablamos del diseño de un algoritmo, nos referimos al tiempo que nos tomamos <b>antes de comenzar a programar</b>. Ese tiempo de diseño, es importante para tomar decisiones de implementación. Antes de escribir una sola línea de código, es bueno que nos preguntemos por qué necesitamos una estructura repetitiva, cuántas veces se deberá iterar, si conocemos o no la cantidad de iteraciones antes de que se comienze a ejecutar el bloque repetitivo, etc. Este análisis nos permitirá construír soluciones más sólidas, mas fáciles de mantener en el tiempo, más simples de implementar.
+		
+		</p>
+		
+		
+		
+	</div>
+	<div class="col-6">
+		<center>
+			<img width="82%" class="info-img" src="assets/images/repe07.png" alt="info" /> 
+		</center>
+			
+
+
+	</div>
+
+</div>	
+						 <!-- desafio #1 -->
+</section>
+				</article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-6-1">
+					<header class="docs-header">
+						<h1 class="docs-heading" id="item-6-1"  >Videos<span class="docs-time"></span></h1>
+						<section class="docs-intro">
+							<p>A continuación les dejamos un pequeño resumen de los temas que vimos en esta sección en
+								formato de video!!</p>
+
+
+								<div class="card">
+									<div class="card-header">
+									Repetitivas: EL FOR	
+									</div>							
+										<div class="card-body">
+											<div class="video-container">
+											<a href="https://youtu.be/I0Wq7CyTci4" target="_blank"><img  src="assets\images\videofor.png" width="25%"> 				</a>			
+											</div>
+
+										</div>
+
+
+									
+							</div>
+							<div class="card">
+									<div class="card-header">
+									Repetitivas: EL DO WHILE
+									</div>							
+										<div class="card-body">
+											<div class="video-container">
+											<a href="https://youtu.be/9HtCicXCIWE" target="_blank"><img  src="assets\images\videofor.png" width="25%"> 				</a>			
+											</div>
+										</div>
+							</div>
+							<div class="card">
+									<div class="card-header">
+									Repetitivas: EL WHILE	
+									</div>							
+										<div class="card-body">
+											<div class="video-container">
+											<a href="https://youtu.be/RA-iJ1E3PWg" target="_blank"><img  src="assets\images\videofor.png" width="25%"> 				</a>			
+											</div>
+										</div></div>
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+					
+
+				</article>
+			    
+			    
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Desafios FOR</h1>
+					    <section class="docs-intro">
+						    <p>Llegamos a la sección más interesante, al momento en que ponemos en práctica todo lo que aprendimos sobre repes.  </p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-5">
+ 
+            
+ 
+ 
+						<h2 class="section-heading" id="item-5-1">Nivel 1: Contadores y Acumuladores (sin usar repes)</h2>
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	                 A- Contando mis amig@s                               
+	                            </h4>
+                                <p> Generá un código que utilice un contador para contar tus amig@s. Por ejemplo, si tenes 3 amig@s, tu contador debe comenzar con el valor 0 y terminar con el valor 3.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	                 B- Calculando los gastos del mes                               
+	                            </h4>
+                                <p> Generá un código que utilice un acumulador para calcular todos los gastos del mes. Por ejemplo, si gastaste 100$ en la factura del celular y 500$ en un regalo para el profe de la diplo, al finalizar tu acumulador debería tener el valor 600$.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+ <h2 class="section-heading" id="item-5-2">Nivel 2: Mis primeras repes</h2>
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	    A - Mostrando el 1, 2, 3, 4 y 5
+	                            </h4>
+                                <p> Generá una repe que muestre los números del 1 al 5.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	                 B- Mostrando los números del 1 al N                  
+	                            </h4>
+                                <p> Generá una repe que muestre los números del 1 al N. </p><p><b>HINT: modularizá convenientemente.</b></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+<h2 class="section-heading" id="item-5-3">Nivel 3: Profesiones</h2>
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">A - Las artistas
+	                            </h4>
+                                <p> Diseñá una repe que permita armar una sola cadena de texto donde estén tus 5 colores favoritos. Los colores deben preguntarse al usuario de a uno.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">B- L@s enfermer@s. 
+	                            </h4>
+                                <p>Esto de ser artístas no nos funcionó. Mejor nos dedicamos a la medicina integral. Vamos a tomar la presión a 10 personas. Si la presión es mayor a 11 entonces debemos alertar al paciente para que baje el consumo de sal. </p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+ <h2 class="section-heading" id="item-5-4">Nivel 4: El Tarot</h2>
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	    A - Los Mediums (Sin repes)
+	                            </h4>
+                                <p> Generá un módulo que a partir de 6 cartas del Tarot, entregue una profecía al usuario. Las cartas pueden ser: 
+                                	<ul>
+                                		<li>"#1- Amor"</li>
+                                		<li>"#2- Cerveza"</li>
+                                		<li>"#3- Trillizos"</li>
+                                		<li>"#4- Parcial"</li>
+                                		<li>"#5- Casamiento"</li>
+                                		<li>"#6- Hospital"</li>
+                                	</ul>  </p>
+                                	<p><b>Por ej. si la carta seleccionada es la número #4, podría entregarse una profecía como esta: "Te va a ir excelente en el parcial de la diplo DIPLI". Podes proponer tus propias profecías.</b></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	                 B- Tirando las cartas a N usuarios (Usar repe)                 
+	                            </h4>
+                                <p> Generá otro módulo que dado un número N de usuarios (N representa un número entero cualquiera) se pida un número de carta al usuario y se le entregue una profecía a partir de la carta seleccionada. </p><p><b>Ej: Si el primer usuario selecciona la carta #4 entonces le mostramos la profecía que propusiste para esa carta, por ej. "Te va a ir excelente en el parcial de la diplo DIPLI".</b></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+<h2 class="section-heading" id="item-5-5">Nivel 5: Liquidando sueldos de informátic@s</h2>
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	    A - Liquidando un ítem (Sin Repes)
+	                            </h4>
+                                <p> Generá un módulo llamado <code>liquidaItem(item, cantidad)</code> que reciba dos parámetros:	</p>
+                                	<ul>
+                                		<li>"Parámetro #1- Item. <i>Estos ítems se corresponden a los 5 ítems del convenio colectivo de trabajo de los informáticos y tienen un monto asociado. Los ítem y sus montos son:</i></li>
+                                		 
+                                	<ul>
+                                		<li>#1- Hora Extra: 100$</li>
+                                		<li>#2- Guardia de fin de semana: 100$</li>
+                                		<li>#3- Hora de Desarrollo Web: 300$</li>
+                                		<li>#4- Análisis de Requerimientos: 300$</li>
+                                		<li>#5- Diseño de Software: 200$</li>                                		
+                                	</ul> 
+                                		<li>Parámetro #2- <i>Cantidad. Es un número entero que representa la cantidad de ítems de un tipo que deben liquidarse.</i></li>                             		                                	
+                                	</ul>
+
+                                
+                                	<p><b>Por ej. si el módulo <code>liquidaItem(item, cantidad)</code> recibe  los parámetros ítem=#3 y cantidad=10, entonces el módulo debe retornar 3000$.</b></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	                 B- Liquidando un sueldo (Usando repes)
+	                            </h4>
+                                <p> Generá otro módulo llamado <code>liquidaSueldo(cantidadItemDistintos)</code>  que dado un número N de ítems distintos, (N representa un número entero cualquiera) calcule el sueldo de un empleado para ese mes. </p><p><b>Ej: Si invocamos a <code>liquidaSueldo(cantidadItemDistintos)</code> con cantidadItemDistintos=1, entonces se solicitará al usuario 1 vez un número de ítem y su cantidad, por ejemplo ítem #3 y cantidad 10, para luego utilizar el módulo <code>liquidaItem(3, 10)</code> acumulando cada liquidación de ítem en un acumulador y entregando el valor resultante. El parámetro cantidadItemDistintos puede tomar cualquier valor entero.</b></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+
+
+					</section><!--//section-->
+					
+			    </article><!--//docs-article-->
+
+			    <article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Desafios DO WHILE</h1>
+					    <section class="docs-intro">
+						    <p>Llegamos a la sección más interesante, al momento en que ponemos en práctica todo lo que aprendimos sobre repes.  </p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-7">
+ 
+            
+ 
+ 
+						<h2 class="section-heading" id="item-7-1">Nivel 1: EL TAROT MISTERIOSO</h2>
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">RETOMAMOS EL DESAFÍO FOR #4 
+	                            </h4>
+                                <p>Pero ahora, consideremos que la secuencia de profecías se detiene cuando el usuario pide la carta número #5. Como ya no conocemos a priori cuántas ejecuciones deberán suceder hasta que el usuario escoja la carta #5, no podemos usar el FOR. Debemos reemplazarlo por una estructura DO WHILE.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+						
+ <h2 class="section-heading" id="item-7-2">Nivel 2: Repetitivas en la NASA</h2>
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	    A - Los permisos de usuario
+	                            </h4>
+                                <p> En la NASA tenemos a una fila de personas apuradas para enviar cohetes a Marte, pero antes de presionar el botón, debemos chequear los permisos del usuario. Para ello, tene en cuenta la siguiente lista de niveles de permisos:
+                                	<ul>
+                                		<li>"#1- Visitante"</li>
+                                		<li>"#2- Administrativo"</li>
+                                		<li>"#3- Ingeniero"</li>
+                                		<li>"#4- Piloto"</li>
+                                		<li>"#5- Director"</li>                                		
+                                	</ul> 		
+                                </p>
+                                <p>
+                                	Solo un usuario que indique tener permiso de Director (#5) puede enviar cohetes a Marte. Desarrollá un código, para solicitar un nivel de permiso a un usuario y que retorne verdadero si el nivel tiene permitido enviar cohetes al espacio. 
+                                </p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	                 B- Enviando cohetes.
+	                            </h4>
+                                <p> Desarrollá una repetitiva que permita a una cantidad desconocida de usuarios enviar cohetes al espacio. Los lanzamientos deben finalizar cuando alguien no tenga el permiso adecuado.</p><p></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+
+
+
+
+					</section><!--//section-->
+					
+			    </article><!--//docs-article-->
+			    <article class="docs-article" id="section-8">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Desafios WHILE</h1>
+					    <section class="docs-intro">
+						    <p>Llegamos a la sección más interesante, al momento en que ponemos en práctica todo lo que aprendimos sobre repes.  </p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-8">
+ 
+            
+ 
+ 
+						<h2 class="section-heading" id="item-8-1">Nivel 1: </h2>
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">A- CONTROL REMOTO
+	                            </h4>
+                                <p>Como sabemos, Dipli funciona a batería, la cual, si está cargada al 100%, posee <b>30 unidades de energía</b>. Pero lo que no sabías es que, por suerte, tiene un modo Control Remoto. Cada movimiento consume una cantidad determinada de niveles de energía. Esta es la tabla de consumo: </p>
+
+                              <table class="table">
+  <thead>
+
+  <tr>
+	<th>COMANDO</th>
+	<th>ACCIÓN</th>
+    <th>CONSUMO EN UNIDADES</th>
+
+  </tr>
+</thead>
+  <tbody>
+  <tr>
+
+    <td>#1</td>
+
+    <td>Saltito</td>
+
+    <td>5 unidades</td>
+
+  </tr>
+
+  <tr>
+
+<tr>
+
+    <td>#2</td>
+
+    <td>Patada Ninja</td>
+
+    <td>7 unidades</td>
+
+  </tr>
+<tr>
+
+    <td>#3</td>
+
+    <td>Pasito de Baile</td>
+
+    <td>4 unidades</td>
+
+  </tr>
+
+  <tr>
+
+    <td>#4</td>
+
+    <td>Hacerse el muertito</td>
+
+    <td>6 unidades</td>
+
+  </tr>
+  <tr>
+
+    <td>#5</td>
+
+    <td>Autodestrucción nuclear</td>
+
+    <td>30 unidades</td>
+
+  </tr>
+  </tr>
+
+  
+ </tbody>
+</table>
+  
+ Tu misión consiste en desarrollar un módulo llamado <code>actualizarEnergia(energiaActual, codigoComando)</code> que retorna la cantidad de unidades de energía restante. Por ejemplo, si invocamos a <code>actualizarEnergia(30, 5)</code> nos retorna 0, porque el comando #5 consume 30 unidades de energía y se restan a la cantidad actual que ingresó como parámetro (30 unidades actuales - 30 unidades que consume el comando #5). 
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	                 B- Controlando a Dipli.
+	                            </h4>
+                                <p> Desarrollá una repetitiva que permita interactuar con Dipli mientras le quede batería.</p><p></p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->						
+ <h2 class="section-heading" id="item-8-2">Nivel 2: Liquidación de sueldos recargada!</h2>
+						<div class="callout-block callout-block-success">
+                            <div class="content">
+                                <h4 class="callout-title">	Ohh no!!! la empresa prohibió las horas extras!!! 
+	                            </h4>
+                                <p> Ahora vamos a tener que modificar nuestro liquidador de sueldos. Esta vez, vamos a liquidar sueldos siempre y cuando no aparezca el ítem #1, de horas extras. Si alguno de los ítems llega a ser el #1, debemos detener la liquidación. No podemos liquidar un ítem #1... mucho cuidado!!
+                                </p>
+                                
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+						
+
+
+
+
+					</section><!--//section-->
+					
+			    </article><!--//docs-article-->
+			    <article class="docs-article" id="section-9">
+					<header class="docs-header">
+						<h1 class="docs-heading">Desafío Dipli! - ¿Cuál es el Número?</h1>
+						<section class="docs-intro">
+							<div class="row" id="item-9-1">
+								<div class="col-6">
+									<p>Considerando todo lo que hemos aprendido durante este recorrido, te proponemos
+										que pienses en el desafío Dipli del recorrido de Repetitivas y trates de
+										incorporar las nuevas estructuras aprendidas. <br>
+										Además de respetar las reglas ya planteadas en desafíos anteriores, también
+										vamos aconsiderar que el desadío Dipli responda a las siguientes reglas:
+									<ul>
+										<li>
+											VIDAS: El/la jugador/a comienza a jugar con 10 vidas.											
+										</li>
+										<li>Cada intento fallido consume una vida. Es necesario mostrar la cantidad de vidas restantes en cada intento fallido.
+										</li>
+										<li>Si el/la jugador/a gana, entonces no debe seguir jugando.
+										</li>
+										<li>Acumulador radioactivo: cada intento fallido incrementa el nivel de radioactividad en 150 REM (Roentgen Equivalent Man). Es necesario informar, en cada intento fallido, el nivel de radioactividad acumulado. A los 1500 REM se produce la muerte del jugador y la explosión nuclear de Dipli.  
+										</li>
+									</ul>
+									</p>
+
+									<h5 class="callout-title">
+										<i class="fas fa-check-circle"></i>
+										TIPS!
+									</h5>
+									<p>
+										Pensá muy bien cuál de todas las estructuras repetitivas deberías utilizar. 
+										Suerte y a disfrutar programando!
+										<i class="fas fa-laptop-code"></i>
+										<i class="far fa-heart"></i>
+									</p>
+									<!-- </div> -->
+								</div>
+								<div class="col-6">
+									<img width="70%" class="info-img" src="assets/images/desafioDipli.gif" alt="info" />
+								</div>
+							</div>
+						</section>
+						<!--//docs-intro-->
+					</header>
+				</article>
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright"> <a href="https://faiweb.uncoma.edu.ar/" target="_blank">FAI-UNCo</a></small>
+				        <!--<ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul>//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
