@@ -20,4 +20,4 @@ El contenido del sitio esta implementado en los lenguages html, js y css en arch
 ## Agradecimientos
 Agradecemos a todxs los facilitadorxs y diplomandxs que han contribuido a la creación de este curso, así como a la comunidad de programadores que comparte su conocimiento en línea.
 
-¡Diviértete aprendiendo a programar!
+¡Diviértete aprendiendo a programar!!!!
