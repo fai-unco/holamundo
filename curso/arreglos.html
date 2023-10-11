@@ -124,7 +124,7 @@
     					let nombreVariable = Array();
     			</code>
 
-				<p> De esta manera podemos definir una variable "col_numeros_aleatorios" como una estructura del tipo Array de 10 elementos numéricos, de la siguiente manera: </p>
+				<p> De esta manera podemos definir una variable "numeros_aleatorios" como una estructura del tipo Array de 10 elementos numéricos, de la siguiente manera: </p>
 			<p>
 				<code class="JavaScript">
     					let numeros_aleatorios = Array(10);
@@ -169,12 +169,12 @@
   			
 			<section class="docs-section" id="item-1-2">
 				<h2 class="section-heading">¿ Cómo accedemos a cada uno de los elementos del arreglo ? </h2>
-				<p> Ya sabemos como crear una variable del tipo Array en JavaScript y cómo asignarle un conjunto de elementos. Ahora es el momento de saber como acceder a cada uno de los elementos que contiene o almacena un arreglo. Cada uno de los elementos tiene asociado  un índice, que indica la posición del elemento dentro del arreglo (comenzando desde la posición 0). Por lo tanto cada uno de los elementos del arreglo "col_numeros_aleatorios" que creamos,  podemos obtenerlos de la siguiente manera: </p>
+				<p> Ya sabemos como crear una variable del tipo Array en JavaScript y cómo asignarle un conjunto de elementos. Ahora es el momento de saber como acceder a cada uno de los elementos que contiene o almacena un arreglo. Cada uno de los elementos tiene asociado  un índice, que indica la posición del elemento dentro del arreglo (comenzando desde la posición 0). Por lo tanto cada uno de los elementos del arreglo "numeros_aleatorios" que creamos,  podemos obtenerlos de la siguiente manera: </p>
 
 <textarea id="myTextarea" style="display: none;"> 
-function visualizar_Elementos(Arreglo_Numeros){
+function visualizar_Elementos(arregloNumeros){
     for (indice=0; indice<10; indice++){
-      alert("En la posición " +indice + " se encuentra el número: "+ Arreglo_Numeros[indice]);
+      alert("En la posición " +indice + " se encuentra el número: "+ arregloNumeros[indice]);
     }
 }
 numeros_aleatorios = [20, 88, 17, 33, 20, 55, 12, 20, 78, 17];
@@ -194,22 +194,22 @@ visualizar_Elementos(numeros_aleatorios);
 		<p> Ahora ya estamos en condiciones de definir una variable que contenga 30 números generados de manera aleatoria, y luego vamos a visualizar cada uno de sus elementos .
 		</p>
 <p>
-<textarea id="myTextarea_3" style="display: none;"> function visualizar_Elementos(Arreglo_Numeros,longitud){
+<textarea id="myTextarea_3" style="display: none;"> function visualizar_Elementos(arregloNumeros,longitud){
     for (indice=0; indice<longitud; indice++){
-      alert("En la posición " +indice + " se encuentra el número: "+ Arreglo_Numeros[indice]);
+      alert("En la posición " +indice + " se encuentra el número: "+ arregloNumeros[indice]);
     }
 }
 	function generarSecuenciaAleatoria(cant_elem){
 	let min = 1;
 	let max = 99;
 	let num; 
- 	Arreglo_Numeros =  Array(cant_elem);
+ 	arregloNumeros =  Array(cant_elem);
  	for (indice=0; indice<cant_elem; indice++){
 	  let num = Math.floor(Math.random()*(max-min+1)+min);
-      Arreglo_Numeros[indice]=num;
-      //alert("En la posición " +indice + " se guardo el número: "+ Arreglo_Numeros[indice]);
+      arregloNumeros[indice]=num;
+      //alert("En la posición " +indice + " se guardo el número: "+ arregloNumeros[indice]);
     }
-    return Arreglo_Numeros;
+    return arregloNumeros;
 } 
 
 let cant_numeros = 30;
@@ -345,6 +345,82 @@ if (repuesta){
                       
                       <h5 class="mt-5">shift</h5>
 					    <p>Nos permite eliminar el primer elemento de un arreglo y lo retorna.</p>
+						<hr/>
+				
+						<h5 class="mt-5">Ejemplos para probar las funciones del tipo de dato arreglo</h5>
+						<p>¿Cómo cambio el orden de un arreglo?</p>
+						
+						
+						<textarea id="myTextarea_6" style="display: none;">/*
+							devuelve un string con los elementos del arreglo
+							*/
+							function imprimir(arreglo){
+								let salida='';
+							  for(i=0; i<arreglo.length; i++){
+								salida+=arreglo[i];
+							  }
+							  return salida;
+							}
+
+							/*
+							devuelve un arreglo con el orden en reverso
+							*/
+							function reverso(arreglo){
+								let salida=Array();
+								while(arreglo.length>0){
+									//saca el ultimo elemento de arreglo y lo pone al final en salida
+									salida.push(arreglo.pop());
+								}
+								return salida;
+							}
+
+							/*
+							devuelve un arreglo con el orden en reverso
+							*/
+							function reverso2(arreglo){
+								let salida=Array();
+								while(arreglo.length>0){
+									//saca el primer elemento de arreglo y lo pone primero en salida
+									salida.unshift(arreglo.shift());
+								}
+								return salida;
+							}
+
+
+							let letras = ['H', 'O', 'L', 'A', ' ', 'M', 'U', 'N', 'D', 'O'];
+							alert(imprimir(letras));
+							
+							letras=reverso(letras);
+							alert(imprimir(letras));
+
+							letras=reverso2(letras);
+							alert(imprimir(letras));
+						</textarea>
+						<script>
+							var editor_6 = CodeMirror.fromTextArea(myTextarea_6, {    
+							  lineNumbers: true,
+							  tabSize: 2,
+							  mode: 'javascript',
+							  theme: 'material'
+						  });
+						</script> 
+						<button class="btn btn-sm btn-primary" onclick="eval(editor_6.getValue())"> Ejecutar </button>
+
+						<div class="callout-block callout-block-success">
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<svg class="svg-inline--fa fa-thumbs-up fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="thumbs-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M104 224H24c-13.255 0-24 10.745-24 24v240c0 13.255 10.745 24 24 24h80c13.255 0 24-10.745 24-24V248c0-13.255-10.745-24-24-24zM64 472c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zM384 81.452c0 42.416-25.97 66.208-33.277 94.548h101.723c33.397 0 59.397 27.746 59.553 58.098.084 17.938-7.546 37.249-19.439 49.197l-.11.11c9.836 23.337 8.237 56.037-9.308 79.469 8.681 25.895-.069 57.704-16.382 74.757 4.298 17.598 2.244 32.575-6.148 44.632C440.202 511.587 389.616 512 346.839 512l-2.845-.001c-48.287-.017-87.806-17.598-119.56-31.725-15.957-7.099-36.821-15.887-52.651-16.178-6.54-.12-11.783-5.457-11.783-11.998v-213.77c0-3.2 1.282-6.271 3.558-8.521 39.614-39.144 56.648-80.587 89.117-113.111 14.804-14.832 20.188-37.236 25.393-58.902C282.515 39.293 291.817 0 312 0c24 0 72 8 72 81.452z"></path></svg><!-- <i class="fas fa-thumbs-up"></i> Font Awesome fontawesome.com -->
+									</span>
+									<!--//icon-holder-->
+									Tip
+								</h4>
+								<p>Ojo!!! si pasas una variable de tipo array por parámetro a una función se pasa por referencia.  Esto significa que si modificas el array dentro de la función, esos cambios se reflejarán fuera de la función, ya que ambos están apuntando a la misma ubicación de memoria.
+								</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
 
 					<!--//section-->
 					</section>	
@@ -613,7 +689,7 @@ Suerte y a disfrutar programando con Dipli! <i class="fas fa-laptop-code"></i>
 <p>
 Dejanos tu comentario del Desafío Dipli que nos acompañó en todos los trayectos de la diplo en el siguiente enlace:<br>
 👉
-<a href="https://docs.google.com/document/d/1TtnP8_2-RjzJ1butPnpnGfwBlacgUAQMscol2TM3Db0/edit?usp=sharing">aquí</a> 👈. </p>
+<a href="https://docs.google.com/document/d/1vuEc-NgLJFrlZ5Y1PXo85Jl2d3xRiDn9AlQHimVws50/edit?usp=sharing">aquí</a> 👈. </p>
 <p>Si queres compartir algo más sobre tu experiencia en la Diplo, es más que bienvenido tu comentario. Es muy valioso saber cómo viviste tu experiencia, nos ayuda a mejorar.
 </p>
 
